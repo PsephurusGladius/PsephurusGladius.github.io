@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;psephurusgladius.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="图论讲义第三节。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【所谓讲义·二】3.几类特殊的图">
+<meta property="og:url" content="https://psephurusgladius.github.io/2021/04/25/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%913-%E5%87%A0%E7%B1%BB%E7%89%B9%E6%AE%8A%E7%9A%84%E5%9B%BE/index.html">
+<meta property="og:site_name" content="白鲟鱼缸">
+<meta property="og:description" content="图论讲义第三节。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/yw3r27ee.png">
+<meta property="article:published_time" content="2021-04-25T09:12:31.000Z">
+<meta property="article:modified_time" content="2021-06-06T13:50:04.319Z">
+<meta property="article:author" content="白鲟">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="hide">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/yw3r27ee.png">
+
+
+<link rel="canonical" href="https://psephurusgladius.github.io/2021/04/25/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%913-%E5%87%A0%E7%B1%BB%E7%89%B9%E6%AE%8A%E7%9A%84%E5%9B%BE/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;04&#x2F;25&#x2F;%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%913-%E5%87%A0%E7%B1%BB%E7%89%B9%E6%AE%8A%E7%9A%84%E5%9B%BE&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;04&#x2F;25&#x2F;【所谓讲义·二】3-几类特殊的图&#x2F;&quot;,&quot;title&quot;:&quot;【所谓讲义·二】3.几类特殊的图&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>【所谓讲义·二】3.几类特殊的图 | 白鲟鱼缸</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">白鲟鱼缸</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-1-%E6%AC%A7%E6%8B%89%E5%9B%BE"><span class="nav-text">3.1 欧拉图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-1-%E6%AC%A7%E6%8B%89%E5%9B%BE%E4%B8%8E%E5%8D%8A%E6%AC%A7%E6%8B%89%E5%9B%BE"><span class="nav-text">3.1.1 欧拉图与半欧拉图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-2-Hierholzer-%E7%AE%97%E6%B3%95%E6%B1%82%E6%AC%A7%E6%8B%89%E8%B7%AF%E5%BE%84"><span class="nav-text">3.1.2 Hierholzer 算法求欧拉路径</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-5-%E6%A0%91"><span class="nav-text">3.5 树</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-2-%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88"><span class="nav-text">3.5.2 最近公共祖先</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-2-2-%E6%AC%A7%E6%8B%89%E5%BA%8F"><span class="nav-text">3.5.2.2 欧拉序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-3-%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86"><span class="nav-text">3.5.3 树链剖分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-3-2-%E9%95%BF%E9%93%BE%E5%89%96%E5%88%86"><span class="nav-text">3.5.3.2 长链剖分</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-4-%E8%99%9A%E6%A0%91"><span class="nav-text">3.5.4 虚树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-5-%E6%A0%91%E5%88%86%E6%B2%BB"><span class="nav-text">3.5.5 树分治</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-5-1-%E7%82%B9%E5%88%86%E6%B2%BB"><span class="nav-text">3.5.5.1 点分治</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-5-2-%E7%82%B9%E5%88%86%E6%A0%91"><span class="nav-text">3.5.5.2 点分树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-5-3-%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6"><span class="nav-text">3.5.5.3 树上启发式合并</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">白鲟</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://psephurusgladius.github.io/2021/04/25/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%913-%E5%87%A0%E7%B1%BB%E7%89%B9%E6%AE%8A%E7%9A%84%E5%9B%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="白鲟">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白鲟鱼缸">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【所谓讲义·二】3.几类特殊的图
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-25 17:12:31" itemprop="dateCreated datePublished" datetime="2021-04-25T17:12:31+08:00">2021-04-25</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-06 21:50:04" itemprop="dateModified" datetime="2021-06-06T21:50:04+08:00">2021-06-06</time>
+      </span>
+
+  
+</div>
+
+            <div class="post-description">图论讲义第三节。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="3-1-欧拉图"><a href="#3-1-欧拉图" class="headerlink" title="3.1 欧拉图"></a>3.1 欧拉图</h1><h2 id="3-1-1-欧拉图与半欧拉图"><a href="#3-1-1-欧拉图与半欧拉图" class="headerlink" title="3.1.1 欧拉图与半欧拉图"></a>3.1.1 欧拉图与半欧拉图</h2><p>在欧拉图中，从每个点出发均可以找到不重复地经过所有边的回到该点的路径，该路径称之为欧拉回路；在半欧拉图中，从一个点出发，可以找到不重复地经过所有边的到达另一个点的路径，该路径称之为欧拉路径。欧拉图可视为若干个环的并，且每条边被包含在奇数个环中。</p>
+<p>无向图中，无奇度数点的图与欧拉图等价；有且仅有两个奇度数点的图与半欧拉图等价，且该图的欧拉路径必定从一个奇度数点出发，到另一个奇度数点结束。</p>
+<h2 id="3-1-2-Hierholzer-算法求欧拉路径"><a href="#3-1-2-Hierholzer-算法求欧拉路径" class="headerlink" title="3.1.2 Hierholzer 算法求欧拉路径"></a>3.1.2 Hierholzer 算法求欧拉路径</h2><p>Hierholzer 算法的基本过程是对图进行深度优先遍历并删掉已访问过的边，同时在每次访问完一个点后将该点入栈。栈中序列即为一条欧拉路径。</p>
+<p>起点应保证为半欧拉图中奇度数点或欧拉图中任一点。</p>
+<p>若需要字典序最小，则按字典序访问即可。</p>
+<p>例题：P2731,CF527E。</p>
+<h1 id="3-5-树"><a href="#3-5-树" class="headerlink" title="3.5 树"></a>3.5 树</h1><h2 id="3-5-2-最近公共祖先"><a href="#3-5-2-最近公共祖先" class="headerlink" title="3.5.2 最近公共祖先"></a>3.5.2 最近公共祖先</h2><h3 id="3-5-2-2-欧拉序"><a href="#3-5-2-2-欧拉序" class="headerlink" title="3.5.2.2 欧拉序"></a>3.5.2.2 欧拉序</h3><p>Dfs 序记录首次经过每个结点的顺序，而欧拉序记录访问结点的实际路径。每次到达某一结点，欧拉序都会对该结点进行记录。确切地说，对于每个结点，欧拉序在首次访问该结点和完成访问其每一棵子树时均会进行记录。</p>
+<p>欧拉序的一个重要性质是：两个结点在欧拉序中首次出现位置之间深度最小的点即为它们的最近公共祖先。证明如下：记 $i$ 结点首次出现位置为 $order_i$，不妨设 $order_i&lt;order_j$，由于访问结点 $j$ 时必定未完成访问 LCA 为根的子树，而访问结点 $i$ 时必定已开始访问该子树，二者之间不可能存在深度小于 LCA 的点；由于 $i$ 和 $j$ 在 LCA 的不同子树中，因此 LCA 必定在 $order_i$ 与 $order_j$ 之间出现。</p>
+<p>通过欧拉序，可以将求最近公共祖先转化为 RMQ 问题。使用 ST 表可做到 $\operatorname{O}(n\log n)-\operatorname{O}(1)$ 的复杂度。</p>
+<p>例题：LOJ#137。</p>
+<h2 id="3-5-3-树链剖分"><a href="#3-5-3-树链剖分" class="headerlink" title="3.5.3 树链剖分"></a>3.5.3 树链剖分</h2><h3 id="3-5-3-2-长链剖分"><a href="#3-5-3-2-长链剖分" class="headerlink" title="3.5.3.2 长链剖分"></a>3.5.3.2 长链剖分</h3><p>定义结点高度为该结点到在它子树内叶结点的最长距离，长链剖分选择其高度最大的子结点作为长结点，每个结点与它的长结点同在一条长链上。经过剖分后，树的形态如下图：</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/yw3r27ee.png"></p>
+<p>长链剖分的结构特征与贪心有关。其最重要的应用是快速求出某个结点的 $k$ 级祖先。</p>
+<p>长链剖分求 $k$ 级祖先的方法如下：预处理求出每个结点祖先的倍增数组，并利用倍增数组在长度为 $l$ 的长链的起始点记录该点上行与沿长链下行各 $l$ 个结点的编号。查询时先跳至 $\operatorname{highbit}(k)$ 级祖先的位置，随后跳到该祖先所在的长链顶端 $x$，再利用 $x$ 记录的上下行结点信息索引至 $k$ 级祖先。</p>
+<p>这一方法证明如下：$\forall i$，$i$ 的 $k$ 级祖先高度不小于 $k$，因此该祖先所在长链长度不小于 $k$。若 $x$ 开始的长链包含了 $k$ 级祖先，则可通过下行记录进行索引；否则，由于 $k-\operatorname{height}(x)\le k-\operatorname{highbit}(k)&lt;\operatorname{highbit}(k)\le \operatorname{height}(x)$，$k$ 级祖先必定出现在上行记录中。</p>
+<p>例题：P5903,CF504E。</p>
+<h2 id="3-5-4-虚树"><a href="#3-5-4-虚树" class="headerlink" title="3.5.4 虚树"></a>3.5.4 虚树</h2><p>给出一棵树和一些关键点，从原树抽象出的只包含关键点和它们的 LCA，同时各结点间相对关系与原树相同的树，称为虚树。</p>
+<p>虚树的构建方法如下：根据关键点的 dfs 序由小到大向虚树中加点，并使用栈维护当前虚树的右链。每次新加入一个点，将栈中不是它祖先的元素均弹出，并将相邻出栈元素的连边，再将最后一个弹出栈的元素与它的 LCA 和它一同入栈，并将 LCA 与最后一个出栈元素连边，若 LCA 已在栈中则不必入栈。加完所有点后，类似地清空整个栈。</p>
+<p>正确性易得。容易发现含 $k$ 个关键点的虚树的点数为 $\operatorname{O}(k)$。因此在多次给出关键点且关键点总数有限的树上问题中，它可以通过减少每次询问的信息量降低时间复杂度。</p>
+<p>例题：P2495,CF639F。</p>
+<h2 id="3-5-5-树分治"><a href="#3-5-5-树分治" class="headerlink" title="3.5.5 树分治"></a>3.5.5 树分治</h2><h3 id="3-5-5-1-点分治"><a href="#3-5-5-1-点分治" class="headerlink" title="3.5.5.1 点分治"></a>3.5.5.1 点分治</h3><p>通常用于解决与经过某点的路径相关的问题。每次分治找到树的重心，并求出经过重心的答案，再递归地对其子树进行分治。该过程满足用于所有分治的树大小之和为 $\operatorname{O}(n\log n)$。</p>
+<p>在实际运用中，通常会运用到用到容斥的思想。</p>
+<p>例题：P3806,P4178。</p>
+<h3 id="3-5-5-2-点分树"><a href="#3-5-5-2-点分树" class="headerlink" title="3.5.5.2 点分树"></a>3.5.5.2 点分树</h3><p>在点分治过程中将上层的重心与本层的重心连边，这样所形成的树称为点分治重构树，简称点分树。点分树上两点间的关系与点分治过程中相同，换言之，每两个点的最近公共祖先与原树上相同。其重要性质是深度为 $\operatorname{O}(\log n)$，每个结点的子树大小之和为 $\operatorname{O}(n\log n)$，因此可以每次询问访问从根开始的整条链，也可以在每个结点上记录它的子树中所有结点的信息。</p>
+<p>例题：P3241,P3292,P6329。</p>
+<h3 id="3-5-5-3-树上启发式合并"><a href="#3-5-5-3-树上启发式合并" class="headerlink" title="3.5.5.3 树上启发式合并"></a>3.5.5.3 树上启发式合并</h3><p>是将一棵树的每个结点的所有子树信息合并起来的方法。具体来说，该方法先访问该结点的轻子树，并在每次访问后清空访问记录，然后访问重子树并保留本次访问的数据，之后访问属于轻子树的所有结点并将其重新计入数据结构。时间复杂度为 $\operatorname{O}(n\log n)$。</p>
+<p>可以看作是链分治的一种优化。</p>
+<p>关于 dsu on tree，据原文作者所称，是该方法的一种基于 dfs 序的具体实现。</p>
+<p>在有关深度的问题中，记录深度相关信息并使用长链剖分可能使得复杂度更优。</p>
+<p>例题：CF600E,P4178。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+              <a href="/tags/hide/" rel="tag"># hide</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/03/20/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%91%E5%9B%BE%E8%AE%BA/" rel="prev" title="【所谓讲义·二】图论">
+                  <i class="fa fa-chevron-left"></i> 【所谓讲义·二】图论
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/04/26/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%89%E3%80%91%E6%95%B0%E8%AE%BA/" rel="next" title="【所谓讲义·三】数论">
+                  【所谓讲义·三】数论 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-fish"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白鲟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{&quot;enable&quot;:true,&quot;tags&quot;:&quot;none&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;mathjax@3.1.4&#x2F;es5&#x2F;tex-mml-chtml.js&quot;,&quot;integrity&quot;:&quot;sha256-ncNI9OXOS5Ek4tzVYiOMmN&#x2F;KKCPZ6V0Cpv2P&#x2F;zHntiA&#x3D;&quot;}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
