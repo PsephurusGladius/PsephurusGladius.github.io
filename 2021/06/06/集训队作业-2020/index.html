@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;psephurusgladius.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}</script><script src="/js/config.js"></script>
+<meta name="description" content="集训队作业 2020 题解。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="集训队作业 2020">
+<meta property="og:url" content="https://psephurusgladius.github.io/2021/06/06/%E9%9B%86%E8%AE%AD%E9%98%9F%E4%BD%9C%E4%B8%9A-2020/index.html">
+<meta property="og:site_name" content="白鲟鱼缸">
+<meta property="og:description" content="集训队作业 2020 题解。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-06T12:23:48.000Z">
+<meta property="article:modified_time" content="2021-06-06T12:36:24.741Z">
+<meta property="article:author" content="白鲟">
+<meta property="article:tag" content="题目选做">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://psephurusgladius.github.io/2021/06/06/%E9%9B%86%E8%AE%AD%E9%98%9F%E4%BD%9C%E4%B8%9A-2020/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;06&#x2F;06&#x2F;%E9%9B%86%E8%AE%AD%E9%98%9F%E4%BD%9C%E4%B8%9A-2020&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;06&#x2F;06&#x2F;集训队作业-2020&#x2F;&quot;,&quot;title&quot;:&quot;集训队作业 2020&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>集训队作业 2020 | 白鲟鱼缸</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">白鲟鱼缸</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CF504E-E"><span class="nav-number">1.</span> <span class="nav-text">CF504E(E)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF505E-M"><span class="nav-number">2.</span> <span class="nav-text">CF505E(M)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF506E-H"><span class="nav-number">3.</span> <span class="nav-text">CF506E(H)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF627E-M"><span class="nav-number">4.</span> <span class="nav-text">CF627E(M)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF512D-M"><span class="nav-number">5.</span> <span class="nav-text">CF512D(M)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF516D-E"><span class="nav-number">6.</span> <span class="nav-text">CF516D(E)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF526F-E"><span class="nav-number">7.</span> <span class="nav-text">CF526F(E)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF521D-E"><span class="nav-number">8.</span> <span class="nav-text">CF521D(E)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF521E-M"><span class="nav-number">9.</span> <span class="nav-text">CF521E(M)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF516E-M"><span class="nav-number">10.</span> <span class="nav-text">CF516E(M)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF547E-E"><span class="nav-number">11.</span> <span class="nav-text">CF547E(E)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CF527E-E"><span class="nav-number">12.</span> <span class="nav-text">CF527E(E)</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">白鲟</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://psephurusgladius.github.io/2021/06/06/%E9%9B%86%E8%AE%AD%E9%98%9F%E4%BD%9C%E4%B8%9A-2020/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="白鲟">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白鲟鱼缸">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          集训队作业 2020
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-06-06 20:23:48 / 修改时间：20:36:24" itemprop="dateCreated datePublished" datetime="2021-06-06T20:23:48+08:00">2021-06-06</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">集训队作业 2020 题解。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="CF504E-E"><a href="#CF504E-E" class="headerlink" title="CF504E(E)"></a>CF504E(E)</h3><p>询问树上两条路径最长公共前缀。</p>
+<p>hash &amp; 各种树上基础操作即可。</p>
+<p>按树剖序建立后缀数组也可做。</p>
+<p>码量题。</p>
+<h3 id="CF505E-M"><a href="#CF505E-M" class="headerlink" title="CF505E(M)"></a>CF505E(M)</h3><p>给出序列 ${a_i}$，每个时刻可以使 $k$ 个 $a_i$ 变为 $\max(a_i-p,0)$，之后每个 $a_i$ 变为 $a_i+b_i$，求 $m$ 个时刻后最小的最大值。</p>
+<p>首先想到二分答案。</p>
+<p>先考虑不操作的最终序列 ${a_i’}$。</p>
+<p>然后猜结论：每个 $a_i’$ 最优情况下减少次数均最少，且按照 $a_i’\bmod p,p,\cdots,p$ 的方式减少。</p>
+<p>结论证明暂时搁置。</p>
+<p>根据这个结论判断即可。</p>
+<h3 id="CF506E-H"><a href="#CF506E-H" class="headerlink" title="CF506E(H)"></a>CF506E(H)</h3><p>给定一个小写字符串 $s$ 和一个正整数 $n$，求在 $s$ 中插入 $n$ 个小写字符使其回文的方案数。</p>
+<p>考虑变形原问题为求长度为 $|s|+n$ 且以 $s$ 为子序列的回文串数。设 $f_{l,r,i}$ 为已确定左右 $i$ 个字符的回文串串匹配 $[1,l-1],[r+1,|s|+n]$ 区间的方案数，容易得到 $\operatorname{O}(|s|^2n)$ 的动态规划解法。</p>
+<p>然而此题的 $n$ 非常大。</p>
+<p>再次考虑匹配过程，发现可以抽象为一个匹配 $s$ 的 DAG：每个结点有 $26$ 条边，有一条或两条边可到达另一个结点，并将对应字符串左右两端的字符按照边的类型减少一个或两个，其余为自环，求从起点到终点经过恰好 $len=\dfrac{n+|s|}{2}$ 条边的方案数。为方便说明，暂时忽略 $n+|s|$ 的奇偶性。这个问题容易有关于点数三次方的邻接矩阵快速幂做法。然而点数过多，无法通过。</p>
+<p>尝试对每一条起点到终点的路径分别考虑贡献，发现其仅与路径上自环为 $24$ 和 $25$ 的点数有关，不妨分别称为红绿点，发现每条路径红绿点的个数满足 $green=\lceil\dfrac{len-red}{2}\rceil$。由于各路径间贡献满足加法原理，可将红绿点个数相同的路径贡献一起计算。这需要使用三次方的动态规划求出从起点到终点经过一定红点个数的路径条数。时间复杂度继续降低。</p>
+<p>然而不同的路径数量仍过多。由于邻接矩阵快速幂可一次求出所有点对间的方案数，考虑将所有红绿点情况合并计算再提取需要的信息，也就是将所有的路径建为同一张图并保留最少的点数。最后可做到时间复杂度为 $\operatorname{O}(|s|^3\log n)$。</p>
+<p>此时将忽略的奇偶性细节进行考虑。当 $n+|s|$ 为奇数时，最后一步不能通过同时减少两端字符走到终点。于是需要减去少走一步走到这样的点的方案数。</p>
+<p>发现此题卡常，连边时稍加处理可保证所有矩阵均为上三角矩阵，此时矩阵乘法可缩小枚举范围减小常数。</p>
+<h3 id="CF627E-M"><a href="#CF627E-M" class="headerlink" title="CF627E(M)"></a>CF627E(M)</h3><p>求标记点数不少于 $k$ 的子矩阵个数。</p>
+<p>容易想到三次方的双指针做法。</p>
+<p>观察到 $k$ 很小。考虑算法与 $k$ 有关。</p>
+<p>考虑固定上边界，并将下边界不断下推，易得以每一列为左边界的最近右边界不断右移。</p>
+<p>首先发现不同的最近右边界值至多为标记点数，每个右边界值都占一段连续的区间，区间的右端点为一个标记点。</p>
+<p>进一步思考发现下边界下推每经过一个标记点，只会对当前已出现的标记点按横坐标排序后向前数 $k$ 个标记点的右边界造成影响。这样已经可以使用 <code>set</code> 之类的数据结构进行维护。</p>
+<p>考虑继续优化复杂度，套路地将下边界上推，使用链表维护即可去掉 $\operatorname{O}(\log n)$ 的数据结构代价。</p>
+<h3 id="CF512D-M"><a href="#CF512D-M" class="headerlink" title="CF512D(M)"></a>CF512D(M)</h3><p>对于一张无向图，不断进行如下操作直到无法进行：选择一个点，该点满足与它直接相连的点至多有一个未被选择过。分别求选择 $0,1,\cdots,n$ 个点的总方案数。</p>
+<p>将原操作变形为每次删除当前度不大于 $1$ 的点。这个操作与拓扑排序有着类似的结构。考虑对该无向图进行类拓扑排序，发现最终成功删除的点构成森林。于是发现树上背包看起来可以解决每棵树的子问题，最后合并即可。</p>
+<p>但这些树上的问题并不是相同的。一部分树与环连通，因此它们的根固定，只能从远离环的叶子开始删除；另一部分则是无根树，需要对于每个点作为根的情况分别计算后加起来，但这样会出现重复计算。考虑每个方案重复计算了多少次，发现若一个方案选择了 $k$ 个点，则剩余的 $size-k$ 个点为根计算时都会算入该方案，于是对于每棵无根树，$k$ 个点的方案数应除以 $size-k$。</p>
+<h3 id="CF516D-E"><a href="#CF516D-E" class="headerlink" title="CF516D(E)"></a>CF516D(E)</h3><p>对于一棵有权树，设 $f_x=\max_{i}\operatorname{dis}(x,i)$，$q$ 次询问求满足 $\max_{x\in S}f_x-\min_{x\in S}f_x\le l$ 的 最大连通子图 $S$ 的大小。</p>
+<p>$f_i$ 可以树上 DP 求出。观察到任意一条链上 $f_i$ 单谷，故以 $f_i$ 最小的点为根建树后 $f_i$ 满足小根堆序。</p>
+<p>由于询问次数小，此时使用倍增树上差分或树状数组桶差分等树上操作可以通过。</p>
+<h3 id="CF526F-E"><a href="#CF526F-E" class="headerlink" title="CF526F(E)"></a>CF526F(E)</h3><p>给出一个方阵，每行每列恰有一个元素，求满足行数等于元素数的子方阵数。</p>
+<p>根据每行每列有且只有一个元素的性质，容易转化为求满足区间 $[l,r]$ 内元素重排后连续的 $(l,r)$ 对数。再次转化为求满足 $\max_{i=l}^r{f_i}-\min_{i=l}^r{f_i}=r-l$ 的区间 $[l,r]$ 的数量。</p>
+<p>套路地枚举右端点，维护每个左端点对应的 $v_l=\max_{i=l}^r{f_i}-\min_{i=l}^r{f_i}+l$ 并判断其值为 $r$ 的数量，发现遇到困难。发现 $v_l\ge r$，问题转化为求 $v_l$ 最小值出现的次数。</p>
+<p>使用单调栈，每次退栈时更改一个区间的最值，可维护 $\max$ 与 $\min$ 两项。区间修改和查询使用线段树维护即可。</p>
+<h3 id="CF521D-E"><a href="#CF521D-E" class="headerlink" title="CF521D(E)"></a>CF521D(E)</h3><p>给定一个序列和一些操作：每个操作形如将指定位置赋值、加或乘某个数。选取有限个操作，使序列操作后乘积最大。</p>
+<p>先分别考虑每个位置。易得若选好某些操作，则一定按赋值、加、乘的顺序进行。分别考虑三个操作的选取策略，赋值操作选取最大的赋值，加法与乘法按从大到小的顺序选取。</p>
+<p>发现可以先将赋值操作转化为加法，再将加法操作都转化为乘法，而乘法可以进行全局考虑。</p>
+<p>于是对于每个位置的赋值与加法操作，按所加值从大到小排序后计算出从头选取到该值实际操作后 $a_i$ 扩大的倍数。再将所有位置的加法与乘法操作放到一起贪心选择即可。</p>
+<h3 id="CF521E-M"><a href="#CF521E-M" class="headerlink" title="CF521E(M)"></a>CF521E(M)</h3><p>任意找出给定无向图中两个点间三条不相交路径。</p>
+<p>原问题转化为找到一条路径为两个环的交线。</p>
+<p>考虑 dfs 树。</p>
+<p>发现只需要用非树边进行覆盖，覆盖两次的边必定同时属于两个环。此时将这两个环的交线求出即可。</p>
+<p>由于首次出现覆盖两次的边即可判断答案，可以暴力覆盖。</p>
+<h3 id="CF516E-M"><a href="#CF516E-M" class="headerlink" title="CF516E(M)"></a>CF516E(M)</h3><p>有 $n$ 个男生与 $m$ 个女生，其中 $b$ 个男生和 $g$ 个女生被标记。在第 $i$ 天，编号为 $i \bmod n$ 的男生和编号为 $i \bmod m$ 的女生配对，<br>若其中一人被标记，则另一人也会被标记。求标记所有人的最早时间。</p>
+<p>由数论知识可得有解的条件为模 $\gcd(n,m)$ 下的每个剩余系中男女至少有一个标记点。</p>
+<p>考虑分开计算男生和女生。不妨先考虑男生。发现每个男生在第一次被标记后，每隔 $m$ 天，他此次所配对的女生会标记下一个男生。于是可以转化为每个女生仅标记第一个与她们配对的男生，之后男生之间互相传递连边，求最短路即可。</p>
+<p>直接模拟的复杂度过高，考虑剪枝。可转化为对被女生标记或一开始即被标记的男生间相邻连边，此时可以采取与 AT2134 类似的方法求出每个剩余系中最短路的最大值再取所有剩余系中的最大值作为答案。</p>
+<p>没写。</p>
+<h3 id="CF547E-E"><a href="#CF547E-E" class="headerlink" title="CF547E(E)"></a>CF547E(E)</h3><p>多次询问，求 $s_k$ 在 $s_l\sim s_r$ 中出现的次数。</p>
+<p>考虑离线询问，求 $s_k$ 在 $1\sim s_i$ 中出现的次数。每出现一个字符串，其每个可重复子串的出现次数会加 $1$，而子串与所有前缀的后缀等价。在 AC 自动机中，每个字符串出现过的所有后缀可用 fail 树上根到其链上所有结点表示。因此顺序遍历所有字符串，将每个字符串在字典树的所有结点对应的 fail 树上结点 $+1$，查询 fail 树上子树和即可。</p>
+<h3 id="CF527E-E"><a href="#CF527E-E" class="headerlink" title="CF527E(E)"></a>CF527E(E)</h3><p>向一个无向图中加入尽量少的边并定向，使得每个点的出入度均为偶数。可添加重边或自环。</p>
+<p>定向后的图出入度均为偶数，意味着原图为欧拉图。考虑任意欧拉图是否均能完成符合条件定向。发现当边数为偶数时，找到一条欧拉回路，并依次按回路顺序正反向定向可满足。</p>
+<p>于是将原图中奇数度的点配对。若总边数为奇数，则再额外添加一个自环即可。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%A2%98%E7%9B%AE%E9%80%89%E5%81%9A/" rel="tag"># 题目选做</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/06/06/Rebirth/" rel="prev" title="Rebirth">
+                  <i class="fa fa-chevron-left"></i> Rebirth
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-fish"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白鲟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{&quot;enable&quot;:true,&quot;tags&quot;:&quot;none&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;mathjax@3.1.4&#x2F;es5&#x2F;tex-mml-chtml.js&quot;,&quot;integrity&quot;:&quot;sha256-ncNI9OXOS5Ek4tzVYiOMmN&#x2F;KKCPZ6V0Cpv2P&#x2F;zHntiA&#x3D;&quot;}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
