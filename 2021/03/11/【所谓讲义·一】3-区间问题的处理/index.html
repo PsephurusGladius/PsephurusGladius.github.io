@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;psephurusgladius.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="数据结构讲义第三节。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【所谓讲义·一】3.区间问题的处理">
+<meta property="og:url" content="https://psephurusgladius.github.io/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86/index.html">
+<meta property="og:site_name" content="白鲟鱼缸">
+<meta property="og:description" content="数据结构讲义第三节。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-03-11T08:54:05.000Z">
+<meta property="article:modified_time" content="2021-06-10T09:04:26.963Z">
+<meta property="article:author" content="白鲟">
+<meta property="article:tag" content="hide">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://psephurusgladius.github.io/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;03&#x2F;11&#x2F;%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;03&#x2F;11&#x2F;【所谓讲义·一】3-区间问题的处理&#x2F;&quot;,&quot;title&quot;:&quot;【所谓讲义·一】3.区间问题的处理&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>【所谓讲义·一】3.区间问题的处理 | 白鲟鱼缸</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">白鲟鱼缸</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-1-%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86"><span class="nav-text">3.1 前缀和与差分</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-ST-%E8%A1%A8"><span class="nav-text">3.2 ST 表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3-%E5%88%86%E5%9D%97"><span class="nav-text">3.3 分块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-1-%E5%88%86%E5%9D%97"><span class="nav-text">3.3.1 分块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-2-%E8%8E%AB%E9%98%9F"><span class="nav-text">3.3.2 莫队</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-2-1-%E6%99%AE%E9%80%9A%E8%8E%AB%E9%98%9F"><span class="nav-text">3.3.2.1 普通莫队</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-2-2-%E5%9B%9E%E6%BB%9A%E8%8E%AB%E9%98%9F"><span class="nav-text">3.3.2.2 回滚莫队</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-2-3-%E5%B8%A6%E4%BF%AE%E8%8E%AB%E9%98%9F"><span class="nav-text">3.3.2.3 带修莫队</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-4-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84"><span class="nav-text">3.4 树状数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-5-%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">3.5 线段树</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-1-%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">3.5.1 线段树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-2-01-trie"><span class="nav-text">3.5.2 01 trie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-3-%E6%89%AB%E6%8F%8F%E7%BA%BF"><span class="nav-text">3.5.3 扫描线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-4-%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6"><span class="nav-text">3.5.4 线段树合并</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-5-%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E8%A3%82"><span class="nav-text">3.5.5 线段树分裂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-6-%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">3.5.6 李超线段树</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-6-%E7%A6%BB%E7%BA%BF%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="nav-text">3.6 离线分治算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-1-CDQ-%E5%88%86%E6%B2%BB"><span class="nav-text">3.6.1 CDQ 分治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-2-%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB"><span class="nav-text">3.6.2 线段树分治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-3-%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86"><span class="nav-text">3.6.3 整体二分</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">白鲟</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://psephurusgladius.github.io/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="白鲟">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白鲟鱼缸">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【所谓讲义·一】3.区间问题的处理
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-11 16:54:05" itemprop="dateCreated datePublished" datetime="2021-03-11T16:54:05+08:00">2021-03-11</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-10 17:04:26" itemprop="dateModified" datetime="2021-06-10T17:04:26+08:00">2021-06-10</time>
+      </span>
+
+  
+</div>
+
+            <div class="post-description">数据结构讲义第三节。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="3-1-前缀和与差分"><a href="#3-1-前缀和与差分" class="headerlink" title="3.1 前缀和与差分"></a>3.1 前缀和与差分</h1><h1 id="3-2-ST-表"><a href="#3-2-ST-表" class="headerlink" title="3.2 ST 表"></a>3.2 ST 表</h1><h1 id="3-3-分块"><a href="#3-3-分块" class="headerlink" title="3.3 分块"></a>3.3 分块</h1><h2 id="3-3-1-分块"><a href="#3-3-1-分块" class="headerlink" title="3.3.1 分块"></a>3.3.1 分块</h2><p>朴素的算法修改复杂度为 $\operatorname{O}(1)$，查询为 $\operatorname{O}(n)$。</p>
+<p>考虑根号平衡。将序列平均分为 $\operatorname{O}(\sqrt n)$ 块，每次修改与询问只会访问到 $\operatorname{O}(\sqrt n)$ 个整块和长度为 $\operatorname{O}(\sqrt n)$ 的散块，故复杂度均为 $\operatorname{O}(\sqrt n)$。</p>
+<p>泛用性很强，但时间复杂度较高。根据问题不同，可取不同的块长。</p>
+<h2 id="3-3-2-莫队"><a href="#3-3-2-莫队" class="headerlink" title="3.3.2 莫队"></a>3.3.2 莫队</h2><p>是一种基于分块的离线算法。</p>
+<p>可参考<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/PsephurusGladius-zdx/ji-chu-mo-dui-suan-fa-xue-xi-bi-ji">基础莫队算法学习笔记</a>与<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/PsephurusGladius-zdx/hui-gun-mu-dui-yu-dai-xiu-mu-dui-xue-xi-bi-ji">回滚莫队与带修莫队学习笔记</a>。</p>
+<h3 id="3-3-2-1-普通莫队"><a href="#3-3-2-1-普通莫队" class="headerlink" title="3.3.2.1 普通莫队"></a>3.3.2.1 普通莫队</h3><p>是一种静态离线算法。</p>
+<p>考虑一种在特殊数据中表现良好的暴力算法：将上次询问的左右端点逐步移动至当前询问，同时维护当前信息。若每次移动的距离足够小，则该算法表现较好。</p>
+<p>考虑通过离线处理询问使得处理询问的顺序满足该算法时间复杂度较小的条件。对序列进行分块，设块长为 $s$，按左端点所在块的顺序处理每个询问。若左端点所在块相同，则按右端点顺序处理。左端点移动的总长为 $\operatorname{O}(qs+n)$，右端点移动的总长为 $\operatorname{O}(\dfrac{n^2}{s})$。根据均值不等式，取 $s=\dfrac{n}{\sqrt{q}}$，总复杂度为 $\operatorname{O}(n\sqrt{q})$。</p>
+<h3 id="3-3-2-2-回滚莫队"><a href="#3-3-2-2-回滚莫队" class="headerlink" title="3.3.2.2 回滚莫队"></a>3.3.2.2 回滚莫队</h3><h3 id="3-3-2-3-带修莫队"><a href="#3-3-2-3-带修莫队" class="headerlink" title="3.3.2.3 带修莫队"></a>3.3.2.3 带修莫队</h3><h1 id="3-4-树状数组"><a href="#3-4-树状数组" class="headerlink" title="3.4 树状数组"></a>3.4 树状数组</h1><p>一种基于倍增的轻型数据结构，每个结点维护 $[i-\operatorname{lowbit}(i)+1,i]$ 一段内的信息。代码简单，常数较小。缺点是只能维护可减的信息。</p>
+<p>查询时直接按位分为 $\operatorname{O}(\log n)$ 个小区间之并即可。注意到包含 $i$ 所代表区间的最小区间的编号为 $i+\operatorname{lowbit}(i)$，向上不断修改即可。</p>
+<p>容易获知修改与查询复杂度均为 $\operatorname{O}(\log n)$。</p>
+<h1 id="3-5-线段树"><a href="#3-5-线段树" class="headerlink" title="3.5 线段树"></a>3.5 线段树</h1><h2 id="3-5-1-线段树"><a href="#3-5-1-线段树" class="headerlink" title="3.5.1 线段树"></a>3.5.1 线段树</h2><p>一种基于二分的区间树。每个结点维护一段区间的信息，其左右结点各维护该区间的一半。</p>
+<h2 id="3-5-2-01-trie"><a href="#3-5-2-01-trie" class="headerlink" title="3.5.2 01 trie"></a>3.5.2 01 trie</h2><p>将序列长度扩展到 $2^k$，则可得到线段树的一种特化形式——01 trie。</p>
+<p>对于第 $i$ 层结点，其左右儿子维护的区间所包含的点的二进制第 $k-i+1$ 位分别为 $0$ 与 $1$。这使得它可以方便地用于解决一些有关二进制位的问题。相反地，可以尝试使用普通线段树代替它所能够解决的问题。</p>
+<p>由于上述性质，它也可以被视作一棵存放 $01$ 串的字典树。</p>
+<h2 id="3-5-3-扫描线"><a href="#3-5-3-扫描线" class="headerlink" title="3.5.3 扫描线"></a>3.5.3 扫描线</h2><h2 id="3-5-4-线段树合并"><a href="#3-5-4-线段树合并" class="headerlink" title="3.5.4 线段树合并"></a>3.5.4 线段树合并</h2><p>考虑对多棵线段树执行一些修改和查询操作，并支持将一棵树上的信息合并到另一棵树上。</p>
+<p>若每次修改的线段树数量为常数且合并单向、不重复、不可逆，则对于每两棵线段树的合并，可以从根遍历，合并两者共有结点的信息，并在访问到仅一棵树具有的结点时将其拷贝到另一棵树上。特别地，在合并后其中一棵树信息失效的题目中，可不拷贝结点而仅仅改变树上指针。</p>
+<p>如此访问到的结点个数，总和为修改次数与结点深度的积。容易得知时间复杂度为 $\operatorname{O}(n\log n)$。</p>
+<p>例题：P4556,P3224,P3521。</p>
+<h2 id="3-5-5-线段树分裂"><a href="#3-5-5-线段树分裂" class="headerlink" title="3.5.5 线段树分裂"></a>3.5.5 线段树分裂</h2><h2 id="3-5-6-李超线段树"><a href="#3-5-6-李超线段树" class="headerlink" title="3.5.6 李超线段树"></a>3.5.6 李超线段树</h2><h1 id="3-6-离线分治算法"><a href="#3-6-离线分治算法" class="headerlink" title="3.6 离线分治算法"></a>3.6 离线分治算法</h1><h2 id="3-6-1-CDQ-分治"><a href="#3-6-1-CDQ-分治" class="headerlink" title="3.6.1 CDQ 分治"></a>3.6.1 CDQ 分治</h2><h2 id="3-6-2-线段树分治"><a href="#3-6-2-线段树分治" class="headerlink" title="3.6.2 线段树分治"></a>3.6.2 线段树分治</h2><h2 id="3-6-3-整体二分"><a href="#3-6-3-整体二分" class="headerlink" title="3.6.3 整体二分"></a>3.6.3 整体二分</h2>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hide/" rel="tag"># hide</a>
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/03/09/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="prev" title="【所谓讲义·一】数据结构">
+                  <i class="fa fa-chevron-left"></i> 【所谓讲义·一】数据结构
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%914-%E4%B8%80%E4%BA%9B%E5%85%B8%E5%9E%8B%E7%9A%84%E7%BB%B4%E6%8A%A4%E6%8A%80%E5%B7%A7/" rel="next" title="【所谓讲义·一】4.一些典型的维护技巧">
+                  【所谓讲义·一】4.一些典型的维护技巧 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-fish"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白鲟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{&quot;enable&quot;:true,&quot;tags&quot;:&quot;none&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;mathjax@3.1.4&#x2F;es5&#x2F;tex-mml-chtml.js&quot;,&quot;integrity&quot;:&quot;sha256-ncNI9OXOS5Ek4tzVYiOMmN&#x2F;KKCPZ6V0Cpv2P&#x2F;zHntiA&#x3D;&quot;}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
