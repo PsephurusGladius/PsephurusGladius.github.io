@@ -28,7 +28,7 @@
 <meta property="og:description" content="数据结构讲义第四节。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-11T09:05:22.000Z">
-<meta property="article:modified_time" content="2021-06-14T03:47:57.041Z">
+<meta property="article:modified_time" content="2021-06-17T08:43:28.954Z">
 <meta property="article:author" content="白鲟">
 <meta property="article:tag" content="hide">
 <meta property="article:tag" content="学习笔记">
@@ -145,7 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1-%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6"><span class="nav-text">4.1 启发式合并</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-2-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96"><span class="nav-text">4.2 可持久化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-1-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">4.2.1 可持久化线段树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-1-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">4.2.1.1 可持久化线段树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-2-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%9D%83%E5%80%BC%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">4.2.1.2 可持久化权值线段树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-2-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86"><span class="nav-text">4.2.2 可持久化并查集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-3-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B3%E8%A1%A1%E6%A0%91"><span class="nav-text">4.2.3 可持久化平衡树</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-3-%E7%A6%BB%E7%BA%BF%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="nav-text">4.3 离线分治算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-1-CDQ-%E5%88%86%E6%B2%BB"><span class="nav-text">4.3.1 CDQ 分治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-2-%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB"><span class="nav-text">4.3.2 线段树分治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-3-%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86"><span class="nav-text">4.3.3 整体二分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-4-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%B5%8C%E5%A5%97"><span class="nav-text">4.4 数据结构的嵌套</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6"><span class="nav-text">4.1 启发式合并</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96"><span class="nav-text">4.2 可持久化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">4.2.1 可持久化线段树</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-1-1-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">4.2.1.1 可持久化线段树</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-1-2-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%9D%83%E5%80%BC%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">4.2.1.2 可持久化权值线段树</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-2-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86"><span class="nav-text">4.2.2 可持久化并查集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-3-%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B3%E8%A1%A1%E6%A0%91"><span class="nav-text">4.2.3 可持久化平衡树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-%E7%A6%BB%E7%BA%BF%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="nav-text">4.3 离线分治算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-2-%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB"><span class="nav-text">4.3.2 线段树分治</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%B5%8C%E5%A5%97"><span class="nav-text">4.4 数据结构的嵌套</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -235,7 +235,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-14 11:47:57" itemprop="dateModified" datetime="2021-06-14T11:47:57+08:00">2021-06-14</time>
+        <time title="修改时间：2021-06-17 16:43:28" itemprop="dateModified" datetime="2021-06-17T16:43:28+08:00">2021-06-17</time>
       </span>
 
   
@@ -249,27 +249,27 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="4-1-启发式合并"><a href="#4-1-启发式合并" class="headerlink" title="4.1 启发式合并"></a>4.1 启发式合并</h1><p>合并两个数据结构信息时，将结点数较少的一个的所有结点一个一个加入结点数较大的一个。在信息仅合并而不会重新分裂的情况下，其时间复杂度为 $\operatorname{O}(n\log n)$。</p>
+        <h2 id="4-1-启发式合并"><a href="#4-1-启发式合并" class="headerlink" title="4.1 启发式合并"></a>4.1 启发式合并</h2><p>合并两个数据结构信息时，将结点数较少的一个的所有结点一个一个加入结点数较大的一个。在信息仅合并而不会重新分裂的情况下，其时间复杂度为 $\operatorname{O}(n\log n)$。</p>
 <p>观察到每次合并，结点数较少的数据结构的结点规模扩大至两倍以上。由于最终达到共 $n$ 个结点的一个结构，每个结点经历拆出不超过 $\operatorname{O}(\log n)$ 次。</p>
 <p>例题：P3201,P6279,P5290,P3302,P7323。</p>
-<h1 id="4-2-可持久化"><a href="#4-2-可持久化" class="headerlink" title="4.2 可持久化"></a>4.2 可持久化</h1><p>指操作可基于指定版本的数据结构。</p>
-<h2 id="4-2-1-可持久化线段树"><a href="#4-2-1-可持久化线段树" class="headerlink" title="4.2.1 可持久化线段树"></a>4.2.1 可持久化线段树</h2><h3 id="4-2-1-1-可持久化线段树"><a href="#4-2-1-1-可持久化线段树" class="headerlink" title="4.2.1.1 可持久化线段树"></a>4.2.1.1 可持久化线段树</h3><p>对于每个版本记录一个根结点，初始由上个版本拷贝。</p>
+<h2 id="4-2-可持久化"><a href="#4-2-可持久化" class="headerlink" title="4.2 可持久化"></a>4.2 可持久化</h2><p>指操作可基于指定版本的数据结构。</p>
+<h3 id="4-2-1-可持久化线段树"><a href="#4-2-1-可持久化线段树" class="headerlink" title="4.2.1 可持久化线段树"></a>4.2.1 可持久化线段树</h3><h4 id="4-2-1-1-可持久化线段树"><a href="#4-2-1-1-可持久化线段树" class="headerlink" title="4.2.1.1 可持久化线段树"></a>4.2.1.1 可持久化线段树</h4><p>对于每个版本记录一个根结点，初始由上个版本拷贝。</p>
 <p>注意到线段树上每次单点修改只会对 $\operatorname{O}(\log n)$ 个结点造成影响。</p>
 <p>因此对于每次修改影响到的点，新建一个该结点的拷贝结点，并在访问上一个版本结点信息的同时，在新建的结点上进行真实的修改操作即可。每次操作时间复杂度为 $\operatorname{O}(\log n)$。总结点数为 $m\log n$，其中 $m$ 为修改次数。</p>
 <p>可持久化 01 trie 与之类似。</p>
 <p>可用于实现可持久化的数组，从而便于其余数据结构的可持久化。</p>
 <p>例题：P3919,P4735。</p>
-<h3 id="4-2-1-2-可持久化权值线段树"><a href="#4-2-1-2-可持久化权值线段树" class="headerlink" title="4.2.1.2 可持久化权值线段树"></a>4.2.1.2 可持久化权值线段树</h3><p>是基于可持久化线段树的在线静态区间数据结构。将序列的每个位置视为一个版本，均基于上一个位置的版本，在线段树上修改当前值，建立可持久化线段树。</p>
+<h4 id="4-2-1-2-可持久化权值线段树"><a href="#4-2-1-2-可持久化权值线段树" class="headerlink" title="4.2.1.2 可持久化权值线段树"></a>4.2.1.2 可持久化权值线段树</h4><p>是基于可持久化线段树的在线静态区间数据结构。将序列的每个位置视为一个版本，均基于上一个位置的版本，在线段树上修改当前值，建立可持久化线段树。</p>
 <p>可理解为对每个位置保留了线段树的前缀和。两个位置线段树之差即为该区间内信息。可用于解决一部分区间问题。</p>
 <p>例题：P3834,P3567,P3293,P2633,P3302。</p>
-<h2 id="4-2-2-可持久化并查集"><a href="#4-2-2-可持久化并查集" class="headerlink" title="4.2.2 可持久化并查集"></a>4.2.2 可持久化并查集</h2><p>由于可持久化需要保证每次操作的复杂度，路径压缩这样的均摊技巧无法使用。应当使用按秩合并。</p>
+<h3 id="4-2-2-可持久化并查集"><a href="#4-2-2-可持久化并查集" class="headerlink" title="4.2.2 可持久化并查集"></a>4.2.2 可持久化并查集</h3><p>由于可持久化需要保证每次操作的复杂度，路径压缩这样的均摊技巧无法使用。应当使用按秩合并。</p>
 <p>具体的实现基于可持久化数组。可持久化地维护每个点的父结点与深度即可。</p>
 <p>例题：P3402。</p>
-<h2 id="4-2-3-可持久化平衡树"><a href="#4-2-3-可持久化平衡树" class="headerlink" title="4.2.3 可持久化平衡树"></a>4.2.3 可持久化平衡树</h2><p>使用非旋 Treap 易于维护时间复杂度，在分裂过程中拷贝原始结点即可。</p>
+<h3 id="4-2-3-可持久化平衡树"><a href="#4-2-3-可持久化平衡树" class="headerlink" title="4.2.3 可持久化平衡树"></a>4.2.3 可持久化平衡树</h3><p>使用非旋 Treap 易于维护时间复杂度，在分裂过程中拷贝原始结点即可。</p>
 <p>例题：P3835,P5055。</p>
-<h1 id="4-3-离线分治算法"><a href="#4-3-离线分治算法" class="headerlink" title="4.3 离线分治算法"></a>4.3 离线分治算法</h1><h2 id="4-3-1-CDQ-分治"><a href="#4-3-1-CDQ-分治" class="headerlink" title="4.3.1 CDQ 分治"></a>4.3.1 CDQ 分治</h2><h2 id="4-3-2-线段树分治"><a href="#4-3-2-线段树分治" class="headerlink" title="4.3.2 线段树分治"></a>4.3.2 线段树分治</h2><p>线段树分治可以解决操作在一段时间区间内有效的问题。以时间轴离线建立线段树，将每个操作拆分到线段树的对应的多个结点上。统计答案时，从线段树的根结点出发递归，每次进入一个结点时执行操作，退出结点时逆序撤销已执行操作。</p>
+<h2 id="4-3-离线分治算法"><a href="#4-3-离线分治算法" class="headerlink" title="4.3 离线分治算法"></a>4.3 离线分治算法</h2><h3 id="4-3-2-线段树分治"><a href="#4-3-2-线段树分治" class="headerlink" title="4.3.2 线段树分治"></a>4.3.2 线段树分治</h3><p>线段树分治可以解决操作在一段时间区间内有效的问题。以时间轴离线建立线段树，将每个操作拆分到线段树的对应的多个结点上。统计答案时，从线段树的根结点出发递归，每次进入一个结点时执行操作，退出结点时逆序撤销已执行操作。</p>
 <p>例题：P4588,P5787。</p>
-<h2 id="4-3-3-整体二分"><a href="#4-3-3-整体二分" class="headerlink" title="4.3.3 整体二分"></a>4.3.3 整体二分</h2><h1 id="4-4-数据结构的嵌套"><a href="#4-4-数据结构的嵌套" class="headerlink" title="4.4 数据结构的嵌套"></a>4.4 数据结构的嵌套</h1>
+<h2 id="4-4-数据结构的嵌套"><a href="#4-4-数据结构的嵌套" class="headerlink" title="4.4 数据结构的嵌套"></a>4.4 数据结构的嵌套</h2>
     </div>
 
     
