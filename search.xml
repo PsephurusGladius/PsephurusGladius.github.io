@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CQOI 2021 游记</title>
+    <url>/2021/04/11/CQOI-2021-%E6%B8%B8%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="Day-0"><a href="#Day-0" class="headerlink" title="Day 0"></a>Day 0</h3><p>结束了一滩烂泥的月考。</p>
+<p>月考前扬言接下来五天将崩掉。一语成谶。胃最近情况不妙，头也昏昏沉沉的。数学考试接续了头几次的走低，接着使得考物理的心态崩溃，又影响了下午的化学。最后一堂英语时已经失去了关心考试的心思。看错的题目算下来即有数十分。</p>
+<p>做出来的拿不到分，没做出来的更拿不到。</p>
+<p>月考期间唯一令人有点欣慰的是和 clorf 说上了两周多以来第一句话。</p>
+<p>后来乘车前往酒店。天已经黑了。头有点痛。车上放的我的歌单。最后因为不够动感而被切掉。</p>
+<p>喝了点 Coco 的鲜芋奶茶。Chery 请客。由于需要监考，他带我们去西附门口记路。大概我是完全记不到吧。</p>
+<p>路边山上有座塔，一片黑暗里倏尔闪出一尊橙光。</p>
+<p>回来的路上路过罗森，买了个面包。</p>
+<p>给 clorf 和 ShuYoMo 发了祝福。虽然两周前似乎和 clorf 大吵了一架。那天下午去操场跑了两圈，又坐在操场边上呆看了四十分钟。阳光很好。</p>
+<p>和钟白住一间。之前本来和 tkz 约了，不知出于什么缘故没换成和他一起。心血来潮吧。</p>
+<p>回酒店看了看去年的省选题，发现不会。十二点上的床，然而心跳很快，当大雨在两点多响起时才入睡。</p>
+<h3 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h3><p>七点时被叫醒。早餐和钟白吃的小面。在饭店遇到绿橘子。</p>
+<p>后来在路上遇到 clorf。跟着他进了西附，找到了考场。</p>
+<p>西附的绿化不错。机房看起来很新。</p>
+<p>开题时以为自己看错了。大概是题目太短不太有省选题的风格。很快有了第一题 $\operatorname{O}(n\log n)$ 的思路——枚举最小值查找最大值。调了一小时放下了。样例略微有点水，检测不到我的边界问题。</p>
+<p>开第二题。看出一共 $n+m-1$ 个自由元，后来想到 +1 -1 的流动，感到有点像 NOI Online 2020 #1 的第一题。感觉是个图论，二分图之类的。这部分了解不深，于是贪心构造了一阵子，把 $m=2$ 的做了出来。</p>
+<p>途中遇到停电。幸而当时保存了代码。</p>
+<p>开第三题。想了动态维护强连通分量，不会。后来想到最短路，由于不会去掉枚举 $m$ 条边的过程，与暴力同分。于是敲了暴力。</p>
+<p>回到第二题。卡了有点久，对着九宫格自闭。后来总算搞出一种构造方式。结果才发现忘了上界。$m=2$ 也忘了。</p>
+<p>时间不够。弃了。</p>
+<p>左边坐的巴蜀同学敲键盘有点意思。敲几下会把手腕提起来。</p>
+<p>出考场预估 116。果然是观光选手。</p>
+<p>绿橘子预估 230。听说 clorf 考得不错。</p>
+<p>在西附吃了午餐。没限量挺不错。</p>
+<p>下午打了几把 Splendor。晚上又打了两把。晚餐从 KFC 带回。钟白看了咒回。</p>
+<p>面包过期了。</p>
+<h3 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h3><p>睡得有点久。</p>
+<p>忘了扔面包。</p>
+<p>早餐换地方吃小面。又遇到了绿橘子。</p>
+<p>开题。流鼻血。四张纸。给考试染上点红色的血腥气。</p>
+<p>抱着可乐瓶开始啃。</p>
+<p>第一题貌似可做。边写边想一个小时没出成果。</p>
+<p>转战第二题。看数据范围是个状压。几经尝试甩不掉 $m^2$。后来想了想，只求排名方案，与 $b_i$ 无关，于是对 $b_i$ 贪心分配，做出了 $\operatorname{O}(2^nn^2m)$ 的做法。改大大样例跑了 0.7s 左右。空间算下来 400+ MB。</p>
+<p>第一次在考场上做出动态规划。</p>
+<p>回第一题。下行有点可持久化线段树的想法，但时间不太够没深究。最后暴力没打成功。</p>
+<p>第三题没碰。听说过支配树而已。</p>
+<p>结束了。</p>
+<p>总分 216 往下。</p>
+<p>irc 貌似会第三题。</p>
+<p>绿橘子似乎崩了。没问。祝福。</p>
+<p>ShuYuMo 自述退役。具体情况不明。但愿不会。</p>
+<p>下午坐车回家。和绿橘子家长聊了两句。沉默。晕车。几乎未有过的症状。后来下车踉踉跄跄。撞到钟白。</p>
+<p>回机房。干呕。回家。看月考成绩。洗澡。</p>
+<p>是预料到的事情。由内而外地空虚。</p>
+<p>预言中的事情预言一般结束。失落吗？大概有点。</p>
+<p>晚上吃了烤鱼。clorf 没来。他回教室上自习去了。</p>
+<p>发现自己第一题 CE 了。</p>
+<p>后来回到机房打开他的代码。他今日代码的注释里写着 AFO 三个字母。</p>
+<p>我好像什么也做不了。</p>
+<p>落笔于此。</p>
+<p>放肆自己，放空未来。</p>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
+        <tag>hide</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSP 2019 游记</title>
     <url>/2019/10/26/CSP-2019-%E6%B8%B8%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="初赛"><a href="#初赛" class="headerlink" title="初赛"></a>初赛</h1><h2 id="Day-0"><a href="#Day-0" class="headerlink" title="Day 0"></a>Day 0</h2><p>作为一个初三的小蒟蒻……</p>
@@ -199,68 +259,8 @@
 <p>自闭的我决心发愤图强！！！</p>
 ]]></content>
       <tags>
-        <tag>hide</tag>
         <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CQOI 2021 游记</title>
-    <url>/2021/04/11/CQOI-2021-%E6%B8%B8%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="Day-0"><a href="#Day-0" class="headerlink" title="Day 0"></a>Day 0</h3><p>结束了一滩烂泥的月考。</p>
-<p>月考前扬言接下来五天将崩掉。一语成谶。胃最近情况不妙，头也昏昏沉沉的。数学考试接续了头几次的走低，接着使得考物理的心态崩溃，又影响了下午的化学。最后一堂英语时已经失去了关心考试的心思。看错的题目算下来即有数十分。</p>
-<p>做出来的拿不到分，没做出来的更拿不到。</p>
-<p>月考期间唯一令人有点欣慰的是和 clorf 说上了两周多以来第一句话。</p>
-<p>后来乘车前往酒店。天已经黑了。头有点痛。车上放的我的歌单。最后因为不够动感而被切掉。</p>
-<p>喝了点 Coco 的鲜芋奶茶。Chery 请客。由于需要监考，他带我们去西附门口记路。大概我是完全记不到吧。</p>
-<p>路边山上有座塔，一片黑暗里倏尔闪出一尊橙光。</p>
-<p>回来的路上路过罗森，买了个面包。</p>
-<p>给 clorf 和 ShuYoMo 发了祝福。虽然两周前似乎和 clorf 大吵了一架。那天下午去操场跑了两圈，又坐在操场边上呆看了四十分钟。阳光很好。</p>
-<p>和钟白住一间。之前本来和 tkz 约了，不知出于什么缘故没换成和他一起。心血来潮吧。</p>
-<p>回酒店看了看去年的省选题，发现不会。十二点上的床，然而心跳很快，当大雨在两点多响起时才入睡。</p>
-<h3 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h3><p>七点时被叫醒。早餐和钟白吃的小面。在饭店遇到绿橘子。</p>
-<p>后来在路上遇到 clorf。跟着他进了西附，找到了考场。</p>
-<p>西附的绿化不错。机房看起来很新。</p>
-<p>开题时以为自己看错了。大概是题目太短不太有省选题的风格。很快有了第一题 $\operatorname{O}(n\log n)$ 的思路——枚举最小值查找最大值。调了一小时放下了。样例略微有点水，检测不到我的边界问题。</p>
-<p>开第二题。看出一共 $n+m-1$ 个自由元，后来想到 +1 -1 的流动，感到有点像 NOI Online 2020 #1 的第一题。感觉是个图论，二分图之类的。这部分了解不深，于是贪心构造了一阵子，把 $m=2$ 的做了出来。</p>
-<p>途中遇到停电。幸而当时保存了代码。</p>
-<p>开第三题。想了动态维护强连通分量，不会。后来想到最短路，由于不会去掉枚举 $m$ 条边的过程，与暴力同分。于是敲了暴力。</p>
-<p>回到第二题。卡了有点久，对着九宫格自闭。后来总算搞出一种构造方式。结果才发现忘了上界。$m=2$ 也忘了。</p>
-<p>时间不够。弃了。</p>
-<p>左边坐的巴蜀同学敲键盘有点意思。敲几下会把手腕提起来。</p>
-<p>出考场预估 116。果然是观光选手。</p>
-<p>绿橘子预估 230。听说 clorf 考得不错。</p>
-<p>在西附吃了午餐。没限量挺不错。</p>
-<p>下午打了几把 Splendor。晚上又打了两把。晚餐从 KFC 带回。钟白看了咒回。</p>
-<p>面包过期了。</p>
-<h3 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h3><p>睡得有点久。</p>
-<p>忘了扔面包。</p>
-<p>早餐换地方吃小面。又遇到了绿橘子。</p>
-<p>开题。流鼻血。四张纸。给考试染上点红色的血腥气。</p>
-<p>抱着可乐瓶开始啃。</p>
-<p>第一题貌似可做。边写边想一个小时没出成果。</p>
-<p>转战第二题。看数据范围是个状压。几经尝试甩不掉 $m^2$。后来想了想，只求排名方案，与 $b_i$ 无关，于是对 $b_i$ 贪心分配，做出了 $\operatorname{O}(2^nn^2m)$ 的做法。改大大样例跑了 0.7s 左右。空间算下来 400+ MB。</p>
-<p>第一次在考场上做出动态规划。</p>
-<p>回第一题。下行有点可持久化线段树的想法，但时间不太够没深究。最后暴力没打成功。</p>
-<p>第三题没碰。听说过支配树而已。</p>
-<p>结束了。</p>
-<p>总分 216 往下。</p>
-<p>irc 貌似会第三题。</p>
-<p>绿橘子似乎崩了。没问。祝福。</p>
-<p>ShuYuMo 自述退役。具体情况不明。但愿不会。</p>
-<p>下午坐车回家。和绿橘子家长聊了两句。沉默。晕车。几乎未有过的症状。后来下车踉踉跄跄。撞到钟白。</p>
-<p>回机房。干呕。回家。看月考成绩。洗澡。</p>
-<p>是预料到的事情。由内而外地空虚。</p>
-<p>预言中的事情预言一般结束。失落吗？大概有点。</p>
-<p>晚上吃了烤鱼。clorf 没来。他回教室上自习去了。</p>
-<p>发现自己第一题 CE 了。</p>
-<p>后来回到机房打开他的代码。他今日代码的注释里写着 AFO 三个字母。</p>
-<p>我好像什么也做不了。</p>
-<p>落笔于此。</p>
-<p>放肆自己，放空未来。</p>
-]]></content>
-      <tags>
         <tag>hide</tag>
-        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -331,6 +331,31 @@
       </tags>
   </entry>
   <entry>
+    <title>NOIP 2015 提高组题解</title>
+    <url>/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>听说斗地主是大毒瘤……</p>
+<h3 id="A-神奇的幻方"><a href="#A-神奇的幻方" class="headerlink" title="A.神奇的幻方"></a>A.神奇的幻方</h3><p>模拟即可~</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">39</span>;</span><br><span class="line"><span class="keyword">int</span> n,lastx,lasty,a[maxn+<span class="number">1</span>][maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	a[lastx=<span class="number">1</span>][lasty=((n&gt;&gt;<span class="number">1</span>)+<span class="number">1</span>)]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n*n;++i)</span><br><span class="line">		<span class="keyword">if</span>(lastx==<span class="number">1</span>&amp;&amp;lasty!=n)</span><br><span class="line">			a[lastx=n][++lasty]=i;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(lasty==n&amp;&amp;lastx!=<span class="number">1</span>)</span><br><span class="line">			a[--lastx][lasty=<span class="number">1</span>]=i;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(lastx==<span class="number">1</span>&amp;&amp;lasty==n)</span><br><span class="line">			a[++lastx][lasty]=i;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(!a[lastx<span class="number">-1</span>][lasty+<span class="number">1</span>])</span><br><span class="line">			a[--lastx][++lasty]=i;</span><br><span class="line">		<span class="keyword">else</span> a[++lastx][lasty]=i;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;++j)</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,a[i][j]);</span><br><span class="line">		<span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="B-信息传递"><a href="#B-信息传递" class="headerlink" title="B.信息传递"></a>B.信息传递</h3><p>由于每个点出度均为 $1$，容易发现图的形态是由几个不连通的子图构成的，而每个子图都形如一个环上挂一些指向它的链，链上再挂指向该链的链（大雾）。而题目要求的就是图中最小的环。  </p>
+<p>对于每个未访问过的结点都进行深搜。若此时遇到了一个已访问过的结点，则有两种可能——一是访问到了之前的搜索访问过的结点，那就没必要继续搜索，因为这个子图的答案已经统计过；二是访问到了某个子图的环，此时则将两次访问这个点的时间差统计入答案。为此，我们需要对每个点记录它在哪一次搜索中被访问到以及每次搜索的时间戳。  </p>
+<p>由于每个点只会访问一次，时间复杂度为 $\operatorname{O}(n)$。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">2e5</span>;</span><br><span class="line"><span class="keyword">int</span> n,ans=maxn,tag,nowturn,t[maxn+<span class="number">1</span>],time[maxn+<span class="number">1</span>],turn[maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(time[now])</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(turn[now]==nowturn)</span><br><span class="line">			ans=<span class="built_in">min</span>(ans,tag-time[now]+<span class="number">1</span>);</span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		turn[now]=nowturn;</span><br><span class="line">		time[now]=++tag;</span><br><span class="line">		<span class="built_in">dfs</span>(t[now]);</span><br><span class="line">		--tag;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;t[i]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="keyword">if</span>(!time[i])</span><br><span class="line">		&#123;</span><br><span class="line">			++nowturn;</span><br><span class="line">			<span class="built_in">dfs</span>(i);</span><br><span class="line">		&#125;	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="D-跳石头"><a href="#D-跳石头" class="headerlink" title="D.跳石头"></a>D.跳石头</h3><p>大概是挺明显的二分~</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">5e4</span>;</span><br><span class="line"><span class="keyword">int</span> l,n,m,left,right,mid,ans,d[maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> res=<span class="number">0</span>,i=<span class="number">0</span>,j=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i&lt;=n+<span class="number">1</span>&amp;&amp;j&lt;=n+<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span>(j&lt;=n+<span class="number">1</span>&amp;&amp;d[j]-d[i]&lt;x)</span><br><span class="line">		&#123;</span><br><span class="line">			++res;</span><br><span class="line">			++j;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(d[j]-d[i]&gt;=x)</span><br><span class="line">			i=j++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> res&lt;=m&amp;&amp;i==n+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;l,&amp;n,&amp;m);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;d[i]);</span><br><span class="line">	<span class="built_in">sort</span>(d+<span class="number">1</span>,d+n+<span class="number">1</span>);</span><br><span class="line">	d[n+<span class="number">1</span>]=l;</span><br><span class="line">	left=<span class="number">1</span>;</span><br><span class="line">	right=l;</span><br><span class="line">	<span class="keyword">while</span>(left&lt;=right)</span><br><span class="line">	&#123;</span><br><span class="line">		mid=(left+right)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">check</span>(mid))</span><br><span class="line">		&#123;</span><br><span class="line">			ans=mid;</span><br><span class="line">			left=mid+<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> right=mid<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="E-子串"><a href="#E-子串" class="headerlink" title="E.子串"></a>E.子串</h3><p>一道 DP。距离第一次做已经很久了但现在还记得做法……  </p>
+<p>翻到了远古时期的<a href="https://www.cnblogs.com/Psephurus-Gladius-zdx/p/11220356.html">题解</a>，莫名感到有点怀念呢……</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">1000</span>,maxm=<span class="number">200</span>,mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,k,f[<span class="number">2</span>][maxm+<span class="number">1</span>][maxm+<span class="number">1</span>][<span class="number">2</span>];</span><br><span class="line"><span class="keyword">char</span> a[maxn+<span class="number">1</span>],b[maxm+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d%s%s&quot;</span>,&amp;n,&amp;m,&amp;k,a+<span class="number">1</span>,b+<span class="number">1</span>);</span><br><span class="line">	f[<span class="number">0</span>][<span class="number">0</span>][<span class="number">0</span>][<span class="number">0</span>]=f[<span class="number">1</span>][<span class="number">0</span>][<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=m;++j)</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> l=<span class="number">1</span>;l&lt;=k;++l)</span><br><span class="line">			&#123;</span><br><span class="line">				f[i&amp;<span class="number">1</span>][j][l][<span class="number">0</span>]=(f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j][l][<span class="number">0</span>]+f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j][l][<span class="number">1</span>])%mod;</span><br><span class="line">				f[i&amp;<span class="number">1</span>][j][l][<span class="number">1</span>]=a[i]==b[j]?((f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j<span class="number">-1</span>][l<span class="number">-1</span>][<span class="number">0</span>]+f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j<span class="number">-1</span>][l<span class="number">-1</span>][<span class="number">1</span>])%mod+f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j<span class="number">-1</span>][l][<span class="number">1</span>])%mod:<span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,(f[n&amp;<span class="number">1</span>][m][k][<span class="number">0</span>]+f[n&amp;<span class="number">1</span>][m][k][<span class="number">1</span>])%mod);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="F-运输计划"><a href="#F-运输计划" class="headerlink" title="F.运输计划"></a>F.运输计划</h3><p>首先要求的是最大值最小，容易想到二分。  </p>
+<p>二分内的判断就是看大于答案的路径是否在减去它们公共经过的某条边长后均能不大于答案（事实上只需要看最长的路径是否不大于答案）。而统计公共边可以使用树上差分统计每条边的经过次数。</p>
+<p>想到算法之后还是蛮简单。不过略卡常。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">3e5</span>,maxlog=<span class="number">18</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,u,v,w,l,r,mid,ans,tot,maxlen,value[maxn+<span class="number">1</span>],head[maxn+<span class="number">1</span>],suc[maxn&lt;&lt;<span class="number">1</span>|<span class="number">1</span>],to[maxn&lt;&lt;<span class="number">1</span>|<span class="number">1</span>],len[maxn&lt;&lt;<span class="number">1</span>|<span class="number">1</span>],depth[maxn+<span class="number">1</span>],sum[maxn+<span class="number">1</span>],father[maxn+<span class="number">1</span>][maxlog+<span class="number">1</span>],x[maxn+<span class="number">1</span>],y[maxn+<span class="number">1</span>],ancestor[maxn+<span class="number">1</span>],time[maxn+<span class="number">1</span>],tree[maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">read</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	x=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">char</span> t=<span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(t))</span><br><span class="line">		t=<span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">isdigit</span>(t))</span><br><span class="line">	&#123;</span><br><span class="line">		x=x*<span class="number">10</span>+t-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">		t=<span class="built_in">getchar</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">add_edge</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y,<span class="keyword">int</span> z)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	to[++tot]=y;</span><br><span class="line">	len[tot]=z;</span><br><span class="line">	suc[tot]=head[x];</span><br><span class="line">	head[x]=tot;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs1</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=maxlog;++i)</span><br><span class="line">		father[now][i]=father[father[now][i<span class="number">-1</span>]][i<span class="number">-1</span>];</span><br><span class="line">	depth[now]=depth[father[now][<span class="number">0</span>]]+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=head[now];i;i=suc[i])</span><br><span class="line">		<span class="keyword">if</span>(to[i]!=father[now][<span class="number">0</span>])</span><br><span class="line">		&#123;</span><br><span class="line">			value[to[i]]=len[i];</span><br><span class="line">			father[to[i]][<span class="number">0</span>]=now;</span><br><span class="line">			sum[to[i]]=sum[now]+len[i];</span><br><span class="line">			<span class="built_in">dfs1</span>(to[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">LCA</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(depth[x]&lt;depth[y])</span><br><span class="line">		x^=y^=x^=y;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=maxlog;~i;--i)</span><br><span class="line">		<span class="keyword">if</span>(depth[father[x][i]]&gt;=depth[y])</span><br><span class="line">			x=father[x][i];</span><br><span class="line">	<span class="keyword">if</span>(x==y)</span><br><span class="line">		<span class="keyword">return</span> x;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=maxlog;~i;--i)</span><br><span class="line">		<span class="keyword">if</span>(father[x][i]!=father[y][i])</span><br><span class="line">		&#123;</span><br><span class="line">			x=father[x][i];</span><br><span class="line">			y=father[y][i];</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> father[x][<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs2</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=head[now];i;i=suc[i])</span><br><span class="line">		<span class="keyword">if</span>(to[i]!=father[now][<span class="number">0</span>])</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">dfs2</span>(to[i]);</span><br><span class="line">			tree[now]+=tree[to[i]];</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> cnt=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">bool</span> found=<span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;++i)</span><br><span class="line">		<span class="keyword">if</span>(time[i]&gt;now)</span><br><span class="line">		&#123;</span><br><span class="line">			++cnt;</span><br><span class="line">			++tree[x[i]];</span><br><span class="line">			++tree[y[i]];</span><br><span class="line">			tree[ancestor[i]]-=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="built_in">dfs2</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="keyword">if</span>(tree[i]==cnt&amp;&amp;maxlen-value[i]&lt;=now)</span><br><span class="line">		&#123;</span><br><span class="line">			found=<span class="literal">true</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="built_in">memset</span>(tree,<span class="number">0</span>,<span class="keyword">sizeof</span> tree);</span><br><span class="line">	<span class="keyword">return</span> found;		</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">read</span>(n);</span><br><span class="line">	<span class="built_in">read</span>(m);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">read</span>(u);</span><br><span class="line">		<span class="built_in">read</span>(v);</span><br><span class="line">		<span class="built_in">read</span>(w);</span><br><span class="line">		<span class="built_in">add_edge</span>(u,v,w);</span><br><span class="line">		<span class="built_in">add_edge</span>(v,u,w);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">dfs1</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">read</span>(x[i]);</span><br><span class="line">		<span class="built_in">read</span>(y[i]);</span><br><span class="line">		ancestor[i]=<span class="built_in">LCA</span>(x[i],y[i]);</span><br><span class="line">		maxlen=<span class="built_in">max</span>(maxlen,time[i]=sum[x[i]]+sum[y[i]]-(sum[ancestor[i]]&lt;&lt;<span class="number">1</span>));</span><br><span class="line">	&#125;</span><br><span class="line">	r=maxlen;</span><br><span class="line">	<span class="keyword">while</span>(l&lt;=r)</span><br><span class="line">	&#123;</span><br><span class="line">		mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">check</span>(mid))</span><br><span class="line">		&#123;</span><br><span class="line">			ans=mid;</span><br><span class="line">			r=mid<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> l=mid+<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>hide</tag>
+        <tag>题目选做</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NOIP 2016 提高组题解</title>
     <url>/2020/08/12/NOIP-2016-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>NOIP 的难度真是一年比一年高啊……2016 比 2019 简单到不知道哪儿去了……</p>
@@ -393,28 +418,14 @@
       </tags>
   </entry>
   <entry>
-    <title>NOIP 2015 提高组题解</title>
-    <url>/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>听说斗地主是大毒瘤……</p>
-<h3 id="A-神奇的幻方"><a href="#A-神奇的幻方" class="headerlink" title="A.神奇的幻方"></a>A.神奇的幻方</h3><p>模拟即可~</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">39</span>;</span><br><span class="line"><span class="keyword">int</span> n,lastx,lasty,a[maxn+<span class="number">1</span>][maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	a[lastx=<span class="number">1</span>][lasty=((n&gt;&gt;<span class="number">1</span>)+<span class="number">1</span>)]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n*n;++i)</span><br><span class="line">		<span class="keyword">if</span>(lastx==<span class="number">1</span>&amp;&amp;lasty!=n)</span><br><span class="line">			a[lastx=n][++lasty]=i;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(lasty==n&amp;&amp;lastx!=<span class="number">1</span>)</span><br><span class="line">			a[--lastx][lasty=<span class="number">1</span>]=i;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(lastx==<span class="number">1</span>&amp;&amp;lasty==n)</span><br><span class="line">			a[++lastx][lasty]=i;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(!a[lastx<span class="number">-1</span>][lasty+<span class="number">1</span>])</span><br><span class="line">			a[--lastx][++lasty]=i;</span><br><span class="line">		<span class="keyword">else</span> a[++lastx][lasty]=i;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;++j)</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,a[i][j]);</span><br><span class="line">		<span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>Rebirth</title>
+    <url>/2021/06/06/Rebirth/</url>
+    <content><![CDATA[<span id="more"></span>
 
-<h3 id="B-信息传递"><a href="#B-信息传递" class="headerlink" title="B.信息传递"></a>B.信息传递</h3><p>由于每个点出度均为 $1$，容易发现图的形态是由几个不连通的子图构成的，而每个子图都形如一个环上挂一些指向它的链，链上再挂指向该链的链（大雾）。而题目要求的就是图中最小的环。  </p>
-<p>对于每个未访问过的结点都进行深搜。若此时遇到了一个已访问过的结点，则有两种可能——一是访问到了之前的搜索访问过的结点，那就没必要继续搜索，因为这个子图的答案已经统计过；二是访问到了某个子图的环，此时则将两次访问这个点的时间差统计入答案。为此，我们需要对每个点记录它在哪一次搜索中被访问到以及每次搜索的时间戳。  </p>
-<p>由于每个点只会访问一次，时间复杂度为 $\operatorname{O}(n)$。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">2e5</span>;</span><br><span class="line"><span class="keyword">int</span> n,ans=maxn,tag,nowturn,t[maxn+<span class="number">1</span>],time[maxn+<span class="number">1</span>],turn[maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(time[now])</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(turn[now]==nowturn)</span><br><span class="line">			ans=<span class="built_in">min</span>(ans,tag-time[now]+<span class="number">1</span>);</span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		turn[now]=nowturn;</span><br><span class="line">		time[now]=++tag;</span><br><span class="line">		<span class="built_in">dfs</span>(t[now]);</span><br><span class="line">		--tag;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;t[i]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="keyword">if</span>(!time[i])</span><br><span class="line">		&#123;</span><br><span class="line">			++nowturn;</span><br><span class="line">			<span class="built_in">dfs</span>(i);</span><br><span class="line">		&#125;	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="D-跳石头"><a href="#D-跳石头" class="headerlink" title="D.跳石头"></a>D.跳石头</h3><p>大概是挺明显的二分~</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">5e4</span>;</span><br><span class="line"><span class="keyword">int</span> l,n,m,left,right,mid,ans,d[maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> res=<span class="number">0</span>,i=<span class="number">0</span>,j=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(i&lt;=n+<span class="number">1</span>&amp;&amp;j&lt;=n+<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span>(j&lt;=n+<span class="number">1</span>&amp;&amp;d[j]-d[i]&lt;x)</span><br><span class="line">		&#123;</span><br><span class="line">			++res;</span><br><span class="line">			++j;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(d[j]-d[i]&gt;=x)</span><br><span class="line">			i=j++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> res&lt;=m&amp;&amp;i==n+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;l,&amp;n,&amp;m);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;d[i]);</span><br><span class="line">	<span class="built_in">sort</span>(d+<span class="number">1</span>,d+n+<span class="number">1</span>);</span><br><span class="line">	d[n+<span class="number">1</span>]=l;</span><br><span class="line">	left=<span class="number">1</span>;</span><br><span class="line">	right=l;</span><br><span class="line">	<span class="keyword">while</span>(left&lt;=right)</span><br><span class="line">	&#123;</span><br><span class="line">		mid=(left+right)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">check</span>(mid))</span><br><span class="line">		&#123;</span><br><span class="line">			ans=mid;</span><br><span class="line">			left=mid+<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> right=mid<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="E-子串"><a href="#E-子串" class="headerlink" title="E.子串"></a>E.子串</h3><p>一道 DP。距离第一次做已经很久了但现在还记得做法……  </p>
-<p>翻到了远古时期的<a href="https://www.cnblogs.com/Psephurus-Gladius-zdx/p/11220356.html">题解</a>，莫名感到有点怀念呢……</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">1000</span>,maxm=<span class="number">200</span>,mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,k,f[<span class="number">2</span>][maxm+<span class="number">1</span>][maxm+<span class="number">1</span>][<span class="number">2</span>];</span><br><span class="line"><span class="keyword">char</span> a[maxn+<span class="number">1</span>],b[maxm+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d%s%s&quot;</span>,&amp;n,&amp;m,&amp;k,a+<span class="number">1</span>,b+<span class="number">1</span>);</span><br><span class="line">	f[<span class="number">0</span>][<span class="number">0</span>][<span class="number">0</span>][<span class="number">0</span>]=f[<span class="number">1</span>][<span class="number">0</span>][<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=m;++j)</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> l=<span class="number">1</span>;l&lt;=k;++l)</span><br><span class="line">			&#123;</span><br><span class="line">				f[i&amp;<span class="number">1</span>][j][l][<span class="number">0</span>]=(f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j][l][<span class="number">0</span>]+f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j][l][<span class="number">1</span>])%mod;</span><br><span class="line">				f[i&amp;<span class="number">1</span>][j][l][<span class="number">1</span>]=a[i]==b[j]?((f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j<span class="number">-1</span>][l<span class="number">-1</span>][<span class="number">0</span>]+f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j<span class="number">-1</span>][l<span class="number">-1</span>][<span class="number">1</span>])%mod+f[(i&amp;<span class="number">1</span>)^<span class="number">1</span>][j<span class="number">-1</span>][l][<span class="number">1</span>])%mod:<span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,(f[n&amp;<span class="number">1</span>][m][k][<span class="number">0</span>]+f[n&amp;<span class="number">1</span>][m][k][<span class="number">1</span>])%mod);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="F-运输计划"><a href="#F-运输计划" class="headerlink" title="F.运输计划"></a>F.运输计划</h3><p>首先要求的是最大值最小，容易想到二分。  </p>
-<p>二分内的判断就是看大于答案的路径是否在减去它们公共经过的某条边长后均能不大于答案（事实上只需要看最长的路径是否不大于答案）。而统计公共边可以使用树上差分统计每条边的经过次数。</p>
-<p>想到算法之后还是蛮简单。不过略卡常。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">3e5</span>,maxlog=<span class="number">18</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,u,v,w,l,r,mid,ans,tot,maxlen,value[maxn+<span class="number">1</span>],head[maxn+<span class="number">1</span>],suc[maxn&lt;&lt;<span class="number">1</span>|<span class="number">1</span>],to[maxn&lt;&lt;<span class="number">1</span>|<span class="number">1</span>],len[maxn&lt;&lt;<span class="number">1</span>|<span class="number">1</span>],depth[maxn+<span class="number">1</span>],sum[maxn+<span class="number">1</span>],father[maxn+<span class="number">1</span>][maxlog+<span class="number">1</span>],x[maxn+<span class="number">1</span>],y[maxn+<span class="number">1</span>],ancestor[maxn+<span class="number">1</span>],time[maxn+<span class="number">1</span>],tree[maxn+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">read</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	x=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">char</span> t=<span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(t))</span><br><span class="line">		t=<span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">isdigit</span>(t))</span><br><span class="line">	&#123;</span><br><span class="line">		x=x*<span class="number">10</span>+t-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">		t=<span class="built_in">getchar</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">add_edge</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y,<span class="keyword">int</span> z)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	to[++tot]=y;</span><br><span class="line">	len[tot]=z;</span><br><span class="line">	suc[tot]=head[x];</span><br><span class="line">	head[x]=tot;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs1</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=maxlog;++i)</span><br><span class="line">		father[now][i]=father[father[now][i<span class="number">-1</span>]][i<span class="number">-1</span>];</span><br><span class="line">	depth[now]=depth[father[now][<span class="number">0</span>]]+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=head[now];i;i=suc[i])</span><br><span class="line">		<span class="keyword">if</span>(to[i]!=father[now][<span class="number">0</span>])</span><br><span class="line">		&#123;</span><br><span class="line">			value[to[i]]=len[i];</span><br><span class="line">			father[to[i]][<span class="number">0</span>]=now;</span><br><span class="line">			sum[to[i]]=sum[now]+len[i];</span><br><span class="line">			<span class="built_in">dfs1</span>(to[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">LCA</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(depth[x]&lt;depth[y])</span><br><span class="line">		x^=y^=x^=y;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=maxlog;~i;--i)</span><br><span class="line">		<span class="keyword">if</span>(depth[father[x][i]]&gt;=depth[y])</span><br><span class="line">			x=father[x][i];</span><br><span class="line">	<span class="keyword">if</span>(x==y)</span><br><span class="line">		<span class="keyword">return</span> x;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=maxlog;~i;--i)</span><br><span class="line">		<span class="keyword">if</span>(father[x][i]!=father[y][i])</span><br><span class="line">		&#123;</span><br><span class="line">			x=father[x][i];</span><br><span class="line">			y=father[y][i];</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> father[x][<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs2</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=head[now];i;i=suc[i])</span><br><span class="line">		<span class="keyword">if</span>(to[i]!=father[now][<span class="number">0</span>])</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">dfs2</span>(to[i]);</span><br><span class="line">			tree[now]+=tree[to[i]];</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> cnt=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">bool</span> found=<span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;++i)</span><br><span class="line">		<span class="keyword">if</span>(time[i]&gt;now)</span><br><span class="line">		&#123;</span><br><span class="line">			++cnt;</span><br><span class="line">			++tree[x[i]];</span><br><span class="line">			++tree[y[i]];</span><br><span class="line">			tree[ancestor[i]]-=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="built_in">dfs2</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="keyword">if</span>(tree[i]==cnt&amp;&amp;maxlen-value[i]&lt;=now)</span><br><span class="line">		&#123;</span><br><span class="line">			found=<span class="literal">true</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="built_in">memset</span>(tree,<span class="number">0</span>,<span class="keyword">sizeof</span> tree);</span><br><span class="line">	<span class="keyword">return</span> found;		</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">read</span>(n);</span><br><span class="line">	<span class="built_in">read</span>(m);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">read</span>(u);</span><br><span class="line">		<span class="built_in">read</span>(v);</span><br><span class="line">		<span class="built_in">read</span>(w);</span><br><span class="line">		<span class="built_in">add_edge</span>(u,v,w);</span><br><span class="line">		<span class="built_in">add_edge</span>(v,u,w);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">dfs1</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">read</span>(x[i]);</span><br><span class="line">		<span class="built_in">read</span>(y[i]);</span><br><span class="line">		ancestor[i]=<span class="built_in">LCA</span>(x[i],y[i]);</span><br><span class="line">		maxlen=<span class="built_in">max</span>(maxlen,time[i]=sum[x[i]]+sum[y[i]]-(sum[ancestor[i]]&lt;&lt;<span class="number">1</span>));</span><br><span class="line">	&#125;</span><br><span class="line">	r=maxlen;</span><br><span class="line">	<span class="keyword">while</span>(l&lt;=r)</span><br><span class="line">	&#123;</span><br><span class="line">		mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">check</span>(mid))</span><br><span class="line">		&#123;</span><br><span class="line">			ans=mid;</span><br><span class="line">			r=mid<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> l=mid+<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+<p>新博客祭。</p>
+]]></content>
       <tags>
-        <tag>hide</tag>
-        <tag>题目选做</tag>
+        <tag>大事祭</tag>
       </tags>
   </entry>
   <entry>
@@ -447,17 +458,6 @@
       <tags>
         <tag>hide</tag>
         <tag>题目选做</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Rebirth</title>
-    <url>/2021/06/06/Rebirth/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>新博客祭。</p>
-]]></content>
-      <tags>
-        <tag>大事祭</tag>
       </tags>
   </entry>
   <entry>
@@ -546,6 +546,35 @@
       </tags>
   </entry>
   <entry>
+    <title>【所谓讲义·一】4.一些典型的维护技巧</title>
+    <url>/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%914-%E4%B8%80%E4%BA%9B%E5%85%B8%E5%9E%8B%E7%9A%84%E7%BB%B4%E6%8A%A4%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<h2 id="4-1-启发式合并"><a href="#4-1-启发式合并" class="headerlink" title="4.1 启发式合并"></a>4.1 启发式合并</h2><p>合并两个数据结构信息时，将结点数较少的一个的所有结点一个一个加入结点数较大的一个。在信息仅合并而不会重新分裂的情况下，其时间复杂度为 $\operatorname{O}(n\log n)$。</p>
+<p>观察到每次合并，结点数较少的数据结构的结点规模扩大至两倍以上。由于最终达到共 $n$ 个结点的一个结构，每个结点经历拆出不超过 $\operatorname{O}(\log n)$ 次。</p>
+<p>例题：P3201,P6279,P5290,P3302,P7323。</p>
+<h2 id="4-2-可持久化"><a href="#4-2-可持久化" class="headerlink" title="4.2 可持久化"></a>4.2 可持久化</h2><p>指操作可基于指定版本的数据结构。</p>
+<h3 id="4-2-1-可持久化线段树"><a href="#4-2-1-可持久化线段树" class="headerlink" title="4.2.1 可持久化线段树"></a>4.2.1 可持久化线段树</h3><h4 id="4-2-1-1-可持久化线段树"><a href="#4-2-1-1-可持久化线段树" class="headerlink" title="4.2.1.1 可持久化线段树"></a>4.2.1.1 可持久化线段树</h4><p>对于每个版本记录一个根结点，初始由上个版本拷贝。</p>
+<p>注意到线段树上每次单点修改只会对 $\operatorname{O}(\log n)$ 个结点造成影响。</p>
+<p>因此对于每次修改影响到的点，新建一个该结点的拷贝结点，并在访问上一个版本结点信息的同时，在新建的结点上进行真实的修改操作即可。每次操作时间复杂度为 $\operatorname{O}(\log n)$。总结点数为 $m\log n$，其中 $m$ 为修改次数。</p>
+<p>可持久化 01 trie 与之类似。</p>
+<p>可用于实现可持久化的数组，从而便于其余数据结构的可持久化。</p>
+<p>例题：P3919,P4735。</p>
+<h4 id="4-2-1-2-可持久化权值线段树"><a href="#4-2-1-2-可持久化权值线段树" class="headerlink" title="4.2.1.2 可持久化权值线段树"></a>4.2.1.2 可持久化权值线段树</h4><p>是基于可持久化线段树的在线静态区间数据结构。将序列的每个位置视为一个版本，均基于上一个位置的版本，在线段树上修改当前值，建立可持久化线段树。</p>
+<p>可理解为对每个位置保留了线段树的前缀和。两个位置线段树之差即为该区间内信息。可用于解决一部分区间问题。</p>
+<p>例题：P3834,P3567,P3293,P2633,P3302。</p>
+<h3 id="4-2-2-可持久化并查集"><a href="#4-2-2-可持久化并查集" class="headerlink" title="4.2.2 可持久化并查集"></a>4.2.2 可持久化并查集</h3><p>由于可持久化需要保证每次操作的复杂度，路径压缩这样的均摊技巧无法使用。应当使用按秩合并。</p>
+<p>具体的实现基于可持久化数组。可持久化地维护每个点的父结点与深度即可。</p>
+<p>例题：P3402。</p>
+<h3 id="4-2-3-可持久化平衡树"><a href="#4-2-3-可持久化平衡树" class="headerlink" title="4.2.3 可持久化平衡树"></a>4.2.3 可持久化平衡树</h3><p>使用非旋 Treap 易于维护时间复杂度，在分裂过程中拷贝原始结点即可。</p>
+<p>例题：P3835,P5055。</p>
+<h2 id="4-3-离线分治算法"><a href="#4-3-离线分治算法" class="headerlink" title="4.3 离线分治算法"></a>4.3 离线分治算法</h2><h3 id="4-3-2-线段树分治"><a href="#4-3-2-线段树分治" class="headerlink" title="4.3.2 线段树分治"></a>4.3.2 线段树分治</h3><p>线段树分治可以解决操作在一段时间区间内有效的问题。以时间轴离线建立线段树，将每个操作拆分到线段树的对应的多个结点上。统计答案时，从线段树的根结点出发递归，每次进入一个结点时执行操作，退出结点时逆序撤销已执行操作。</p>
+<p>例题：P4588,P5787。</p>
+<h2 id="4-4-数据结构的嵌套"><a href="#4-4-数据结构的嵌套" class="headerlink" title="4.4 数据结构的嵌套"></a>4.4 数据结构的嵌套</h2>]]></content>
+      <tags>
+        <tag>hide</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【所谓讲义·三】数论</title>
     <url>/2021/04/26/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%89%E3%80%91%E6%95%B0%E8%AE%BA/</url>
     <content><![CDATA[<p>咕。</p>
@@ -615,35 +644,6 @@
 </ul>
 ]]></content>
       <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·一】4.一些典型的维护技巧</title>
-    <url>/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%914-%E4%B8%80%E4%BA%9B%E5%85%B8%E5%9E%8B%E7%9A%84%E7%BB%B4%E6%8A%A4%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<h2 id="4-1-启发式合并"><a href="#4-1-启发式合并" class="headerlink" title="4.1 启发式合并"></a>4.1 启发式合并</h2><p>合并两个数据结构信息时，将结点数较少的一个的所有结点一个一个加入结点数较大的一个。在信息仅合并而不会重新分裂的情况下，其时间复杂度为 $\operatorname{O}(n\log n)$。</p>
-<p>观察到每次合并，结点数较少的数据结构的结点规模扩大至两倍以上。由于最终达到共 $n$ 个结点的一个结构，每个结点经历拆出不超过 $\operatorname{O}(\log n)$ 次。</p>
-<p>例题：P3201,P6279,P5290,P3302,P7323。</p>
-<h2 id="4-2-可持久化"><a href="#4-2-可持久化" class="headerlink" title="4.2 可持久化"></a>4.2 可持久化</h2><p>指操作可基于指定版本的数据结构。</p>
-<h3 id="4-2-1-可持久化线段树"><a href="#4-2-1-可持久化线段树" class="headerlink" title="4.2.1 可持久化线段树"></a>4.2.1 可持久化线段树</h3><h4 id="4-2-1-1-可持久化线段树"><a href="#4-2-1-1-可持久化线段树" class="headerlink" title="4.2.1.1 可持久化线段树"></a>4.2.1.1 可持久化线段树</h4><p>对于每个版本记录一个根结点，初始由上个版本拷贝。</p>
-<p>注意到线段树上每次单点修改只会对 $\operatorname{O}(\log n)$ 个结点造成影响。</p>
-<p>因此对于每次修改影响到的点，新建一个该结点的拷贝结点，并在访问上一个版本结点信息的同时，在新建的结点上进行真实的修改操作即可。每次操作时间复杂度为 $\operatorname{O}(\log n)$。总结点数为 $m\log n$，其中 $m$ 为修改次数。</p>
-<p>可持久化 01 trie 与之类似。</p>
-<p>可用于实现可持久化的数组，从而便于其余数据结构的可持久化。</p>
-<p>例题：P3919,P4735。</p>
-<h4 id="4-2-1-2-可持久化权值线段树"><a href="#4-2-1-2-可持久化权值线段树" class="headerlink" title="4.2.1.2 可持久化权值线段树"></a>4.2.1.2 可持久化权值线段树</h4><p>是基于可持久化线段树的在线静态区间数据结构。将序列的每个位置视为一个版本，均基于上一个位置的版本，在线段树上修改当前值，建立可持久化线段树。</p>
-<p>可理解为对每个位置保留了线段树的前缀和。两个位置线段树之差即为该区间内信息。可用于解决一部分区间问题。</p>
-<p>例题：P3834,P3567,P3293,P2633,P3302。</p>
-<h3 id="4-2-2-可持久化并查集"><a href="#4-2-2-可持久化并查集" class="headerlink" title="4.2.2 可持久化并查集"></a>4.2.2 可持久化并查集</h3><p>由于可持久化需要保证每次操作的复杂度，路径压缩这样的均摊技巧无法使用。应当使用按秩合并。</p>
-<p>具体的实现基于可持久化数组。可持久化地维护每个点的父结点与深度即可。</p>
-<p>例题：P3402。</p>
-<h3 id="4-2-3-可持久化平衡树"><a href="#4-2-3-可持久化平衡树" class="headerlink" title="4.2.3 可持久化平衡树"></a>4.2.3 可持久化平衡树</h3><p>使用非旋 Treap 易于维护时间复杂度，在分裂过程中拷贝原始结点即可。</p>
-<p>例题：P3835,P5055。</p>
-<h2 id="4-3-离线分治算法"><a href="#4-3-离线分治算法" class="headerlink" title="4.3 离线分治算法"></a>4.3 离线分治算法</h2><h3 id="4-3-2-线段树分治"><a href="#4-3-2-线段树分治" class="headerlink" title="4.3.2 线段树分治"></a>4.3.2 线段树分治</h3><p>线段树分治可以解决操作在一段时间区间内有效的问题。以时间轴离线建立线段树，将每个操作拆分到线段树的对应的多个结点上。统计答案时，从线段树的根结点出发递归，每次进入一个结点时执行操作，退出结点时逆序撤销已执行操作。</p>
-<p>例题：P4588,P5787。</p>
-<h2 id="4-4-数据结构的嵌套"><a href="#4-4-数据结构的嵌套" class="headerlink" title="4.4 数据结构的嵌套"></a>4.4 数据结构的嵌套</h2>]]></content>
-      <tags>
-        <tag>hide</tag>
         <tag>学习笔记</tag>
       </tags>
   </entry>
@@ -906,20 +906,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·四】4.子串问题</title>
-    <url>/2021/06/14/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%914-%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="4-2-后缀树"><a href="#4-2-后缀树" class="headerlink" title="4.2 后缀树"></a>4.2 后缀树</h2><p>一个字符串的所有可重子串为它的所有后缀的所有前缀，这是解决许多子串问题的基本想法。</p>
-<p>为了解决子串问题，朴素的想法使将所有后缀使用某种结构存储。字典树显然可以作为存储字符串的工具。然而，子串的总结点个数可达到 $\operatorname{O}(n^2)$，这是难以被接受的。</p>
-<p>后缀树是一棵压缩后的后缀字典树。由于后缀字典树中共仅有 $n$ 个叶结点，运用虚树的方法，可以将总边数压缩至 $\operatorname{O}(n)$。</p>
-<p>可以发现，后缀树存储的信息为每两个字符串的最长公共子串以及子串字典序。理论上，后缀树拥有线性时间的构造方法，然而该方法较复杂。于是出现了后缀仙人掌、后缀数组等后缀树的替代品。其中，后缀数组使用较为方便。</p>
-<h2 id="4-3-后缀数组"><a href="#4-3-后缀数组" class="headerlink" title="4.3 后缀数组"></a>4.3 后缀数组</h2><p>后缀数组用更加简易的结构存储了后缀树的信息。</p>
-]]></content>
-      <tags>
-        <tag>hide</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【所谓讲义·四】字符串</title>
     <url>/2021/05/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<h3 id="1-基础算法"><a href="#1-基础算法" class="headerlink" title="1.基础算法"></a>1.基础算法</h3><ul>
@@ -946,6 +932,20 @@
       </tags>
   </entry>
   <entry>
+    <title>【所谓讲义·四】4.子串问题</title>
+    <url>/2021/06/14/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%914-%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="4-2-后缀树"><a href="#4-2-后缀树" class="headerlink" title="4.2 后缀树"></a>4.2 后缀树</h2><p>一个字符串的所有可重子串为它的所有后缀的所有前缀，这是解决许多子串问题的基本想法。</p>
+<p>为了解决子串问题，朴素的想法使将所有后缀使用某种结构存储。字典树显然可以作为存储字符串的工具。然而，子串的总结点个数可达到 $\operatorname{O}(n^2)$，这是难以被接受的。</p>
+<p>后缀树是一棵压缩后的后缀字典树。由于后缀字典树中共仅有 $n$ 个叶结点，运用虚树的方法，可以将总边数压缩至 $\operatorname{O}(n)$。</p>
+<p>可以发现，后缀树存储的信息为每两个字符串的最长公共子串以及子串字典序。理论上，后缀树拥有线性时间的构造方法，然而该方法较复杂。于是出现了后缀仙人掌、后缀数组等后缀树的替代品。其中，后缀数组使用较为方便。</p>
+<h2 id="4-3-后缀数组"><a href="#4-3-后缀数组" class="headerlink" title="4.3 后缀数组"></a>4.3 后缀数组</h2><p>后缀数组用更加简易的结构存储了后缀树的信息。</p>
+]]></content>
+      <tags>
+        <tag>hide</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>册页</title>
     <url>/2021/06/10/%E5%86%8C%E9%A1%B5/</url>
     <content><![CDATA[<ul>
@@ -963,6 +963,14 @@
 ]]></content>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【所谓讲义·五】动态规划</title>
+    <url>/2021/06/17/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%94%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<h2 id="1-状态设计模型"><a href="#1-状态设计模型" class="headerlink" title="1.状态设计模型"></a>1.状态设计模型</h2><h2 id="2-常见优化方案"><a href="#2-常见优化方案" class="headerlink" title="2.常见优化方案"></a>2.常见优化方案</h2>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1015,8 +1023,8 @@
 <p>谨以此文致意。</p>
 ]]></content>
       <tags>
-        <tag>hide</tag>
         <tag>随笔</tag>
+        <tag>hide</tag>
       </tags>
   </entry>
   <entry>
@@ -1289,8 +1297,8 @@
 <p>唯一能做的，就是彻底地变强，然后碾压。</p>
 ]]></content>
       <tags>
-        <tag>hide</tag>
         <tag>随笔</tag>
+        <tag>hide</tag>
       </tags>
   </entry>
 </search>
