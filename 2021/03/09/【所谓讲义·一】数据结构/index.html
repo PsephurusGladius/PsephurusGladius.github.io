@@ -28,7 +28,7 @@
 <meta property="og:description" content="数据结构讲义目录。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-09T09:20:40.000Z">
-<meta property="article:modified_time" content="2021-06-14T03:41:42.000Z">
+<meta property="article:modified_time" content="2021-08-03T11:09:15.361Z">
 <meta property="article:author" content="白鲟">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
@@ -88,6 +88,7 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-friends"><a href="/friends" rel="section"><i class="fas fa-link fa-fw"></i>友链</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -144,7 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">1.基础数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9C%80%E5%80%BC%E4%B8%8E%E6%8E%92%E5%BA%8F"><span class="nav-text">2.最值与排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86"><span class="nav-text">3.区间问题的处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E4%B8%80%E4%BA%9B%E5%85%B8%E5%9E%8B%E7%9A%84%E7%BB%B4%E6%8A%A4%E6%8A%80%E5%B7%A7"><span class="nav-text">4.一些典型的维护技巧</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">1.基础数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9C%80%E5%80%BC%E4%B8%8E%E6%8E%92%E5%BA%8F"><span class="nav-text">2.最值与排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98"><span class="nav-text">3.区间问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%BB%B4%E6%8A%A4%E6%8A%80%E5%B7%A7"><span class="nav-text">4.维护技巧</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -234,7 +235,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-14 11:41:42" itemprop="dateModified" datetime="2021-06-14T11:41:42+08:00">2021-06-14</time>
+        <time title="修改时间：2021-08-03 19:09:15" itemprop="dateModified" datetime="2021-08-03T19:09:15+08:00">2021-08-03</time>
       </span>
 
   
@@ -248,12 +249,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>整体完善留到复习。</p>
-<p>为了行文完整，掺杂有一些不算狭义数据结构的内容。</p>
-<p>文中的复杂度若无特别说明，均指时间复杂度。</p>
-<p>此处有<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/61424">题单</a>。</p>
-<h3 id="1-基础数据结构"><a href="#1-基础数据结构" class="headerlink" title="1.基础数据结构"></a>1.基础数据结构</h3><p>此部分内容大概短时间内不会填坑。</p>
-<ul>
+        <p>此处有<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/61424">题单</a>。</p>
+<h3 id="1-基础数据结构"><a href="#1-基础数据结构" class="headerlink" title="1.基础数据结构"></a>1.基础数据结构</h3><ul>
 <li>1.1 链表</li>
 <li>1.2 队列<ul>
 <li>1.2.1 队列</li>
@@ -274,7 +271,7 @@
 </li>
 </ul>
 <h3 id="2-最值与排序"><a href="#2-最值与排序" class="headerlink" title="2.最值与排序"></a><a href="/2021/03/16/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%912-%E6%9C%80%E5%80%BC%E4%B8%8E%E6%8E%92%E5%BA%8F">2.最值与排序</a></h3><ul>
-<li>2.1 排序算法<ul>
+<li>2.1 排序<ul>
 <li>2.1.1 冒泡排序</li>
 <li>2.1.2 归并排序</li>
 <li>2.1.3 快速排序</li>
@@ -297,32 +294,36 @@
 </ul>
 </li>
 </ul>
-<h3 id="3-区间问题的处理"><a href="#3-区间问题的处理" class="headerlink" title="3.区间问题的处理"></a><a href="/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86">3.区间问题的处理</a></h3><ul>
+<h3 id="3-区间问题"><a href="#3-区间问题" class="headerlink" title="3.区间问题"></a><a href="/2021/03/11/%5B%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%5D3-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86">3.区间问题</a></h3><ul>
 <li>3.1 前缀和与差分</li>
 <li>3.2 ST 表</li>
-<li>3.3 分块<ul>
-<li>3.3.1 分块</li>
-<li>3.3.2 莫队<ul>
-<li>3.3.2.1 普通莫队</li>
-<li>3.3.2.2 回滚莫队</li>
-<li>3.3.2.3 带修莫队</li>
+<li>3.3 树状数组</li>
+<li>3.4 分块<ul>
+<li>3.4.1 分块</li>
+<li>3.4.2 莫队<ul>
+<li>3.4.2.1 普通莫队</li>
+<li>3.4.2.2 回滚莫队</li>
+<li>3.4.2.3 带修莫队</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>3.4 树状数组</li>
 <li>3.5 线段树<ul>
 <li>3.5.1 线段树</li>
 <li>3.5.2 01 trie</li>
 <li>3.5.3 扫描线</li>
-<li>3.5.4 线段树合并</li>
-<li>3.5.5 线段树分裂</li>
 <li>3.5.6 李超线段树</li>
 </ul>
 </li>
 </ul>
-<h3 id="4-一些典型的维护技巧"><a href="#4-一些典型的维护技巧" class="headerlink" title="4.一些典型的维护技巧"></a><a href="/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%914-%E4%B8%80%E4%BA%9B%E5%85%B8%E5%9E%8B%E7%9A%84%E7%BB%B4%E6%8A%A4%E6%8A%80%E5%B7%A7">4.一些典型的维护技巧</a></h3><ul>
-<li>4.1 启发式合并</li>
+<h3 id="4-维护技巧"><a href="#4-维护技巧" class="headerlink" title="4.维护技巧"></a><a href="/2021/03/11/%5B%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%5D4-%E4%B8%80%E4%BA%9B%E5%85%B8%E5%9E%8B%E7%9A%84%E7%BB%B4%E6%8A%A4%E6%8A%80%E5%B7%A7">4.维护技巧</a></h3><ul>
+<li>4.1 拆分与合并<ul>
+<li>4.1.1 启发式合并</li>
+<li>4.1.2 二进制分组</li>
+<li>4.1.3 线段树合并</li>
+<li>4.1.4 线段树分裂</li>
+</ul>
+</li>
 <li>4.2 可持久化<ul>
 <li>4.2.1 可持久化线段树<ul>
 <li>4.2.1.1 可持久化线段树</li>
