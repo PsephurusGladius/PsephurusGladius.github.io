@@ -28,9 +28,8 @@
 <meta property="og:description" content="图论讲义第二节。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-25T07:01:03.000Z">
-<meta property="article:modified_time" content="2021-06-17T08:43:48.000Z">
+<meta property="article:modified_time" content="2021-08-08T08:47:54.011Z">
 <meta property="article:author" content="白鲟">
-<meta property="article:tag" content="hide">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
 
@@ -42,7 +41,7 @@
 <script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;03&#x2F;25&#x2F;%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%912-%E5%9B%BE%E8%AE%BA%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;03&#x2F;25&#x2F;【所谓讲义·二】2-图论问题与解决方法&#x2F;&quot;,&quot;title&quot;:&quot;【所谓讲义·二】2.图论问题与解决方法&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>【所谓讲义·二】2.图论问题与解决方法 | 白鲟鱼缸</title>
+<title>【所谓讲义·二】2.图论问题与解决方法 | 白鲟鱼缸</title><meta name="robots" content="noindex">
   
 
 
@@ -159,14 +158,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -236,7 +235,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-17 16:43:48" itemprop="dateModified" datetime="2021-06-17T16:43:48+08:00">2021-06-17</time>
+        <time title="修改时间：2021-08-08 16:47:54" itemprop="dateModified" datetime="2021-08-08T16:47:54+08:00">2021-08-08</time>
       </span>
 
   
@@ -254,7 +253,7 @@
 <p>问题可转化为 $(\neg x_i \rightarrow x_j)\wedge(\neg x_j \rightarrow x_i)$。如此出现了变量间的关系，尝试转化为图论问题。</p>
 <p>对于每一对 $x_i,x_j$，从 $\neg x_i$ 向 $x_j$ 连边，$\neg x_j$ 向 $x_i$ 连边，每条有向边表示前者为真蕴含后者为真。根据蕴含的传递性，每一个强连通分量内的必同为真或同为假。因此，若 $\neg x_i$ 与 $x_i$ 同属于一个强连通分量，方程组必定无解。</p>
 <p>现在说明未出现上述情况则必定有解，尝试构造出一组可行解。由于蕴含的传递性，若一个点所代表的值为真，它能够到达的所有点必定均为真。因此，对缩点后的图进行拓扑排序，并贪心地使得 $x_i$ 与 $\neg x_i$ 中拓扑序较大者为真，可以保证 $x_i$ 与 $\neg x_i$ 间不会同时为真。同时可以证明两两之间如此构造无矛盾。关于这一贪心构造的正确性证明，在这里暂时略去。</p>
-
+<!-- flag of hidden posts -->
     </div>
 
     
@@ -263,24 +262,11 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hide/" rel="tag"># hide</a>
               <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
           </div>
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2021/03/20/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%91%E5%9B%BE%E8%AE%BA/" rel="prev" title="【所谓讲义·二】图论">
-                  <i class="fa fa-chevron-left"></i> 【所谓讲义·二】图论
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/2021/04/11/CQOI-2021-%E6%B8%B8%E8%AE%B0/" rel="next" title="CQOI 2021 游记">
-                  CQOI 2021 游记 <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
     </footer>
   </article>
 </div>
