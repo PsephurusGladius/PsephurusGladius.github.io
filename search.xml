@@ -301,9 +301,27 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·六】线性代数</title>
-    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
-    <content><![CDATA[<p>留坑。</p>
+    <title>【所谓讲义·四】字符串</title>
+    <url>/2021/05/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<h3 id="1-基础算法"><a href="#1-基础算法" class="headerlink" title="1.基础算法"></a>1.基础算法</h3><ul>
+<li>1.1 字符串散列</li>
+<li>1.2 子序列自动机</li>
+</ul>
+<h3 id="2-匹配问题"><a href="#2-匹配问题" class="headerlink" title="2.匹配问题"></a>2.匹配问题</h3><ul>
+<li>2.1 KMP 算法</li>
+<li>2.2 AC 自动机</li>
+</ul>
+<h3 id="3-回文问题"><a href="#3-回文问题" class="headerlink" title="3.回文问题"></a><a href="/2021/08/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91-%E5%9B%9E%E6%96%87%E9%97%AE%E9%A2%98">3.回文问题</a></h3><ul>
+<li>3.1 Manacher</li>
+<li>3.2 回文自动机</li>
+</ul>
+<h3 id="4-子串问题"><a href="#4-子串问题" class="headerlink" title="4.子串问题"></a><a href="/2021/06/14/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%914-%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98">4.子串问题</a></h3><ul>
+<li>4.1 Z 函数</li>
+<li>4.2 后缀树</li>
+<li>4.3 后缀数组</li>
+<li>4.4 后缀自动机</li>
+<li>4.5 广义后缀自动机</li>
+</ul>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -354,42 +372,12 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·四】字符串</title>
-    <url>/2021/05/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
-    <content><![CDATA[<h3 id="1-基础算法"><a href="#1-基础算法" class="headerlink" title="1.基础算法"></a>1.基础算法</h3><ul>
-<li>1.1 字符串散列</li>
-<li>1.2 子序列自动机</li>
-</ul>
-<h3 id="2-匹配问题"><a href="#2-匹配问题" class="headerlink" title="2.匹配问题"></a>2.匹配问题</h3><ul>
-<li>2.1 KMP 算法</li>
-<li>2.2 AC 自动机</li>
-</ul>
-<h3 id="3-回文问题"><a href="#3-回文问题" class="headerlink" title="3.回文问题"></a>3.回文问题</h3><ul>
-<li>3.1 Manacher </li>
-<li>3.2 回文自动机</li>
-</ul>
-<h3 id="4-子串问题"><a href="#4-子串问题" class="headerlink" title="4.子串问题"></a><a href="/2021/06/14/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%914-%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98">4.子串问题</a></h3><ul>
-<li>4.1 Z 函数</li>
-<li>4.2 后缀树</li>
-<li>4.3 后缀数组</li>
-<li>4.4 后缀自动机</li>
-<li>4.5 广义后缀自动机</li>
-</ul>
+    <title>【所谓讲义·六】线性代数</title>
+    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
+    <content><![CDATA[<p>留坑。</p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客更新日志</title>
-    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
-<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
-<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
-<p>同时安装了加密系统。</p>
-]]></content>
-      <tags>
-        <tag>大事祭</tag>
       </tags>
   </entry>
   <entry>
@@ -419,6 +407,58 @@
 ]]></content>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客更新日志</title>
+    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
+<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
+<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
+<p>同时安装了加密系统。</p>
+]]></content>
+      <tags>
+        <tag>大事祭</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>历届联赛题解</title>
+    <url>/2021/06/10/%E5%8E%86%E5%B1%8A%E8%81%94%E8%B5%9B%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<ul>
+<li><a href="/2020/09/29/NOIP-2014-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2014 提高组</a></li>
+<li><a href="/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2015 提高组</a></li>
+<li><a href="/2020/08/12/NOIP-2016-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2016 提高组</a></li>
+<li><a href="/2020/08/10/NOIP-2017-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2017 提高组</a></li>
+<li><a href="/2020/08/04/NOIP-2018-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2018 提高组</a></li>
+<li><a href="/2020/08/02/CSP-S-2019-%E9%A2%98%E8%A7%A3">CSP-S 2019</a></li>
+<li><a href="/2020/12/19/NOIP-2020-%E9%A2%98%E8%A7%A3">NOIP 2020</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>题目选做</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计划</title>
+    <url>/2021/07/11/%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<ul>
+<li>July 11th~20th：4+ 集训队作业/day，完成 Part 1——failed(14/36，感人的现实……)<ul>
+<li>11th: failed(1)</li>
+<li>12th: failed(2)</li>
+<li>13th: failed(3)</li>
+<li>14th: failed(1)</li>
+<li>15th: failed(0)</li>
+<li>16th: passed(4)</li>
+<li>17th: failed(1)</li>
+<li>18th: failed(0)</li>
+<li>19th: failed(1)</li>
+<li>20th: failed(1)</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>flag</tag>
       </tags>
   </entry>
   <entry>
@@ -505,46 +545,6 @@
 <h3 id="CF611G-E"><a href="#CF611G-E" class="headerlink" title="CF611G(E)"></a>CF611G(E)</h3><p>在平面直角坐标系中，对一个多边形每条对角线所分两多边形面积之差求和。</p>
 <p>考虑顺时针方向枚举一端点，寻找对角线左侧面积减右侧面积得到的差值由正转负的另一端点，发现此端点单调向顺时针方向移动，于是双指针维护。考虑利用某一端点与其分界点如何迅速计算在该端点处的答案贡献。由于情况对称，只需计算左侧面积不大于右侧的情况：在小于时，每一对角线只计算一次，可以推出与向量和、叉积前缀和、叉积二阶前缀和有关的 $\operatorname{O}(1)$ 式子；在等于时，由于分界按上述方法会计算两次，故记录等于的情况数特殊判断。</p>
 <h3 id="CF575E-M"><a href="#CF575E-M" class="headerlink" title="CF575E(M)"></a>CF575E(M)</h3>]]></content>
-      <tags>
-        <tag>题目选做</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计划</title>
-    <url>/2021/07/11/%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<ul>
-<li>July 11th~20th：4+ 集训队作业/day，完成 Part 1——failed(14/36，感人的现实……)<ul>
-<li>11th: failed(1)</li>
-<li>12th: failed(2)</li>
-<li>13th: failed(3)</li>
-<li>14th: failed(1)</li>
-<li>15th: failed(0)</li>
-<li>16th: passed(4)</li>
-<li>17th: failed(1)</li>
-<li>18th: failed(0)</li>
-<li>19th: failed(1)</li>
-<li>20th: failed(1)</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>flag</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>历届联赛题解</title>
-    <url>/2021/06/10/%E5%8E%86%E5%B1%8A%E8%81%94%E8%B5%9B%E9%A2%98%E8%A7%A3/</url>
-    <content><![CDATA[<ul>
-<li><a href="/2020/09/29/NOIP-2014-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2014 提高组</a></li>
-<li><a href="/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2015 提高组</a></li>
-<li><a href="/2020/08/12/NOIP-2016-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2016 提高组</a></li>
-<li><a href="/2020/08/10/NOIP-2017-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2017 提高组</a></li>
-<li><a href="/2020/08/04/NOIP-2018-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2018 提高组</a></li>
-<li><a href="/2020/08/02/CSP-S-2019-%E9%A2%98%E8%A7%A3">CSP-S 2019</a></li>
-<li><a href="/2020/12/19/NOIP-2020-%E9%A2%98%E8%A7%A3">NOIP 2020</a></li>
-</ul>
-]]></content>
       <tags>
         <tag>题目选做</tag>
       </tags>
