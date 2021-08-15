@@ -20,29 +20,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;psephurusgladius.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="2021 暑期峰会两阶段总结。">
+<meta name="description" content="组合数学讲义第三节。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2021 暑期峰会">
-<meta property="og:url" content="https://psephurusgladius.github.io/2021/08/14/2021%20%E6%9A%91%E6%9C%9F%E5%B3%B0%E4%BC%9A/index.html">
+<meta property="og:title" content="【所谓讲义·七】3.数列与生成函数">
+<meta property="og:url" content="https://psephurusgladius.github.io/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="白鲟鱼缸">
-<meta property="og:description" content="2021 暑期峰会两阶段总结。">
+<meta property="og:description" content="组合数学讲义第三节。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-08-14T15:34:34.000Z">
-<meta property="article:modified_time" content="2021-08-15T13:34:25.127Z">
+<meta property="article:published_time" content="2021-08-15T05:44:50.000Z">
+<meta property="article:modified_time" content="2021-08-15T08:42:27.792Z">
 <meta property="article:author" content="白鲟">
-<meta property="article:tag" content="题目选做">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://psephurusgladius.github.io/2021/08/14/2021%20%E6%9A%91%E6%9C%9F%E5%B3%B0%E4%BC%9A/">
+<link rel="canonical" href="https://psephurusgladius.github.io/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;08&#x2F;14&#x2F;2021%20%E6%9A%91%E6%9C%9F%E5%B3%B0%E4%BC%9A&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;08&#x2F;14&#x2F;2021 暑期峰会&#x2F;&quot;,&quot;title&quot;:&quot;2021 暑期峰会&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;08&#x2F;15&#x2F;%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;08&#x2F;15&#x2F;【所谓讲义·七】3-数列与生成函数&#x2F;&quot;,&quot;title&quot;:&quot;【所谓讲义·七】3.数列与生成函数&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>2021 暑期峰会 | 白鲟鱼缸</title>
+<title>【所谓讲义·七】3.数列与生成函数 | 白鲟鱼缸</title><meta name="robots" content="noindex">
   
 
 
@@ -133,7 +132,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -146,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-%E7%A6%BB%E6%95%A3%E5%8D%B7%E7%A7%AF"><span class="nav-text">3.2 离散卷积</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-2-%E4%BD%8D%E8%BF%90%E7%AE%97%E5%8D%B7%E7%A7%AF"><span class="nav-text">3.2.2 位运算卷积</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -204,7 +204,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://psephurusgladius.github.io/2021/08/14/2021%20%E6%9A%91%E6%9C%9F%E5%B3%B0%E4%BC%9A/">
+    <link itemprop="mainEntityOfPage" href="https://psephurusgladius.github.io/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -217,7 +217,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2021 暑期峰会
+          【所谓讲义·七】3.数列与生成函数
         </h1>
 
         <div class="post-meta-container">
@@ -227,21 +227,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-08-14 23:34:34" itemprop="dateCreated datePublished" datetime="2021-08-14T23:34:34+08:00">2021-08-14</time>
+      <time title="创建时间：2021-08-15 13:44:50 / 修改时间：16:42:27" itemprop="dateCreated datePublished" datetime="2021-08-15T13:44:50+08:00">2021-08-15</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-08-15 21:34:25" itemprop="dateModified" datetime="2021-08-15T21:34:25+08:00">2021-08-15</time>
-      </span>
 
   
 </div>
 
-            <div class="post-description">2021 暑期峰会两阶段总结。</div>
+            <div class="post-description">组合数学讲义第三节。</div>
         </div>
       </header>
 
@@ -249,18 +243,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b1e78cd0e5b9d138ed6f992030e0d1374400d62fe333605654d502fc2069aca7">1b3806f9606ea8f63b72fb4cf87bb3b7c784e885a4869e46a5850136d5dadcfbed7818274c61e9138b72f623bb9f73769795e21cbfefa3e2b7e07516970827ba59c779d2c66d3fbfc7e57e7c764ea1206c92f3d2131dc45e85d2def969f1a0f5750cbe4bedf4479ae422c28fcc7a2c5d72cce4945aeea229c17b68f0c634ef16193bf79b71bb736989d914c370631cdb2d2d49bce7f1876505f1f6ed0761c2f6f397aae41f94f2cba41850bd72acc6272dcc6b1a180f1b121f404989b070ad8cd54a76c84c6707c29f25b209c804f31f6bfee5fc1c145d10129a7b02cf4b39767cd7bb7de18e95f941c96a5fd9aa9ead3e2d615a748f1af608ed054fc71a36f469a8766d211796521ca00236510f870521a42929f3e2ce895795f1852633c15ad91dff3f666f17c2ea97602c90524cb5d6d4fca819556e9db3b926dfa6bde92a42704385a721fa27e65ebbb614e3dd96bbe003098a6c5f147679f0203b9a47331741d5641215af0af4eb7468c9ede5a97f6d48907a7657ef257d9057ba40db9baebca25c6c357761747de0250f36da44501ed238682845a82acd55e5b895ded2a76f6ee19981a2be4949c163cf495d3f5aa9d7e86a5d1cc08c3e90515ff2fc3683b26e771a76b68cac97dab3d68d911ac8ea150575896c855cab24d9b76f48c702d2dda2460243661a73136d39046490afad325fbd0a0b105ee73ba4649cd63449c88d9ebee8015c1c1a803335293628cd93c1d391382a13a4f58478b498520445371203e3016eee53ba5b9c92d3c91ba27a54d5f85b16f8bc5f6d798432d22d9bf6c6e5f21886076d235d84158f14b358441ca2b8274d085fc2de9061ffc2870cc8016958ca1f87f52dd127eee3019ba47fee2733358cee48e19b5e1e22a1d33f03d96690e7de26f9d1aea09654157790c5c3d98e930932bb9ba0be4caeb4213d95e37ceebbdf31e7c30d2043071bca6ec2ed8c73b11a033dca8393b8362dde0444bf51af8c1c68badb8912601c4db8effbf788aeb90fddbb85eadd2bdb0027b8c5f716c0921936b42533fb80e0ae97e07ebcffc22af86c554d3e32c7d1603dafde7bfc906b7c64e4a412224abf63663cab5f99aca3bda72ab579c0ec7e092e71a5ea81640e8c8ae07f6d283cda1a3f640ca073c603edd9e811637e27d63e341e16a147859db32a0da285a1c393637630b4b3fbc371b296b1371cb97c50ee203e238fff9b7b79bd23d22ad2991abca9fd0bbc71d09cbf6a1e6a77364066a53af281fb8ae9df7c728846648a2adad906c8eb0a10b201696145084e17bf03f2f84bbbb572831c6d2e15704605c825f1682d5725a99bc6c2824c5e79935ee5edf025f7a0fb7141dc9806dde6552462336d409d117ed4f16fd86e5481be8f0633be473a3d4418049c623194355008bc493438844b9a7a80c59502f38cbeae59f6359554652ef77b496403f55be903a2503f012440e32a97842636d1b06fdaace0f9ed8ba625cbb4cec3412cd49f56ffde68f426e3611059effb70779e77447147376e17f4d077728229f5cf7dbca465484b0a07491089fd40ca006b124eb940ceb41f230be2c2f9fd916e9153a5dfe20c715b9d0712cf30bb23650f0f153b5aed273b926cb518dc9e043c80012c66c93730364b780d283f260c47fb3155e09ff481a4cc52bc2952f5c2364bbca3cf8e40027b640dfeca2d4b65b8894a7011216de0c1dbe2cdc1224c9e6d550c39b8dd9c27f24e1d89fac6dbc8556ba41e47ca3e39c81903e4e81304a51f09f105e9fb205866254d4b372950ee4dc1e7844c8d486c537702718fe0c772404fc4bc8990cbbea32da3c74b60b477c78cb57933ad80eaf44901272c1482f017ada36358fc1c2cb0a7f65fc84a5ae4a2ca15e4e22f62394480316adfc02b83d86aa0abd2b8e3463346f94129a6a34e3959fc2f1ce10c76ecef8ddddfb2ef0e3ad53a93a34cd1164c3bd7c534fda00d7b42ecf026fb6205c5b562762938dd9be4b098c7f608026e6027fbdf2a5d164e14016673636e3ae02116af433032676e2a8c3b13c251cee83f58788e71516cd6e0351816d72a54e95d28356838d48c12c149c0baa4e9e2a62e94116e13a5e6da8de572439ccd5ee86dc42b7f878d4d9e1024d250d7dda767f998ef0041ae767ea9fd69b3a1239c4732305c90d90244dcc05ace933dc214bde78f2dfb54d01083603c9d7f84196ae3064d2e9c6a826c0f3287c654ac848c004d6ab7bc84d47fd14b3f01f8e5dfafa6ffb7bd11d1bcfbc46ec81e95abe37b78c6130841521ca945af0e9aee83b043bf314eea71f7cfcfae3fa3247e5940c8be1a73923259c5a1bb4d89c33f3ca2a1b62d0443656ba2def0ae6eccfc7e13d6316c58b01ac2ee8d01378c8b7fe1c1e303d7159cd362b5ef1ffff9606722a210d4d56b7da96b73434921d7423fded3bb36d5f5ebda4dfa2bf404fb1fb8a89ed4622c9523b88c692560b3fa4a5faf091c8cfb5c342cffd62c0aecdae1ac3e3df65f89256b2214cc4c1916b555ce676a815151a9cec3a5840c1c3ef9da39513bfa0066d67e13f604217676b485c793138e3fdf17824510b97ae1e806ef3035c76257ca64b00476166bd132953637d2e80d79cfbe37cce158c9427b1438a918b85e2e1c9813c5bed9f42132415cd8839ae6481ae103324a57505eff4c924cab57b3d1831c010c0ca1a7d1abef80919c7848d0ed0d2910262d033d3fb690adacfcece2eb2f5ed9314e793a1c9ceecf97a64c2a647b014048fb19a610167fbaeb16dda98aba6050be368c00d19b259aa333bf42243ddb8ba4dee23c23681cf8cc1d4a9b19b8e0112fd3238b5d270ec3d1d6cd09089c48c683e47a528051d9f1d78a981117a4897c44903ca8cf7b76dc2a0996cdfed5d35b24ed724c3310f64a6fe720a9c673089e9e28bbe4d3d61024310fa9298a4f4a4d7d54da31c35ac303b632bf944b6f120f84e3bc320c48b47008b41603a3da57ffa738da7a0042df59b3c223569dbdb307341525bb4a3d466cfccad2ce840ad56e71e91659992470b932e0094be9d6a9e5f65dbfaae3989364bce4d447846ffb643735dff58a5a13986a8293a1a43e4710a7b9c9559241f95b978cfb0c4f6dcc3bc86f601b6c4465d39ffc9694fba8af24a9e795bfcfcd8aa8032f02eb2eed96b5be660c0acd4c18a114a5c6d23f124421f1753bd308716b65ec73107466bbda5049c4d44139416d12cf2234cdeb373258f62069795b117d292cac8483da619d302536714277c733eb3212198102d64622b813db6914510ab0771e2014061c259745f0a558bceeea13be54997a3bcd46f889702247acf2becd42ec7e643eb7ff001f001c2f3a0f32caa0768d6c57efa8531286250b99f0cfb2e0842a9233c3be1862eea26f774fd50182fd376677bbcb9c5678f8e94f23f6db7cbf4262680905cc3a1be9eff292a519ddbda023b438d61f4f5046d05270544dda2950896b98bc61a573454e7425887ad97f7b1a986e47a9dc84d52cea29cfebe234ca143bc8df6d09b974efa26cebd256153d1fd92212e33b8bd5d059378a4fc8e288a37319443d224ea33aa21b5c637ef206375f3d6edfe10e45577db743811607e84516f71b25d82e8b27f23e4d8ba5976da2923f871f48a302dce29813e0b10207be8a9e44a7748ff707f9a78530b5c2ae886b5c85b35fd3da8841549374b188e96f0d9e49306ccdca76a0d819ba77946a4340e421086206aa898c312043efb8cc8e4245ebc092172a36a9a4a11002f064e4dc9479b665369961eae747e403108c4931853c7c8a3e4561df331771260a770acf47e20e7f76a66684894b26fe6065d8646ad239cdbd7bf13ed6ba805ad49ff8d9e82de34a48725092b73e13b535fd118610cc45047a9f0b0d184a120887add906df9c126501b933e3381a6561fc4ae8b9d79bf199e3c1aa05254334b68cae62c6b168814d3c2c6b3bc0114c3c009190111997a5a6326dab50b46ccdcb3ffc8b8b5a1828da05b2a07e0787cfa30e5a9c8c928b1835fbc16ae9aab6d83b2e409cc03e23be98dd8ca0c7d06da1248d471770bd0eb3d3670e26786d25ccf24c4b166ce8919e21c98725d0b9a32fb81d7fdc33db23be965c1fc52880c118e1a1aeb81074e38f6c772b99ba5183d3b2c8a0e3d0723c3a096443f905e5abe7f1e1d6c35f1a393cf270d330d161bc967413d4247908da3094b277516b63b685029505cc3f215bb4d2fb8f73279d80fec8bfcce4ccb616004862ab6f86c4b9c691b67d089677d6b306426fa52a154ca36a40219422030b941b80fad2288e066667d49703d751de4e1194a3f5267e64e5e9f76bd07622e0a91b70e218a36f83ae93ce5ecb452fb6321a8e871fc3f256e0c19505e460d3a90d0874ab3a4622d18f2e453ec27574146fba85477357adecb336ca5603b8a3b83de88d073c1bba6c3dedc330ca</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">君は何が欲しい？</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+        <h2 id="3-2-离散卷积"><a href="#3-2-离散卷积" class="headerlink" title="3.2 离散卷积"></a>3.2 离散卷积</h2><h3 id="3-2-2-位运算卷积"><a href="#3-2-2-位运算卷积" class="headerlink" title="3.2.2 位运算卷积"></a>3.2.2 位运算卷积</h3><p>对数列 $a,b$ 进行位运算卷积得到数列 $c$，则 $c_i=\sum_{j\oplus k=i}a_jb_k$，其中 $\oplus$ 是一种位运算。进行位运算卷积通常使用的方法是对原数列进行线性变换，使得 $c_i’=a_i’b_i’$ 便于线性计算，再进行逆变换得到 $c_i$。为方便进行，固定 $n$ 为 $2$ 的幂。</p>
+<p>设 $a_x’=\sum_{i=1}^n f(i,x)a_i$，则有<br>$$<br>\begin{aligned}<br>&amp;\sum_{j=1}^n\sum_{k=1}^nf(j,x)f(k,x)a_jb_k\<br>=&amp;\sum_{i=1}^nf(i,x)c_i\<br>=&amp;\sum_{i=1}^nf(i,x)\sum_{j\oplus k=i}a_jb_k\<br>=&amp;\sum_{j=1}^n\sum_{k=1}^nf(j\oplus k,x)a_jb_k<br>\end{aligned}<br>$$<br>因此，构造需满足 $f(j,x)f(k,x)=f(j\oplus k,x)$。该构造实质上是将行向量 $a$ 右乘一个矩阵 $f$。由于需进行逆变换，需满足 $f$ 矩阵可逆。</p>
+<p>对于 $\operatorname{or}$ 运算，构造 $f_1(i,x)=[i\subseteq x]$，即 $a_i’=\sum_{j\subseteq x}a_j$，易得矩阵可逆。该变换本质是子集和。考虑快速进行。（（（（（</p>
+<p>对于 $\operatorname{and}$ 运算，类似地构造超集和即可。</p>
+<!-- flag of hidden posts -->
     </div>
 
     
@@ -269,21 +256,11 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E9%A2%98%E7%9B%AE%E9%80%89%E5%81%9A/" rel="tag"># 题目选做</a>
               <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
           </div>
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" rel="prev" title="【所谓讲义·七】组合数学">
-                  <i class="fa fa-chevron-left"></i> 【所谓讲义·七】组合数学
-                </a>
-            </div>
-            <div class="post-nav-item">
-            </div>
-          </div>
     </footer>
   </article>
 </div>
