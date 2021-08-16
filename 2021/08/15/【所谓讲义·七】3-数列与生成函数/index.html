@@ -28,7 +28,7 @@
 <meta property="og:description" content="组合数学讲义第三节。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-08-15T05:44:50.000Z">
-<meta property="article:modified_time" content="2021-08-16T05:48:21.054Z">
+<meta property="article:modified_time" content="2021-08-16T06:04:32.556Z">
 <meta property="article:author" content="白鲟">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
@@ -239,7 +239,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-08-16 13:48:21" itemprop="dateModified" datetime="2021-08-16T13:48:21+08:00">2021-08-16</time>
+        <time title="修改时间：2021-08-16 14:04:32" itemprop="dateModified" datetime="2021-08-16T14:04:32+08:00">2021-08-16</time>
       </span>
 
   
@@ -256,9 +256,9 @@
         <h2 id="3-2-离散卷积"><a href="#3-2-离散卷积" class="headerlink" title="3.2 离散卷积"></a>3.2 离散卷积</h2><h3 id="3-2-1-快速傅里叶变换与加法卷积"><a href="#3-2-1-快速傅里叶变换与加法卷积" class="headerlink" title="3.2.1 快速傅里叶变换与加法卷积"></a>3.2.1 快速傅里叶变换与加法卷积</h3><p>对数列 $a,b$ 进行卷积得到数列 $c$，则 $c_i=\sum_{j\oplus k=i}a_jb_k$，其中 $\oplus$ 是一种运算。进行卷积通常使用的方法是对原数列进行线性变换，使得 $c_i’=a_i’b_i’$ 便于线性计算，再进行逆变换得到 $c_i$。为方便进行，固定 $n$ 为 $2$ 的幂。</p>
 <p>设 $a_x’=\sum_{i=1}^n f(i,x)a_i$，则有<br>$$<br>\begin{aligned}<br>&amp;\sum_{j=1}^n\sum_{k=1}^nf(j,x)f(k,x)a_jb_k\\<br>=&amp;\sum_{i=1}^nf(i,x)c_i\\<br>=&amp;\sum_{i=1}^nf(i,x)\sum_{j\oplus k=i}a_jb_k\\<br>=&amp;\sum_{j=1}^n\sum_{k=1}^nf(j\oplus k,x)a_jb_k<br>\end{aligned}<br>$$<br>因此，构造需满足 $f(j,x)f(k,x)=f(j\oplus k,x)$。该构造实质上是将行向量 $a$ 右乘一个矩阵 $f$。由于需进行逆变换，需满足 $f$ 矩阵可逆。</p>
 <h3 id="3-2-2-位运算卷积"><a href="#3-2-2-位运算卷积" class="headerlink" title="3.2.2 位运算卷积"></a>3.2.2 位运算卷积</h3><p>方法与加法卷积类似。</p>
-<p>对于 $\operatorname{or}$ 运算，构造 $f_1(i,x)=[i\subseteq x]$，即 $a_i’=\sum_{j\subseteq x}a_j$，易得矩阵可逆。该变换本质是子集和。考虑快速进行，可以得到一种折半分治的算法，每次将左半部分的贡献累计到右半部分对应位置。过程的中第 $i$ 层计算出每个位置前缀至少 $i-1$ 位相同时的子集和。将其循环化可减小常数。发现该分治过程从底到顶与从顶到底均可行，于是逆变换亦可沿原方向进行，不需求出系数矩阵，将正向变换时的加法更改为减法即可。时间复杂度为 $\operatorname{O}(n\log n)$。</p>
+<p>对于 $\operatorname{or}$ 运算，构造 $f_1(i,x)=[i\subseteq x]$，即 $a_i’=\sum_{j\subseteq x}a_j$，易得矩阵可逆。该变换本质是子集和。考虑快速进行，可以得到一种折半分治的算法，从底到顶，每次将左半部分的贡献累计到右半部分对应位置。过程的中第 $i$ 层计算出每个位置前缀至少 $i-1$ 位相同时的子集和。将其循环化可减小常数。发现该分治过程事实上从底到顶与从顶到底均可行，于是逆变换亦可沿原方向进行，不需求出系数矩阵，将正向变换时的加法更改为减法即可。时间复杂度为 $\operatorname{O}(n\log n)$。</p>
 <p>对于 $\operatorname{and}$ 运算，类似地构造超集和，即 $f_2(i,x)=[x\subseteq i]$，实现时将右半部分的贡献累计到左半部分对应位置。</p>
-<p>对于 $\operatorname{xor}$ 运算的构造，一个性质是 $\operatorname{popcount(a)}+\operatorname{popcount}(b)\equiv\operatorname{popcount}(a \operatorname{xor}b)\pmod 2$。于是构造  $f_3(i,x)=(-1)^{\operatorname{popcount}(i\cap x)}$，即 $a_i’=\sum_{j=1}^n(-1)^{\operatorname{popcount}(j\cap x)}a_j$。考虑与上述类似的分治方法，可以发现两位置累计时仅有一位不同，且第 $i$ 层计算的是每个位置前缀至少 $i-1$ 位相同的数中只考虑非前 $i-1$ 位的和。因此，将两对应位置根据第 $i$ 位分别记作 $t_0,t_1$，在第 $i$ 位加入考虑后 $a_{t_0}’$ 与 $a_{t_1}’$ 均应当由加入前的二者得到，且二者的贡献正负与加入后交集的奇偶有关，发现仅有 $t_1$ 考虑第 $i$ 位后由原本的 $a_{t_1}’$ 贡献时交集的奇偶性会改变，亦即贡献为负。于是设加入前 $x_0=a_{t_0}’,x_1=a_{t_1}’$，则加入后 $a_{t_0}’=x_0+x_1,a_{t_1}’=x_0-x_1$。逆变换时则反解得 $a_{t_0}’=\dfrac{x_0+x_1}{2},a_{t_1}’=\dfrac{x_0-x_1}{2}$。</p>
+<p>对于 $\operatorname{xor}$ 运算的构造，一个性质是 $\operatorname{popcount(a)}+\operatorname{popcount}(b)\equiv\operatorname{popcount}(a \operatorname{xor}b)\pmod 2$。于是构造  $f_3(i,x)=(-1)^{\operatorname{popcount}(i\cap x)}$，即 $a_i’=\sum_{j=1}^n(-1)^{\operatorname{popcount}(j\cap x)}a_j$。考虑与上述类似的分治方法，可以发现两位置进行累计时二进制位仅一位不同，且第 $i$ 层计算的是每个位置前缀至少 $i-1$ 位相同的数中不考虑前 $i-1$ 位得到的答案。将两对应位置根据第 $i$ 位分别记作 $t_0,t_1$，在第 $i$ 位加入考虑后，$a_{t_0}’$ 与 $a_{t_1}’$ 均应当由加入前的二者得到，且二者的贡献正负与加入后交集的奇偶有关，发现仅有 $t_1$ 由原本的 $a_{t_1}’$ 贡献时交集元素会增加 $1$，即奇偶性会改变，亦即贡献为负。于是设加入前 $x_0=a_{t_0}’,x_1=a_{t_1}’$，则加入后 $a_{t_0}’=x_0+x_1,a_{t_1}’=x_0-x_1$。逆变换时则反解得 $a_{t_0}’=\dfrac{x_0+x_1}{2},a_{t_1}’=\dfrac{x_0-x_1}{2}$。</p>
 <!-- flag of hidden posts -->
     </div>
 
