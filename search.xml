@@ -21,195 +21,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·三】数论</title>
-    <url>/2021/04/26/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%89%E3%80%91%E6%95%B0%E8%AE%BA/</url>
-    <content><![CDATA[<p>咕。</p>
-<h3 id="1-整除与质数"><a href="#1-整除与质数" class="headerlink" title="1.整除与质数"></a>1.整除与质数</h3><ul>
-<li>1.1 整除<ul>
-<li>1.1.1 算术基本定理</li>
-<li>1.1.2 约数分解<ul>
-<li>1.1.2.1 试除法 </li>
-<li>1.1.2.2 倍数法</li>
-<li>1.1.2.3 阶乘的约数分解 </li>
-</ul>
-</li>
-<li>1.1.3 最大公约数与最小公倍数<ul>
-<li>1.1.3.1 欧几里得算法</li>
-<li>1.1.3.2 二进制算法</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>1.2 质数<ul>
-<li>1.2.1 质数测试</li>
-<li>1.2.1 质数筛法<ul>
-<li>1.2.2.1 埃氏筛法</li>
-<li>1.2.2.2 欧拉筛法 </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-线性同余"><a href="#2-线性同余" class="headerlink" title="2.线性同余"></a>2.线性同余</h3><ul>
-<li>2.1 同余的基本性质</li>
-<li>2.2 线性同余方程<ul>
-<li>2.2.1 裴蜀定理</li>
-<li>2.2.2 扩展欧几里得算法</li>
-<li>2.2.3 乘法逆元</li>
-</ul>
-</li>
-<li>2.3 线性同余方程组<ul>
-<li>2.3.1 中国剩余定理</li>
-<li>2.3.2 扩展中国剩余定理</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-阶乘相关同余"><a href="#3-阶乘相关同余" class="headerlink" title="3.阶乘相关同余"></a>3.阶乘相关同余</h3><ul>
-<li>3.1 威尔逊定理</li>
-<li>3.2 卢卡斯定理</li>
-<li>3.3 库默尔定理</li>
-<li>3.4 扩展卢卡斯</li>
-</ul>
-<h3 id="4-高次同余"><a href="#4-高次同余" class="headerlink" title="4.高次同余"></a>4.高次同余</h3><ul>
-<li>4.1 欧拉定理<ul>
-<li>4.1.1 欧拉定理</li>
-<li>4.1.2 费马小定理</li>
-<li>4.1.3 扩展欧拉定理</li>
-<li>4.1.4 Miller-Rabin 质数测试</li>
-<li>4.1.5 Pollar-Rho 质因数分解</li>
-</ul>
-</li>
-<li>4.2 离散对数<ul>
-<li>4.2.1 原根</li>
-<li>4.2.2 BSGS</li>
-<li>4.2.3 扩展 BSGS</li>
-<li>4.2.4 整数模 $n$ 乘法群</li>
-</ul>
-</li>
-<li>4.3 二次剩余</li>
-</ul>
-<h3 id="5-数论函数"><a href="#5-数论函数" class="headerlink" title="5.数论函数"></a>5.数论函数</h3><ul>
-<li>5.1 数论函数变换<ul>
-<li>5.1.1 积性函数</li>
-<li>5.1.2 狄利克雷卷积</li>
-<li>5.1.3 狄利克雷生成函数</li>
-</ul>
-</li>
-<li>5.2 亚线性前缀和筛法<ul>
-<li>5.2.1 杜教筛</li>
-<li>5.2.2 min_25 筛</li>
-<li>5.2.3 Powerful Numbers</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·七】组合数学</title>
-    <url>/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</url>
-    <content><![CDATA[<h3 id="1-计数原理"><a href="#1-计数原理" class="headerlink" title="1.计数原理"></a>1.计数原理</h3><ul>
-<li>1.1 加法原理与乘法原理</li>
-<li>1.2 排列组合<ul>
-<li>1.2.1 排列数与组合数</li>
-<li>1.2.2 组合数相关公式</li>
-<li>1.2.3 康托展开</li>
-<li>1.2.4 排列组合经典问题</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-容斥与反演"><a href="#2-容斥与反演" class="headerlink" title="2.容斥与反演"></a>2.容斥与反演</h3><ul>
-<li>2.1 容斥原理</li>
-<li>2.2 子集反演</li>
-<li>2.3 最值反演</li>
-<li>2.4 二项式反演</li>
-<li>2.5 莫比乌斯反演</li>
-<li>2.6 单位根反演</li>
-<li>2.7 斯特林反演</li>
-</ul>
-<h3 id="3-数列与生成函数"><a href="#3-数列与生成函数" class="headerlink" title="3.数列与生成函数"></a>3.数列与生成函数</h3><ul>
-<li>3.1 常见数列</li>
-<li>3.2 离散卷积<ul>
-<li>3.2.1 快速傅里叶变换与加法卷积</li>
-<li>3.2.2 位运算卷积</li>
-</ul>
-</li>
-<li>3.3 多项式操作<ul>
-<li>3.3.1 拉格朗日插值</li>
-<li>3.3.2 多项式牛顿迭代</li>
-<li>3.3.3 多项式求逆与除法</li>
-<li>3.3.4 多项式开方</li>
-<li>3.3.5 多点求值与快速插值</li>
-<li>3.3.6 多项式三角函数</li>
-</ul>
-</li>
-<li>3.4 生成函数<ul>
-<li>3.4.1 普通型生成函数</li>
-<li>3.4.2 指数型生成函数</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·五】动态规划</title>
-    <url>/2021/06/17/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%94%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[<h2 id="1-状态设计模型"><a href="#1-状态设计模型" class="headerlink" title="1.状态设计模型"></a>1.状态设计模型</h2><ul>
-<li>1.1 子序列问题<ul>
-<li>1.1.1 最长单调子序列</li>
-<li>1.1.2 最长公共子序列</li>
-</ul>
-</li>
-<li>1.2 背包问题<ul>
-<li>1.2.1 01 背包与完全背包</li>
-<li>1.2.2 多重背包</li>
-<li>1.2.3 分组背包</li>
-</ul>
-</li>
-<li>1.3 区间问题<ul>
-<li>1.3.1 划分方法</li>
-<li>1.3.2 合并方法</li>
-</ul>
-</li>
-<li>1.4 数位问题</li>
-<li>1.5 树上问题</li>
-<li>1.6 状态压缩<ul>
-<li>1.6.1 用集合压缩状态</li>
-<li>1.6.2 基于连通性的压缩方法</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-常见优化方案"><a href="#2-常见优化方案" class="headerlink" title="2.常见优化方案"></a>2.常见优化方案</h2><ul>
-<li>1.1 矩阵优化</li>
-<li>1.2 数据结构优化<ul>
-<li>1.2.1 前缀和</li>
-<li>1.2.2 单调队列</li>
-<li>1.2.3 悬线法与单调栈</li>
-</ul>
-</li>
-<li>1.3 决策单调性</li>
-<li>1.4 斜率优化</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·六】线性代数</title>
-    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
-    <content><![CDATA[<p>留坑。</p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【所谓讲义·一】数据结构</title>
     <url>/2021/03/09/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>此处有<a href="https://www.luogu.com.cn/training/61424">题单</a>。</p>
@@ -311,32 +122,192 @@
       </tags>
   </entry>
   <entry>
-    <title>册页</title>
-    <url>/2021/06/10/%E5%86%8C%E9%A1%B5/</url>
-    <content><![CDATA[<ul>
-<li><p>人物杂谈</p>
-<ul>
-<li><a href="/2021/04/11/%E5%AD%A6%E9%95%BF%E4%BB%AC">学长们</a></li>
-<li><a href="/2021/07/27/%E9%92%9F%E7%99%BD">钟白</a></li>
+    <title>【所谓讲义·七】组合数学</title>
+    <url>/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</url>
+    <content><![CDATA[<h3 id="1-计数原理"><a href="#1-计数原理" class="headerlink" title="1.计数原理"></a>1.计数原理</h3><ul>
+<li>1.1 加法原理与乘法原理</li>
+<li>1.2 排列组合<ul>
+<li>1.2.1 排列数与组合数</li>
+<li>1.2.2 组合数相关公式</li>
+<li>1.2.3 康托展开</li>
+<li>1.2.4 排列组合经典问题</li>
 </ul>
 </li>
-<li><p>比赛游记</p>
-<ul>
-<li><a href="/2019/10/26/CSP-2019-%E6%B8%B8%E8%AE%B0">CSP 2019 游记</a></li>
-<li><a href="/2020/10/12/CSP-S-2020-NOIP-2020-%E6%97%A5%E8%AE%B0%E4%B8%8E%E6%B8%B8%E8%AE%B0">CSP-S 2020 &amp; NOIP 2020 日记与游记</a></li>
-<li><a href="/2021/04/11/CQOI-2021-%E6%B8%B8%E8%AE%B0">CQOI 2021 游记</a></li>
+</ul>
+<h3 id="2-容斥与反演"><a href="#2-容斥与反演" class="headerlink" title="2.容斥与反演"></a>2.容斥与反演</h3><ul>
+<li>2.1 容斥原理</li>
+<li>2.2 子集反演</li>
+<li>2.3 最值反演</li>
+<li>2.4 二项式反演</li>
+<li>2.5 莫比乌斯反演</li>
+<li>2.6 单位根反演</li>
+<li>2.7 斯特林反演</li>
+</ul>
+<h3 id="3-数列与生成函数"><a href="#3-数列与生成函数" class="headerlink" title="3.数列与生成函数"></a><a href="/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0">3.数列与生成函数</a></h3><ul>
+<li>3.1 常见数列</li>
+<li>3.2 离散卷积<ul>
+<li>3.2.1 快速傅里叶变换与加法卷积</li>
+<li>3.2.2 位运算卷积</li>
 </ul>
 </li>
-<li><p>闲话</p>
-<ul>
-<li><a href="/2020/10/24/%E8%A8%80">言</a></li>
-<li><a href="/2021/08/10/%E5%91%93%E8%AF%AD">呓语</a></li>
+<li>3.3 多项式操作<ul>
+<li>3.3.1 拉格朗日插值</li>
+<li>3.3.2 多项式牛顿迭代</li>
+<li>3.3.3 多项式求逆与除法</li>
+<li>3.3.4 多项式开方</li>
+<li>3.3.5 多点求值与快速插值</li>
+<li>3.3.6 多项式三角函数</li>
+</ul>
+</li>
+<li>3.4 生成函数<ul>
+<li>3.4.1 普通型生成函数</li>
+<li>3.4.2 指数型生成函数</li>
 </ul>
 </li>
 </ul>
 ]]></content>
       <tags>
-        <tag>随笔</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【所谓讲义·三】数论</title>
+    <url>/2021/04/26/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%89%E3%80%91%E6%95%B0%E8%AE%BA/</url>
+    <content><![CDATA[<p>咕。</p>
+<h3 id="1-整除与质数"><a href="#1-整除与质数" class="headerlink" title="1.整除与质数"></a>1.整除与质数</h3><ul>
+<li>1.1 整除<ul>
+<li>1.1.1 算术基本定理</li>
+<li>1.1.2 约数分解<ul>
+<li>1.1.2.1 试除法 </li>
+<li>1.1.2.2 倍数法</li>
+<li>1.1.2.3 阶乘的约数分解 </li>
+</ul>
+</li>
+<li>1.1.3 最大公约数与最小公倍数<ul>
+<li>1.1.3.1 欧几里得算法</li>
+<li>1.1.3.2 二进制算法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1.2 质数<ul>
+<li>1.2.1 质数测试</li>
+<li>1.2.1 质数筛法<ul>
+<li>1.2.2.1 埃氏筛法</li>
+<li>1.2.2.2 欧拉筛法 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-线性同余"><a href="#2-线性同余" class="headerlink" title="2.线性同余"></a>2.线性同余</h3><ul>
+<li>2.1 同余的基本性质</li>
+<li>2.2 线性同余方程<ul>
+<li>2.2.1 裴蜀定理</li>
+<li>2.2.2 扩展欧几里得算法</li>
+<li>2.2.3 乘法逆元</li>
+</ul>
+</li>
+<li>2.3 线性同余方程组<ul>
+<li>2.3.1 中国剩余定理</li>
+<li>2.3.2 扩展中国剩余定理</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-阶乘相关同余"><a href="#3-阶乘相关同余" class="headerlink" title="3.阶乘相关同余"></a>3.阶乘相关同余</h3><ul>
+<li>3.1 威尔逊定理</li>
+<li>3.2 卢卡斯定理</li>
+<li>3.3 库默尔定理</li>
+<li>3.4 扩展卢卡斯</li>
+</ul>
+<h3 id="4-高次同余"><a href="#4-高次同余" class="headerlink" title="4.高次同余"></a>4.高次同余</h3><ul>
+<li>4.1 欧拉定理<ul>
+<li>4.1.1 欧拉定理</li>
+<li>4.1.2 费马小定理</li>
+<li>4.1.3 扩展欧拉定理</li>
+<li>4.1.4 Miller-Rabin 质数测试</li>
+<li>4.1.5 Pollar-Rho 质因数分解</li>
+</ul>
+</li>
+<li>4.2 离散对数<ul>
+<li>4.2.1 原根</li>
+<li>4.2.2 BSGS</li>
+<li>4.2.3 扩展 BSGS</li>
+<li>4.2.4 整数模 $n$ 乘法群</li>
+</ul>
+</li>
+<li>4.3 二次剩余</li>
+</ul>
+<h3 id="5-数论函数"><a href="#5-数论函数" class="headerlink" title="5.数论函数"></a>5.数论函数</h3><ul>
+<li>5.1 数论函数变换<ul>
+<li>5.1.1 积性函数</li>
+<li>5.1.2 狄利克雷卷积</li>
+<li>5.1.3 狄利克雷生成函数</li>
+</ul>
+</li>
+<li>5.2 亚线性前缀和筛法<ul>
+<li>5.2.1 杜教筛</li>
+<li>5.2.2 min_25 筛</li>
+<li>5.2.3 Powerful Numbers</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【所谓讲义·六】线性代数</title>
+    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
+    <content><![CDATA[<p>留坑。</p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【所谓讲义·五】动态规划</title>
+    <url>/2021/06/17/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%94%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<h2 id="1-状态设计模型"><a href="#1-状态设计模型" class="headerlink" title="1.状态设计模型"></a>1.状态设计模型</h2><ul>
+<li>1.1 子序列问题<ul>
+<li>1.1.1 最长单调子序列</li>
+<li>1.1.2 最长公共子序列</li>
+</ul>
+</li>
+<li>1.2 背包问题<ul>
+<li>1.2.1 01 背包与完全背包</li>
+<li>1.2.2 多重背包</li>
+<li>1.2.3 分组背包</li>
+</ul>
+</li>
+<li>1.3 区间问题<ul>
+<li>1.3.1 划分方法</li>
+<li>1.3.2 合并方法</li>
+</ul>
+</li>
+<li>1.4 数位问题</li>
+<li>1.5 树上问题</li>
+<li>1.6 状态压缩<ul>
+<li>1.6.1 用集合压缩状态</li>
+<li>1.6.2 基于连通性的压缩方法</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-常见优化方案"><a href="#2-常见优化方案" class="headerlink" title="2.常见优化方案"></a>2.常见优化方案</h2><ul>
+<li>1.1 矩阵优化</li>
+<li>1.2 数据结构优化<ul>
+<li>1.2.1 前缀和</li>
+<li>1.2.2 单调队列</li>
+<li>1.2.3 悬线法与单调栈</li>
+</ul>
+</li>
+<li>1.3 决策单调性</li>
+<li>1.4 斜率优化</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -477,6 +448,35 @@
 ]]></content>
       <tags>
         <tag>大事祭</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>册页</title>
+    <url>/2021/06/10/%E5%86%8C%E9%A1%B5/</url>
+    <content><![CDATA[<ul>
+<li><p>人物杂谈</p>
+<ul>
+<li><a href="/2021/04/11/%E5%AD%A6%E9%95%BF%E4%BB%AC">学长们</a></li>
+<li><a href="/2021/07/27/%E9%92%9F%E7%99%BD">钟白</a></li>
+</ul>
+</li>
+<li><p>比赛游记</p>
+<ul>
+<li><a href="/2019/10/26/CSP-2019-%E6%B8%B8%E8%AE%B0">CSP 2019 游记</a></li>
+<li><a href="/2020/10/12/CSP-S-2020-NOIP-2020-%E6%97%A5%E8%AE%B0%E4%B8%8E%E6%B8%B8%E8%AE%B0">CSP-S 2020 &amp; NOIP 2020 日记与游记</a></li>
+<li><a href="/2021/04/11/CQOI-2021-%E6%B8%B8%E8%AE%B0">CQOI 2021 游记</a></li>
+</ul>
+</li>
+<li><p>闲话</p>
+<ul>
+<li><a href="/2020/10/24/%E8%A8%80">言</a></li>
+<li><a href="/2021/08/10/%E5%91%93%E8%AF%AD">呓语</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
