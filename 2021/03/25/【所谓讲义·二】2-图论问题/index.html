@@ -20,28 +20,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;psephurusgladius.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="数据结构讲义第三节。">
+<meta name="description" content="图论讲义第二节。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【所谓讲义·一】3.区间问题的处理">
-<meta property="og:url" content="https://psephurusgladius.github.io/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86/index.html">
+<meta property="og:title" content="【所谓讲义·二】2.图论问题">
+<meta property="og:url" content="https://psephurusgladius.github.io/2021/03/25/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%912-%E5%9B%BE%E8%AE%BA%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="白鲟鱼缸">
-<meta property="og:description" content="数据结构讲义第三节。">
+<meta property="og:description" content="图论讲义第二节。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-11T08:54:05.000Z">
-<meta property="article:modified_time" content="2021-08-08T08:48:53.770Z">
+<meta property="article:published_time" content="2021-03-25T07:01:03.000Z">
+<meta property="article:modified_time" content="2021-08-23T07:36:39.299Z">
 <meta property="article:author" content="白鲟">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://psephurusgladius.github.io/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86/">
+<link rel="canonical" href="https://psephurusgladius.github.io/2021/03/25/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%912-%E5%9B%BE%E8%AE%BA%E9%97%AE%E9%A2%98/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;03&#x2F;11&#x2F;%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;03&#x2F;11&#x2F;【所谓讲义·一】3-区间问题的处理&#x2F;&quot;,&quot;title&quot;:&quot;【所谓讲义·一】3.区间问题的处理&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;psephurusgladius.github.io&#x2F;2021&#x2F;03&#x2F;25&#x2F;%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%912-%E5%9B%BE%E8%AE%BA%E9%97%AE%E9%A2%98&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;03&#x2F;25&#x2F;【所谓讲义·二】2-图论问题&#x2F;&quot;,&quot;title&quot;:&quot;【所谓讲义·二】2.图论问题&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>【所谓讲义·一】3.区间问题的处理 | 白鲟鱼缸</title><meta name="robots" content="noindex">
+<title>【所谓讲义·二】2.图论问题 | 白鲟鱼缸</title><meta name="robots" content="noindex">
   
 
 
@@ -149,7 +149,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-%E5%88%86%E5%9D%97"><span class="nav-text">3.3 分块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-1-%E5%88%86%E5%9D%97"><span class="nav-text">3.3.1 分块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-2-%E8%8E%AB%E9%98%9F"><span class="nav-text">3.3.2 莫队</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-2-1-%E6%99%AE%E9%80%9A%E8%8E%AB%E9%98%9F"><span class="nav-text">3.3.2.1 普通莫队</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84"><span class="nav-text">3.4 树状数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">3.5 线段树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-1-%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="nav-text">3.5.1 线段树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-2-01-trie"><span class="nav-text">3.5.2 01 trie</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-4-%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6"><span class="nav-text">3.5.4 线段树合并</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E8%BF%9E%E9%80%9A%E6%80%A7"><span class="nav-text">2.3 连通性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2-2-SAT-%E9%97%AE%E9%A2%98"><span class="nav-text">2.3.2 2-SAT 问题</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -208,7 +208,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://psephurusgladius.github.io/2021/03/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%913-%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98%E7%9A%84%E5%A4%84%E7%90%86/">
+    <link itemprop="mainEntityOfPage" href="https://psephurusgladius.github.io/2021/03/25/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%912-%E5%9B%BE%E8%AE%BA%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -221,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          【所谓讲义·一】3.区间问题的处理
+          【所谓讲义·二】2.图论问题
         </h1>
 
         <div class="post-meta-container">
@@ -232,20 +232,20 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-03-11 16:54:05" itemprop="dateCreated datePublished" datetime="2021-03-11T16:54:05+08:00">2021-03-11</time>
+      <time title="创建时间：2021-03-25 15:01:03" itemprop="dateCreated datePublished" datetime="2021-03-25T15:01:03+08:00">2021-03-25</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-08-08 16:48:53" itemprop="dateModified" datetime="2021-08-08T16:48:53+08:00">2021-08-08</time>
+        <time title="修改时间：2021-08-23 15:36:39" itemprop="dateModified" datetime="2021-08-23T15:36:39+08:00">2021-08-23</time>
       </span>
 
   
 </div>
 
-            <div class="post-description">数据结构讲义第三节。</div>
+            <div class="post-description">图论讲义第二节。</div>
         </div>
       </header>
 
@@ -253,25 +253,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="3-3-分块"><a href="#3-3-分块" class="headerlink" title="3.3 分块"></a>3.3 分块</h2><h3 id="3-3-1-分块"><a href="#3-3-1-分块" class="headerlink" title="3.3.1 分块"></a>3.3.1 分块</h3><p>朴素的算法修改复杂度为 $\operatorname{O}(1)$，查询为 $\operatorname{O}(n)$。</p>
-<p>考虑根号平衡。将序列平均分为 $\operatorname{O}(\sqrt n)$ 块，每次修改与询问只会访问到 $\operatorname{O}(\sqrt n)$ 个整块和长度为 $\operatorname{O}(\sqrt n)$ 的散块，故复杂度均为 $\operatorname{O}(\sqrt n)$。</p>
-<p>泛用性很强，但时间复杂度较高。根据问题不同，可取不同的块长。</p>
-<h3 id="3-3-2-莫队"><a href="#3-3-2-莫队" class="headerlink" title="3.3.2 莫队"></a>3.3.2 莫队</h3><p>是一种基于分块的离线算法。</p>
-<p>可参考<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/PsephurusGladius-zdx/ji-chu-mo-dui-suan-fa-xue-xi-bi-ji">基础莫队算法学习笔记</a>与<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/PsephurusGladius-zdx/hui-gun-mu-dui-yu-dai-xiu-mu-dui-xue-xi-bi-ji">回滚莫队与带修莫队学习笔记</a>。</p>
-<h4 id="3-3-2-1-普通莫队"><a href="#3-3-2-1-普通莫队" class="headerlink" title="3.3.2.1 普通莫队"></a>3.3.2.1 普通莫队</h4><p>是一种静态离线算法。</p>
-<p>考虑一种在特殊数据中表现良好的暴力算法：将上次询问的左右端点逐步移动至当前询问，同时维护当前信息。若每次移动的距离足够小，则该算法表现较好。</p>
-<p>考虑通过离线处理询问使得处理询问的顺序满足该算法时间复杂度较小的条件。对序列进行分块，设块长为 $s$，按左端点所在块的顺序处理每个询问。若左端点所在块相同，则按右端点顺序处理。左端点移动的总长为 $\operatorname{O}(qs+n)$，右端点移动的总长为 $\operatorname{O}(\dfrac{n^2}{s})$。根据均值不等式，取 $s=\dfrac{n}{\sqrt{q}}$，总复杂度为 $\operatorname{O}(n\sqrt{q})$。</p>
-<h2 id="3-4-树状数组"><a href="#3-4-树状数组" class="headerlink" title="3.4 树状数组"></a>3.4 树状数组</h2><p>一种基于倍增的轻型数据结构，每个结点维护 $[i-\operatorname{lowbit}(i)+1,i]$ 一段内的信息。代码简单，常数较小。缺点是只能维护可减的信息。</p>
-<p>查询时直接按位分为 $\operatorname{O}(\log n)$ 个小区间之并即可。注意到包含 $i$ 所代表区间的最小区间的编号为 $i+\operatorname{lowbit}(i)$，向上不断修改即可。</p>
-<p>容易获知修改与查询复杂度均为 $\operatorname{O}(\log n)$。</p>
-<h2 id="3-5-线段树"><a href="#3-5-线段树" class="headerlink" title="3.5 线段树"></a>3.5 线段树</h2><h3 id="3-5-1-线段树"><a href="#3-5-1-线段树" class="headerlink" title="3.5.1 线段树"></a>3.5.1 线段树</h3><p>一种基于二分的区间树。每个结点维护一段区间的信息，其左右结点各维护该区间的一半。</p>
-<h3 id="3-5-2-01-trie"><a href="#3-5-2-01-trie" class="headerlink" title="3.5.2 01 trie"></a>3.5.2 01 trie</h3><p>将序列长度扩展到 $2^k$，则可得到线段树的一种特化形式——01 trie。</p>
-<p>对于第 $i$ 层结点，其左右儿子维护的区间所包含的点的二进制第 $k-i+1$ 位分别为 $0$ 与 $1$。这使得它可以方便地用于解决一些有关二进制位的问题。相反地，可以尝试使用普通线段树代替它所能够解决的问题。</p>
-<p>由于上述性质，它也可以被视作一棵存放 $01$ 串的字典树。</p>
-<h3 id="3-5-4-线段树合并"><a href="#3-5-4-线段树合并" class="headerlink" title="3.5.4 线段树合并"></a>3.5.4 线段树合并</h3><p>考虑对多棵线段树执行一些修改和查询操作，并支持将一棵树上的信息合并到另一棵树上。</p>
-<p>若每次修改的线段树数量为常数且合并单向、不重复、不可逆，则对于每两棵线段树的合并，可以从根遍历，合并两者共有结点的信息，并在访问到仅一棵树具有的结点时将其拷贝到另一棵树上。特别地，在合并后其中一棵树信息失效的题目中，可不拷贝结点而仅仅改变树上指针。</p>
-<p>如此访问到的结点个数，总和为修改次数与结点深度的积。容易得知时间复杂度为 $\operatorname{O}(n\log n)$。</p>
-<p>例题：P4556,P3224,P3521。</p>
+        <h2 id="2-3-连通性"><a href="#2-3-连通性" class="headerlink" title="2.3 连通性"></a>2.3 连通性</h2><h3 id="2-3-2-2-SAT-问题"><a href="#2-3-2-2-SAT-问题" class="headerlink" title="2.3.2 2-SAT 问题"></a>2.3.2 2-SAT 问题</h3><p>SAT 问题，或称布尔可满足性问题，是一类典型的 NP 完全问题。然而，其中的特殊情况 2-SAT 问题在多项式时间内是可解的。通俗地讲，2-SAT 问题，指给出若干个形如 $x_i \vee x_j$ 的方程，求出满足所有条件的一组解。</p>
+<p>问题可转化为 $(\neg x_i \rightarrow x_j)\wedge(\neg x_j \rightarrow x_i)$。如此出现了变量间的关系，尝试转化为图论问题。</p>
+<p>对于每一对 $x_i,x_j$，从 $\neg x_i$ 向 $x_j$ 连边，$\neg x_j$ 向 $x_i$ 连边，每条有向边表示前者为真蕴含后者为真。根据蕴含的传递性，每一个强连通分量内的必同为真或同为假。因此，若 $\neg x_i$ 与 $x_i$ 同属于一个强连通分量，方程组必定无解。</p>
+<p>现在说明未出现上述情况则必定有解，尝试构造出一组可行解。由于蕴含的传递性，若一个点所代表的值为真，它能够到达的所有点必定均为真。因此，对缩点后的图进行拓扑排序，并贪心地使得 $x_i$ 与 $\neg x_i$ 中拓扑序较大者为真，可以保证 $x_i$ 与 $\neg x_i$ 间不会同时为真。同时可以证明两两之间如此构造无矛盾。关于这一贪心构造的正确性证明，在这里暂时略去。</p>
 <!-- flag of hidden posts -->
     </div>
 
