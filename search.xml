@@ -332,6 +332,50 @@
       </tags>
   </entry>
   <entry>
+    <title>【所谓讲义·五】动态规划</title>
+    <url>/2021/06/17/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%94%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<h2 id="1-状态设计模型"><a href="#1-状态设计模型" class="headerlink" title="1.状态设计模型"></a>1.状态设计模型</h2><ul>
+<li>1.1 子序列问题<ul>
+<li>1.1.1 最长单调子序列</li>
+<li>1.1.2 最长公共子序列</li>
+</ul>
+</li>
+<li>1.2 背包问题<ul>
+<li>1.2.1 01 背包与完全背包</li>
+<li>1.2.2 多重背包</li>
+<li>1.2.3 分组背包</li>
+</ul>
+</li>
+<li>1.3 区间问题<ul>
+<li>1.3.1 划分方法</li>
+<li>1.3.2 合并方法</li>
+</ul>
+</li>
+<li>1.4 数位问题</li>
+<li>1.5 树上问题</li>
+<li>1.6 状态压缩<ul>
+<li>1.6.1 用集合压缩状态</li>
+<li>1.6.2 基于连通性的压缩方法</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-常见优化方案"><a href="#2-常见优化方案" class="headerlink" title="2.常见优化方案"></a>2.常见优化方案</h2><ul>
+<li>1.1 矩阵优化</li>
+<li>1.2 数据结构优化<ul>
+<li>1.2.1 前缀和</li>
+<li>1.2.2 单调队列</li>
+<li>1.2.3 悬线法与单调栈</li>
+</ul>
+</li>
+<li>1.3 决策单调性</li>
+<li>1.4 斜率优化</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【所谓讲义·二】图论</title>
     <url>/2021/03/20/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%91%E5%9B%BE%E8%AE%BA/</url>
     <content><![CDATA[<p>框架有待增补与改进。</p>
@@ -463,50 +507,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·五】动态规划</title>
-    <url>/2021/06/17/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%94%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[<h2 id="1-状态设计模型"><a href="#1-状态设计模型" class="headerlink" title="1.状态设计模型"></a>1.状态设计模型</h2><ul>
-<li>1.1 子序列问题<ul>
-<li>1.1.1 最长单调子序列</li>
-<li>1.1.2 最长公共子序列</li>
-</ul>
-</li>
-<li>1.2 背包问题<ul>
-<li>1.2.1 01 背包与完全背包</li>
-<li>1.2.2 多重背包</li>
-<li>1.2.3 分组背包</li>
-</ul>
-</li>
-<li>1.3 区间问题<ul>
-<li>1.3.1 划分方法</li>
-<li>1.3.2 合并方法</li>
-</ul>
-</li>
-<li>1.4 数位问题</li>
-<li>1.5 树上问题</li>
-<li>1.6 状态压缩<ul>
-<li>1.6.1 用集合压缩状态</li>
-<li>1.6.2 基于连通性的压缩方法</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-常见优化方案"><a href="#2-常见优化方案" class="headerlink" title="2.常见优化方案"></a>2.常见优化方案</h2><ul>
-<li>1.1 矩阵优化</li>
-<li>1.2 数据结构优化<ul>
-<li>1.2.1 前缀和</li>
-<li>1.2.2 单调队列</li>
-<li>1.2.3 悬线法与单调栈</li>
-</ul>
-</li>
-<li>1.3 决策单调性</li>
-<li>1.4 斜率优化</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【所谓讲义·四】字符串</title>
     <url>/2021/05/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<h3 id="1-基础算法"><a href="#1-基础算法" class="headerlink" title="1.基础算法"></a>1.基础算法</h3><ul>
@@ -575,35 +575,6 @@
       </tags>
   </entry>
   <entry>
-    <title>历届联赛题解</title>
-    <url>/2021/06/10/%E5%8E%86%E5%B1%8A%E8%81%94%E8%B5%9B%E9%A2%98%E8%A7%A3/</url>
-    <content><![CDATA[<ul>
-<li><a href="/2020/09/29/NOIP-2014-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2014 提高组</a></li>
-<li><a href="/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2015 提高组</a></li>
-<li><a href="/2020/08/12/NOIP-2016-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2016 提高组</a></li>
-<li><a href="/2020/08/10/NOIP-2017-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2017 提高组</a></li>
-<li><a href="/2020/08/04/NOIP-2018-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2018 提高组</a></li>
-<li><a href="/2020/08/02/CSP-S-2019-%E9%A2%98%E8%A7%A3">CSP-S 2019</a></li>
-<li><a href="/2020/12/19/NOIP-2020-%E9%A2%98%E8%A7%A3">NOIP 2020</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>题目选做</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客更新日志</title>
-    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
-<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
-<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
-<p>同时安装了加密系统。学习方面的密码可以找博主索取。生活方面的随缘猜吧。</p>
-]]></content>
-      <tags>
-        <tag>大事祭</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>册页</title>
     <url>/2021/06/10/%E5%86%8C%E9%A1%B5/</url>
     <content><![CDATA[<ul>
@@ -633,36 +604,15 @@
       </tags>
   </entry>
   <entry>
-    <title>计划</title>
-    <url>/2021/07/11/%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<ul>
-<li>July 11th~20th：4+ 集训队作业/day，完成 Part 1——failed(14/36，感人的现实)<ul>
-<li>11th: failed(1)</li>
-<li>12th: failed(2)</li>
-<li>13th: failed(3)</li>
-<li>14th: failed(1)</li>
-<li>15th: failed(0)</li>
-<li>16th: passed(4)</li>
-<li>17th: failed(1)</li>
-<li>18th: failed(0)</li>
-<li>19th: failed(1)</li>
-<li>20th: failed(1)</li>
-</ul>
-</li>
-<li>August 26th~September 1st 洛谷每日十题——(56/70，感人的现实)<ul>
-<li>26th: passed(11)</li>
-<li>27th: passed(11)</li>
-<li>28th: failed(3)</li>
-<li>29th: failed(4)</li>
-<li>30th: passed(12)</li>
-<li>31st: failed(5)</li>
-<li>1st: passed(10)</li>
-</ul>
-</li>
-</ul>
+    <title>博客更新日志</title>
+    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
+<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
+<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
+<p>同时安装了加密系统。学习方面的密码可以找博主索取。生活方面的随缘猜吧。</p>
 ]]></content>
       <tags>
-        <tag>flag</tag>
+        <tag>大事祭</tag>
       </tags>
   </entry>
   <entry>
@@ -734,6 +684,56 @@
 <h3 id="CF1400E"><a href="#CF1400E" class="headerlink" title="CF1400E"></a>CF1400E</h3><p>对序列执行区间减 $1$ 和单点减正整数两种操作，求使序列清零的最小操作次数。</p>
 <p>贪心可得若决定对执行第一种操作，则一定会选择尽量大的区间，且一定会减到出现 $0$ 为止。</p>
 <h3 id="CF1322D"><a href="#CF1322D" class="headerlink" title="CF1322D"></a>CF1322D</h3><h3 id="P2292"><a href="#P2292" class="headerlink" title="P2292"></a>P2292</h3><h3 id="CF1562E"><a href="#CF1562E" class="headerlink" title="CF1562E"></a>CF1562E</h3><h3 id="CF1556E"><a href="#CF1556E" class="headerlink" title="CF1556E"></a>CF1556E</h3><h3 id="P5110"><a href="#P5110" class="headerlink" title="P5110"></a>P5110</h3><h3 id="P2839"><a href="#P2839" class="headerlink" title="P2839"></a>P2839</h3><h3 id="P1306"><a href="#P1306" class="headerlink" title="P1306"></a>P1306</h3><h3 id="CF1559E"><a href="#CF1559E" class="headerlink" title="CF1559E"></a>CF1559E</h3><h3 id="P6255"><a href="#P6255" class="headerlink" title="P6255"></a>P6255</h3><h3 id="CF1354D"><a href="#CF1354D" class="headerlink" title="CF1354D"></a>CF1354D</h3><h3 id="P2774"><a href="#P2774" class="headerlink" title="P2774"></a>P2774</h3><h3 id="P3396"><a href="#P3396" class="headerlink" title="P3396"></a>P3396</h3><h3 id="P3482"><a href="#P3482" class="headerlink" title="P3482"></a>P3482</h3><h3 id="CF1566E"><a href="#CF1566E" class="headerlink" title="CF1566E"></a>CF1566E</h3><h3 id="AT4353"><a href="#AT4353" class="headerlink" title="AT4353"></a>AT4353</h3><h3 id="P5631"><a href="#P5631" class="headerlink" title="P5631"></a>P5631</h3><h3 id="P7735"><a href="#P7735" class="headerlink" title="P7735"></a>P7735</h3><h3 id="CF1301E"><a href="#CF1301E" class="headerlink" title="CF1301E"></a>CF1301E</h3><h3 id="P3193"><a href="#P3193" class="headerlink" title="P3193"></a>P3193</h3><h3 id="P3426"><a href="#P3426" class="headerlink" title="P3426"></a>P3426</h3><h3 id="P7294"><a href="#P7294" class="headerlink" title="P7294"></a>P7294</h3><h3 id="P1861"><a href="#P1861" class="headerlink" title="P1861"></a>P1861</h3><h3 id="P5495"><a href="#P5495" class="headerlink" title="P5495"></a>P5495</h3><h3 id="P6651"><a href="#P6651" class="headerlink" title="P6651"></a>P6651</h3><h3 id="P6652"><a href="#P6652" class="headerlink" title="P6652"></a>P6652</h3><h3 id="AT1975"><a href="#AT1975" class="headerlink" title="AT1975"></a>AT1975</h3><h3 id="AT2672"><a href="#AT2672" class="headerlink" title="AT2672"></a>AT2672</h3><h3 id="CF1012B"><a href="#CF1012B" class="headerlink" title="CF1012B"></a>CF1012B</h3><h3 id="CF582D"><a href="#CF582D" class="headerlink" title="CF582D"></a>CF582D</h3><h3 id="CF1305F"><a href="#CF1305F" class="headerlink" title="CF1305F"></a>CF1305F</h3><h3 id="CF1503E"><a href="#CF1503E" class="headerlink" title="CF1503E"></a>CF1503E</h3><h3 id="CF914H"><a href="#CF914H" class="headerlink" title="CF914H"></a>CF914H</h3><h3 id="CF1598D"><a href="#CF1598D" class="headerlink" title="CF1598D"></a>CF1598D</h3><h3 id="CF1598E"><a href="#CF1598E" class="headerlink" title="CF1598E"></a>CF1598E</h3><h3 id="CF698F"><a href="#CF698F" class="headerlink" title="CF698F"></a>CF698F</h3><h3 id="CF1320F"><a href="#CF1320F" class="headerlink" title="CF1320F"></a>CF1320F</h3><h3 id="CF960H"><a href="#CF960H" class="headerlink" title="CF960H"></a>CF960H</h3><h3 id="CF1548A"><a href="#CF1548A" class="headerlink" title="CF1548A"></a>CF1548A</h3><h3 id="CF1548C"><a href="#CF1548C" class="headerlink" title="CF1548C"></a>CF1548C</h3><h3 id="CF1548D1-amp-D2"><a href="#CF1548D1-amp-D2" class="headerlink" title="CF1548D1&amp;D2"></a>CF1548D1&amp;D2</h3><h3 id="CF1572B"><a href="#CF1572B" class="headerlink" title="CF1572B"></a>CF1572B</h3><h3 id="CF1528A"><a href="#CF1528A" class="headerlink" title="CF1528A"></a>CF1528A</h3><h3 id="CF1528B"><a href="#CF1528B" class="headerlink" title="CF1528B"></a>CF1528B</h3><h3 id="CF1528C"><a href="#CF1528C" class="headerlink" title="CF1528C"></a>CF1528C</h3><h3 id="CF1528D"><a href="#CF1528D" class="headerlink" title="CF1528D"></a>CF1528D</h3><h3 id="CF1528E"><a href="#CF1528E" class="headerlink" title="CF1528E"></a>CF1528E</h3>]]></content>
+      <tags>
+        <tag>题目选做</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计划</title>
+    <url>/2021/07/11/%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<ul>
+<li>July 11th~20th：4+ 集训队作业/day，完成 Part 1——failed(14/36，感人的现实)<ul>
+<li>11th: failed(1)</li>
+<li>12th: failed(2)</li>
+<li>13th: failed(3)</li>
+<li>14th: failed(1)</li>
+<li>15th: failed(0)</li>
+<li>16th: passed(4)</li>
+<li>17th: failed(1)</li>
+<li>18th: failed(0)</li>
+<li>19th: failed(1)</li>
+<li>20th: failed(1)</li>
+</ul>
+</li>
+<li>August 26th~September 1st 洛谷每日十题——(56/70，感人的现实)<ul>
+<li>26th: passed(11)</li>
+<li>27th: passed(11)</li>
+<li>28th: failed(3)</li>
+<li>29th: failed(4)</li>
+<li>30th: passed(12)</li>
+<li>31st: failed(5)</li>
+<li>1st: passed(10)</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>flag</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>历届联赛题解</title>
+    <url>/2021/06/10/%E5%8E%86%E5%B1%8A%E8%81%94%E8%B5%9B%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<ul>
+<li><a href="/2020/09/29/NOIP-2014-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2014 提高组</a></li>
+<li><a href="/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2015 提高组</a></li>
+<li><a href="/2020/08/12/NOIP-2016-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2016 提高组</a></li>
+<li><a href="/2020/08/10/NOIP-2017-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2017 提高组</a></li>
+<li><a href="/2020/08/04/NOIP-2018-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2018 提高组</a></li>
+<li><a href="/2020/08/02/CSP-S-2019-%E9%A2%98%E8%A7%A3">CSP-S 2019</a></li>
+<li><a href="/2020/12/19/NOIP-2020-%E9%A2%98%E8%A7%A3">NOIP 2020</a></li>
+</ul>
+]]></content>
       <tags>
         <tag>题目选做</tag>
       </tags>
