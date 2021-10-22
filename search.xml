@@ -275,6 +275,63 @@
       </tags>
   </entry>
   <entry>
+    <title>【所谓讲义·七】组合计数</title>
+    <url>/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</url>
+    <content><![CDATA[<h3 id="1-计数原理"><a href="#1-计数原理" class="headerlink" title="1.计数原理"></a>1.计数原理</h3><ul>
+<li>1.1 加法原理与乘法原理</li>
+<li>1.2 排列组合<ul>
+<li>1.2.1 排列数与组合数</li>
+<li>1.2.2 组合数相关公式</li>
+<li>1.2.3 康托展开</li>
+<li>1.2.4 排列组合经典问题</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-容斥与反演"><a href="#2-容斥与反演" class="headerlink" title="2.容斥与反演"></a>2.容斥与反演</h3><ul>
+<li>2.1 容斥原理</li>
+<li>2.2 子集反演</li>
+<li>2.3 最值反演</li>
+<li>2.4 二项式反演</li>
+<li>2.5 莫比乌斯反演</li>
+<li>2.6 单位根反演</li>
+<li>2.7 斯特林反演</li>
+</ul>
+<h3 id="3-数列与生成函数"><a href="#3-数列与生成函数" class="headerlink" title="3.数列与生成函数"></a><a href="/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0">3.数列与生成函数</a></h3><ul>
+<li>3.1 常见数列</li>
+<li>3.2  生成函数<ul>
+<li>3.2.1 普通型生成函数</li>
+<li>3.2.2 指数型生成函数</li>
+</ul>
+</li>
+<li>3.3 离散卷积<ul>
+<li>3.3.1 形式幂级数与加法卷积<ul>
+<li>3.3.1.1 快速傅里叶变换</li>
+<li>3.3.1.2 快速数论变换</li>
+</ul>
+</li>
+<li>3.3.2 集合幂级数与位运算卷积<ul>
+<li>3.3.2.1 快速莫比乌斯变换</li>
+<li>3.3.2.2 快速沃尔什变换</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3.4 多项式操作<ul>
+<li>3.4.1 拉格朗日插值</li>
+<li>3.4.2 多项式牛顿迭代</li>
+<li>3.4.3 多项式求逆与除法</li>
+<li>3.4.4 多项式开方</li>
+<li>3.4.5 多点求值与快速插值</li>
+<li>3.4.6 多项式三角函数</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【所谓讲义·二】图论</title>
     <url>/2021/03/20/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%8C%E3%80%91%E5%9B%BE%E8%AE%BA/</url>
     <content><![CDATA[<p>框架有待增补与改进。</p>
@@ -397,72 +454,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·七】组合计数</title>
-    <url>/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</url>
-    <content><![CDATA[<h3 id="1-计数原理"><a href="#1-计数原理" class="headerlink" title="1.计数原理"></a>1.计数原理</h3><ul>
-<li>1.1 加法原理与乘法原理</li>
-<li>1.2 排列组合<ul>
-<li>1.2.1 排列数与组合数</li>
-<li>1.2.2 组合数相关公式</li>
-<li>1.2.3 康托展开</li>
-<li>1.2.4 排列组合经典问题</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-容斥与反演"><a href="#2-容斥与反演" class="headerlink" title="2.容斥与反演"></a>2.容斥与反演</h3><ul>
-<li>2.1 容斥原理</li>
-<li>2.2 子集反演</li>
-<li>2.3 最值反演</li>
-<li>2.4 二项式反演</li>
-<li>2.5 莫比乌斯反演</li>
-<li>2.6 单位根反演</li>
-<li>2.7 斯特林反演</li>
-</ul>
-<h3 id="3-数列与生成函数"><a href="#3-数列与生成函数" class="headerlink" title="3.数列与生成函数"></a><a href="/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0">3.数列与生成函数</a></h3><ul>
-<li>3.1 常见数列</li>
-<li>3.2  生成函数<ul>
-<li>3.2.1 普通型生成函数</li>
-<li>3.2.2 指数型生成函数</li>
-</ul>
-</li>
-<li>3.3 离散卷积<ul>
-<li>3.3.1 形式幂级数与加法卷积<ul>
-<li>3.3.1.1 快速傅里叶变换</li>
-<li>3.3.1.2 快速数论变换</li>
-</ul>
-</li>
-<li>3.3.2 集合幂级数与位运算卷积<ul>
-<li>3.3.2.1 快速莫比乌斯变换</li>
-<li>3.3.2.2 快速沃尔什变换</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>3.4 多项式操作<ul>
-<li>3.4.1 拉格朗日插值</li>
-<li>3.4.2 多项式牛顿迭代</li>
-<li>3.4.3 多项式求逆与除法</li>
-<li>3.4.4 多项式开方</li>
-<li>3.4.5 多点求值与快速插值</li>
-<li>3.4.6 多项式三角函数</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·六】线性代数</title>
-    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
-    <content><![CDATA[<p>留坑。</p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【所谓讲义·五】动态规划</title>
     <url>/2021/06/17/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%94%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[<h2 id="1-状态设计模型"><a href="#1-状态设计模型" class="headerlink" title="1.状态设计模型"></a>1.状态设计模型</h2><ul>
@@ -507,6 +498,56 @@
       </tags>
   </entry>
   <entry>
+    <title>【所谓讲义·六】线性代数</title>
+    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
+    <content><![CDATA[<p>留坑。</p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【所谓讲义·零】方法论</title>
+    <url>/2021/09/20/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E9%9B%B6%E3%80%91%E6%96%B9%E6%B3%95%E8%AE%BA/</url>
+    <content><![CDATA[<p>是很想写但写不动的内容。从去年开始。</p>
+<p>目前进度为近似于零。</p>
+<h3 id="1-问题的转化"><a href="#1-问题的转化" class="headerlink" title="1.问题的转化"></a><a href="">1.问题的转化</a></h3><ul>
+<li>1.1 条件的变换<ul>
+<li>1.1.1 等价转化</li>
+<li>1.1.2 非等价转化</li>
+</ul>
+</li>
+<li>1.2 关联的利用<ul>
+<li>1.2.1 补集转化</li>
+<li>1.2.2 过程逆转</li>
+</ul>
+</li>
+<li>1.3 对象的分配<ul>
+<li>1.3.1 个体贡献</li>
+<li>1.3.2 规模缩减</li>
+<li>1.3.3 全局处理</li>
+</ul>
+</li>
+<li>1.4 分类讨论</li>
+</ul>
+<h3 id="2-性质的探索"><a href="#2-性质的探索" class="headerlink" title="2.性质的探索"></a><a href="">2.性质的探索</a></h3><ul>
+<li>2.1 单调性</li>
+<li>2.2 连续性</li>
+</ul>
+<h3 id="3-解法的取得"><a href="#3-解法的取得" class="headerlink" title="3.解法的取得"></a><a href="">3.解法的取得</a></h3><ul>
+<li>3.1 类比</li>
+<li>3.2 优化<ul>
+<li>3.2.1 剪枝</li>
+<li>3.2.2 复用</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【所谓讲义·四】字符串</title>
     <url>/2021/05/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<h3 id="1-基础算法"><a href="#1-基础算法" class="headerlink" title="1.基础算法"></a>1.基础算法</h3><ul>
@@ -528,15 +569,6 @@
 <li>4.4 后缀自动机</li>
 <li>4.5 广义后缀自动机</li>
 </ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·零】方法论</title>
-    <url>/2021/09/20/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E9%9B%B6%E3%80%91%E6%96%B9%E6%B3%95%E8%AE%BA/</url>
-    <content><![CDATA[<p>是很想写但写不动的内容。从去年开始。</p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -601,42 +633,9 @@
       </tags>
   </entry>
   <entry>
-    <title>计划</title>
-    <url>/2021/07/11/%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<ul>
-<li>July 11th~20th：4+ 集训队作业/day，完成 Part 1——failed(14/36，感人的现实)<ul>
-<li>11th: failed(1)</li>
-<li>12th: failed(2)</li>
-<li>13th: failed(3)</li>
-<li>14th: failed(1)</li>
-<li>15th: failed(0)</li>
-<li>16th: passed(4)</li>
-<li>17th: failed(1)</li>
-<li>18th: failed(0)</li>
-<li>19th: failed(1)</li>
-<li>20th: failed(1)</li>
-</ul>
-</li>
-<li>August 26th~September 1st 洛谷每日十题——(56/70，感人的现实)<ul>
-<li>26th: passed(11)</li>
-<li>27th: passed(11)</li>
-<li>28th: failed(3)</li>
-<li>29th: failed(4)</li>
-<li>30th: passed(12)</li>
-<li>31st: failed(5)</li>
-<li>1st: passed(10)</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>flag</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>联赛复习杂题</title>
     <url>/2021/08/26/%E8%81%94%E8%B5%9B%E5%A4%8D%E4%B9%A0%E6%9D%82%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="P3205"><a href="#P3205" class="headerlink" title="P3205"></a>P3205</h3><p>对数列 ${a_n}$，按以下方式生成一个数列 ${b_n}$：从 $1$ 到 $n$ 枚举，若 $a_i&gt;a_{i-1}$，则将 $a_i$ 放在当前生成的数列起始，否则放在 数列末尾。给定数列 ${b_n}$，求满足条件的 ${a_n}$ 个数。</p>
+    <content><![CDATA[<h3 id="P3205"><a href="#P3205" class="headerlink" title="P3205"></a>P3205</h3><p>对数列 ${a_n}$，按以下方式生成一个数列 ${b_n}$：从 $1$ 到 $n$ 枚举，若 $a_i&gt;a_{i-1}$，则将 $a_i$ 放在当前生成的数列起始，否则放在数列末尾。给定数列 ${b_n}$，求满足条件的 ${a_n}$ 个数。</p>
 <p>发现扩展方式一直连续。于是区间 DP。设 $f_{i,j,k}$ 表示当前扩展了区间 $[i,j]$ 并位于区间左侧/右侧的方案数，容易 $\operatorname{O}(1)$ 转移。</p>
 <p>类似的题目还有 P6879。</p>
 <h3 id="CF618F"><a href="#CF618F" class="headerlink" title="CF618F"></a>CF618F</h3><p>给你两个元素个数都为 $n$ 的可重集 $a,b$，每个元素的大小 $x\in [1,n]$。找出 $a,b$ 子集，使其元素和相等。</p>
@@ -701,9 +700,42 @@
 <p>KMP 可用于求最大 $\operatorname{border}$。由于 $\operatorname{border}$ 的传递性，前缀的最大 $\operatorname{border}$ 的最小 $\operatorname{border}$（若无 $\operatorname{border}$ 则为自身）即为该前缀的最小 $\operatorname{border}$。</p>
 <h3 id="CF1400E"><a href="#CF1400E" class="headerlink" title="CF1400E"></a>CF1400E</h3><p>对序列执行区间减 $1$ 和单点减正整数两种操作，求使序列清零的最小操作次数。</p>
 <p>贪心可得若决定对执行第一种操作，则一定会选择尽量大的区间，且一定会减到出现 $0$ 为止。</p>
-<h3 id="CF1322D"><a href="#CF1322D" class="headerlink" title="CF1322D"></a>CF1322D</h3><h3 id="P2292"><a href="#P2292" class="headerlink" title="P2292"></a>P2292</h3><h3 id="CF1562E"><a href="#CF1562E" class="headerlink" title="CF1562E"></a>CF1562E</h3><h3 id="CF1556E"><a href="#CF1556E" class="headerlink" title="CF1556E"></a>CF1556E</h3><h3 id="P5110"><a href="#P5110" class="headerlink" title="P5110"></a>P5110</h3><h3 id="P2839"><a href="#P2839" class="headerlink" title="P2839"></a>P2839</h3><h3 id="P1306"><a href="#P1306" class="headerlink" title="P1306"></a>P1306</h3><h3 id="CF1559E"><a href="#CF1559E" class="headerlink" title="CF1559E"></a>CF1559E</h3><h3 id="P6255"><a href="#P6255" class="headerlink" title="P6255"></a>P6255</h3><h3 id="CF1354D"><a href="#CF1354D" class="headerlink" title="CF1354D"></a>CF1354D</h3><h3 id="P2774"><a href="#P2774" class="headerlink" title="P2774"></a>P2774</h3><h3 id="P3396"><a href="#P3396" class="headerlink" title="P3396"></a>P3396</h3><h3 id="P3482"><a href="#P3482" class="headerlink" title="P3482"></a>P3482</h3><h3 id="CF1566E"><a href="#CF1566E" class="headerlink" title="CF1566E"></a>CF1566E</h3><h3 id="AT4353"><a href="#AT4353" class="headerlink" title="AT4353"></a>AT4353</h3><h3 id="P5631"><a href="#P5631" class="headerlink" title="P5631"></a>P5631</h3><h3 id="P7735"><a href="#P7735" class="headerlink" title="P7735"></a>P7735</h3><h3 id="CF1301E"><a href="#CF1301E" class="headerlink" title="CF1301E"></a>CF1301E</h3><h3 id="P3193"><a href="#P3193" class="headerlink" title="P3193"></a>P3193</h3><h3 id="P3426"><a href="#P3426" class="headerlink" title="P3426"></a>P3426</h3>]]></content>
+<h3 id="CF1322D"><a href="#CF1322D" class="headerlink" title="CF1322D"></a>CF1322D</h3><h3 id="P2292"><a href="#P2292" class="headerlink" title="P2292"></a>P2292</h3><h3 id="CF1562E"><a href="#CF1562E" class="headerlink" title="CF1562E"></a>CF1562E</h3><h3 id="CF1556E"><a href="#CF1556E" class="headerlink" title="CF1556E"></a>CF1556E</h3><h3 id="P5110"><a href="#P5110" class="headerlink" title="P5110"></a>P5110</h3><h3 id="P2839"><a href="#P2839" class="headerlink" title="P2839"></a>P2839</h3><h3 id="P1306"><a href="#P1306" class="headerlink" title="P1306"></a>P1306</h3><h3 id="CF1559E"><a href="#CF1559E" class="headerlink" title="CF1559E"></a>CF1559E</h3><h3 id="P6255"><a href="#P6255" class="headerlink" title="P6255"></a>P6255</h3><h3 id="CF1354D"><a href="#CF1354D" class="headerlink" title="CF1354D"></a>CF1354D</h3><h3 id="P2774"><a href="#P2774" class="headerlink" title="P2774"></a>P2774</h3><h3 id="P3396"><a href="#P3396" class="headerlink" title="P3396"></a>P3396</h3><h3 id="P3482"><a href="#P3482" class="headerlink" title="P3482"></a>P3482</h3><h3 id="CF1566E"><a href="#CF1566E" class="headerlink" title="CF1566E"></a>CF1566E</h3><h3 id="AT4353"><a href="#AT4353" class="headerlink" title="AT4353"></a>AT4353</h3><h3 id="P5631"><a href="#P5631" class="headerlink" title="P5631"></a>P5631</h3><h3 id="P7735"><a href="#P7735" class="headerlink" title="P7735"></a>P7735</h3><h3 id="CF1301E"><a href="#CF1301E" class="headerlink" title="CF1301E"></a>CF1301E</h3><h3 id="P3193"><a href="#P3193" class="headerlink" title="P3193"></a>P3193</h3><h3 id="P3426"><a href="#P3426" class="headerlink" title="P3426"></a>P3426</h3><h3 id="P7294"><a href="#P7294" class="headerlink" title="P7294"></a>P7294</h3><h3 id="P1861"><a href="#P1861" class="headerlink" title="P1861"></a>P1861</h3><h3 id="P5495"><a href="#P5495" class="headerlink" title="P5495"></a>P5495</h3><h3 id="P6651"><a href="#P6651" class="headerlink" title="P6651"></a>P6651</h3><h3 id="P6652"><a href="#P6652" class="headerlink" title="P6652"></a>P6652</h3><h3 id="AT1975"><a href="#AT1975" class="headerlink" title="AT1975"></a>AT1975</h3><h3 id="AT2672"><a href="#AT2672" class="headerlink" title="AT2672"></a>AT2672</h3><h3 id="CF1012B"><a href="#CF1012B" class="headerlink" title="CF1012B"></a>CF1012B</h3><h3 id="CF582D"><a href="#CF582D" class="headerlink" title="CF582D"></a>CF582D</h3><h3 id="CF1305F"><a href="#CF1305F" class="headerlink" title="CF1305F"></a>CF1305F</h3><h3 id="CF1503E"><a href="#CF1503E" class="headerlink" title="CF1503E"></a>CF1503E</h3><h3 id="CF914H"><a href="#CF914H" class="headerlink" title="CF914H"></a>CF914H</h3><h3 id="CF1598D"><a href="#CF1598D" class="headerlink" title="CF1598D"></a>CF1598D</h3><h3 id="CF1598E"><a href="#CF1598E" class="headerlink" title="CF1598E"></a>CF1598E</h3><h3 id="CF698F"><a href="#CF698F" class="headerlink" title="CF698F"></a>CF698F</h3><h3 id="CF1320F"><a href="#CF1320F" class="headerlink" title="CF1320F"></a>CF1320F</h3><h3 id="CF960H"><a href="#CF960H" class="headerlink" title="CF960H"></a>CF960H</h3><h3 id="CF1548A"><a href="#CF1548A" class="headerlink" title="CF1548A"></a>CF1548A</h3><h3 id="CF1548C"><a href="#CF1548C" class="headerlink" title="CF1548C"></a>CF1548C</h3><h3 id="CF1548D1-amp-D2"><a href="#CF1548D1-amp-D2" class="headerlink" title="CF1548D1&amp;D2"></a>CF1548D1&amp;D2</h3><h3 id="CF1572B"><a href="#CF1572B" class="headerlink" title="CF1572B"></a>CF1572B</h3><h3 id="CF1528A"><a href="#CF1528A" class="headerlink" title="CF1528A"></a>CF1528A</h3><h3 id="CF1528B"><a href="#CF1528B" class="headerlink" title="CF1528B"></a>CF1528B</h3><h3 id="CF1528C"><a href="#CF1528C" class="headerlink" title="CF1528C"></a>CF1528C</h3><h3 id="CF1528D"><a href="#CF1528D" class="headerlink" title="CF1528D"></a>CF1528D</h3><h3 id="CF1528E"><a href="#CF1528E" class="headerlink" title="CF1528E"></a>CF1528E</h3>]]></content>
       <tags>
         <tag>题目选做</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计划</title>
+    <url>/2021/07/11/%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<ul>
+<li>July 11th~20th：4+ 集训队作业/day，完成 Part 1——failed(14/36，感人的现实)<ul>
+<li>11th: failed(1)</li>
+<li>12th: failed(2)</li>
+<li>13th: failed(3)</li>
+<li>14th: failed(1)</li>
+<li>15th: failed(0)</li>
+<li>16th: passed(4)</li>
+<li>17th: failed(1)</li>
+<li>18th: failed(0)</li>
+<li>19th: failed(1)</li>
+<li>20th: failed(1)</li>
+</ul>
+</li>
+<li>August 26th~September 1st 洛谷每日十题——(56/70，感人的现实)<ul>
+<li>26th: passed(11)</li>
+<li>27th: passed(11)</li>
+<li>28th: failed(3)</li>
+<li>29th: failed(4)</li>
+<li>30th: passed(12)</li>
+<li>31st: failed(5)</li>
+<li>1st: passed(10)</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>flag</tag>
       </tags>
   </entry>
   <entry>
