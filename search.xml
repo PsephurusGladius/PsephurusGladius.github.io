@@ -40,6 +40,55 @@
       </tags>
   </entry>
   <entry>
+    <title>ICPC 杂题浏览</title>
+    <url>/2021/09/13/ICPC-%E6%9D%82%E9%A2%98%E6%B5%8F%E8%A7%88/</url>
+    <content><![CDATA[<h3 id="题源"><a href="#题源" class="headerlink" title="题源"></a>题源</h3><p>随机选自 <a href="https://acm.ecnu.edu.cn/wiki/index.php?title=Main_Page">EOJ Wiki</a>。</p>
+<p>大概并没看过几场。</p>
+<h3 id="2019-Asia-Shanghai-Regional-Contest"><a href="#2019-Asia-Shanghai-Regional-Contest" class="headerlink" title="2019 Asia Shanghai Regional Contest"></a><a href="https://ac.nowcoder.com/acm/contest/4370">2019 Asia Shanghai Regional Contest</a></h3><h4 id="A"><a href="#A" class="headerlink" title="A"></a>A</h4><p>平面上有一些黑格子，求由黑格子围成的矩形中两边比为 $1:2$ 的个数。</p>
+<p>只考虑 $x:y=1:2$，另一种旋转坐标轴即可。</p>
+<p>枚举矩形的一顶点并统计可作为对顶点的点数。</p>
+<p>预处理每个黑点上下左右最多延伸长度。枚举经过黑点的 $k=2$ 的直线，将坐标轴旋转至斜率为 $2$。发现每个会存在向右延伸的最远距离与向左延伸的最远距离。于是对每个点查找在其右侧且能与之相交的点数，即按点坐标降序枚举求当前点的右端点左侧已出现的左端点个数。</p>
+<h4 id="B"><a href="#B" class="headerlink" title="B"></a>B</h4><p>判断给出的串中是否存在两个串具有前缀关系。</p>
+<p>Trie 板子。</p>
+<h4 id="D"><a href="#D" class="headerlink" title="D"></a>D</h4><p>从完全图中每次移除一棵生成树的边，求最大移除数量。</p>
+<p>可得上界 $\lfloor\dfrac{n}{2}\rfloor$。</p>
+<p>考虑把所有点排成一个环，从某个点开始，向其右侧点连边，再向其左侧点连边，再向其右侧第二个点、左侧第二个点连边，以此类推，可构造出一棵树。选择前 $\lfloor\dfrac{n}{2}\rfloor$ 个点执行此操作。奇数时孤立点注意连边。</p>
+<h4 id="E"><a href="#E" class="headerlink" title="E"></a>E</h4><p>给出矩阵，可以四连通移动，每次移动至一个未访问过的格子获得价值为两者权值之积。求最大价值。</p>
+<p>事实上是最大生成树。</p>
+<h4 id="F"><a href="#F" class="headerlink" title="F"></a>F</h4><p>维护链加，链乘，链覆盖，链立方和。</p>
+<p>重链剖分加二项式展开推式子。有点无聊。</p>
+<h4 id="H"><a href="#H" class="headerlink" title="H"></a>H</h4><p>将树切割成 $k$ 块，使每块点权和的最大值最小，求该最大值。</p>
+<p>二分后从底向上贪心。由于需要使得块数最小，从小到大选择尽量多的子树与当前结点连通，再向上传。</p>
+<h4 id="J"><a href="#J" class="headerlink" title="J"></a>J</h4><p>维护十进制下插入，右移，求异或指定数的最大值，求区间异或和。</p>
+<p>十叉 Trie。操作分别为插入，根上接根，以及两个平凡操作。</p>
+<h4 id="K"><a href="#K" class="headerlink" title="K"></a>K</h4><p>保留最多的边使图中无奇环。点数不超过 $16$。</p>
+<p>二分图染色。枚举每个点的颜色即可判断剩下边数。</p>
+<h3 id="2018-Asia-Xuzhou-Regional-Contest"><a href="#2018-Asia-Xuzhou-Regional-Contest" class="headerlink" title="2018 Asia Xuzhou Regional Contest"></a><a href="https://codeforces.com/gym/102012">2018 Asia Xuzhou Regional Contest</a></h3><h4 id="A-1"><a href="#A-1" class="headerlink" title="A"></a>A</h4><p>求所有最小生成树的边权和。边权在大范围内随机。</p>
+<p>难以随机到同边权，因此只需求最小生成树。</p>
+<h4 id="F-1"><a href="#F-1" class="headerlink" title="F"></a>F</h4><p>求 $S$ 中本质不同非空子串 $T$ 的数量，其满足 $\forall P,PT\not=TP\or TP\not\subseteq S$。</p>
+<p>即为对每一非循环子串只统计其最大次幂。转化为统计本质不同非循环子串数量。</p>
+<p>于是需要 runs。不会。</p>
+<h4 id="G"><a href="#G" class="headerlink" title="G"></a>G</h4><p>从给定路径中选出给定数目条，求有交的方案数。</p>
+<p>直接想法是路径覆盖后根据每个点被覆盖的次数算组合数。然而有重复。</p>
+<p>考虑对某条路径的贡献只在与之相关特殊点计算。路径的交必定经过其中之一的最浅点。于是只在当前点为某些点的最浅点时计算该路径的贡献。补集转化为从所有覆盖路径中取的方案数减去从无最浅点路径中取的方案数。</p>
+<h4 id="H-1"><a href="#H-1" class="headerlink" title="H"></a>H</h4><p>为多个区间指定颜色，使得被 $k$ 种颜色同时覆盖的区间总长最大。</p>
+<p>贪心地考虑。从左到右扫，若覆盖当前区间的未染色线段足够产生 $k$ 种颜色则染足。</p>
+<h4 id="I"><a href="#I" class="headerlink" title="I"></a>I</h4><p>给出 $n(\le 50)$ 个数与 $k(\le 10)$ 个操作，每个操作使得指定两位置有序，求使得执行所有操作后最长上升子序列至少为 $n-1$ 的排列数。</p>
+<p>最后的状态数较小。对每个最后状态剪枝搜索初始状态。</p>
+<h4 id="M"><a href="#M" class="headerlink" title="M"></a>M</h4><p>给出一个凸包和一些点光源，选择最少的光源覆盖整个凸包。</p>
+<p>求出每个点光源覆盖的顶点区间后转为区间覆盖问题。</p>
+<h3 id="2018-2019-ICPC-NEERC-Southern-Subregional-Contest"><a href="#2018-2019-ICPC-NEERC-Southern-Subregional-Contest" class="headerlink" title="2018-2019 ICPC NEERC Southern Subregional Contest"></a><a href="https://codeforces.com/blog/entry/62570">2018-2019 ICPC NEERC Southern Subregional Contest</a></h3><h4 id="A-2"><a href="#A-2" class="headerlink" title="A"></a>A</h4><p>求出数位和为 $s$ 的最小的 $d$ 的倍数。</p>
+<p>最短路，在余数间连边。边权为 $1$ 可 bfs。</p>
+<h4 id="B-1"><a href="#B-1" class="headerlink" title="B"></a>B</h4><p>将 $a.b.c.d$ 中每一个数看作一个 $8$ 位二进制数，则整个 IP 地址可以用 $32$ 位二进制数表示。若满足后 $32-x$ 位全为 $0$，$a.b.c.d/x$ 可用于表示一个子网，其覆盖的范围为前 $x$ 位与之相同的所有 IP 地址。可以使用无 $/x$ 的子网表示覆盖一个长度为 $1$ 的范围。现给出子网的黑白名单，判断可行性后构造一份新的名单，使得原名单中的黑白地址仍在对应的新名单中，且新名单的子网数目最少。</p>
+<p>插入 Trie，深搜同时将深度尽量小的全黑名单子树整体作为一个子网。</p>
+<h4 id="G-1"><a href="#G-1" class="headerlink" title="G"></a>G</h4><p>一排格子中某些格子有一些英雄，另一些格子里有一些关卡，第一个经过某个关卡的英雄价值会加上关卡价值。安排一个集合点与一个移动顺序，使得按照这样的移动顺序移动到集合点过程中，所有英雄任意时刻价值非负。</p>
+<p>枚举集合点并贪心地向左向右遍历，尽量使得访问到的英雄立刻移动，判断最远英雄是否可移动即可。</p>
+]]></content>
+      <tags>
+        <tag>题目选做</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【所谓讲义·一】数据结构</title>
     <url>/2021/03/09/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%80%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>此处有<a href="https://www.luogu.com.cn/training/61424">题单</a>。</p>
@@ -218,6 +267,63 @@
 <li>5.2.1 杜教筛</li>
 <li>5.2.2 min_25 筛</li>
 <li>5.2.3 Powerful Numbers</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【所谓讲义·七】组合计数</title>
+    <url>/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</url>
+    <content><![CDATA[<h3 id="1-计数原理"><a href="#1-计数原理" class="headerlink" title="1.计数原理"></a>1.计数原理</h3><ul>
+<li>1.1 加法原理与乘法原理</li>
+<li>1.2 排列组合<ul>
+<li>1.2.1 排列数与组合数</li>
+<li>1.2.2 组合数相关公式</li>
+<li>1.2.3 康托展开</li>
+<li>1.2.4 排列组合经典问题</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-容斥与反演"><a href="#2-容斥与反演" class="headerlink" title="2.容斥与反演"></a>2.容斥与反演</h3><ul>
+<li>2.1 容斥原理</li>
+<li>2.2 子集反演</li>
+<li>2.3 最值反演</li>
+<li>2.4 二项式反演</li>
+<li>2.5 莫比乌斯反演</li>
+<li>2.6 单位根反演</li>
+<li>2.7 斯特林反演</li>
+</ul>
+<h3 id="3-数列与生成函数"><a href="#3-数列与生成函数" class="headerlink" title="3.数列与生成函数"></a><a href="/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0">3.数列与生成函数</a></h3><ul>
+<li>3.1 常见数列</li>
+<li>3.2  生成函数<ul>
+<li>3.2.1 普通型生成函数</li>
+<li>3.2.2 指数型生成函数</li>
+</ul>
+</li>
+<li>3.3 离散卷积<ul>
+<li>3.3.1 形式幂级数与加法卷积<ul>
+<li>3.3.1.1 快速傅里叶变换</li>
+<li>3.3.1.2 快速数论变换</li>
+</ul>
+</li>
+<li>3.3.2 集合幂级数与位运算卷积<ul>
+<li>3.3.2.1 快速莫比乌斯变换</li>
+<li>3.3.2.2 快速沃尔什变换</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3.4 多项式操作<ul>
+<li>3.4.1 拉格朗日插值</li>
+<li>3.4.2 多项式牛顿迭代</li>
+<li>3.4.3 多项式求逆与除法</li>
+<li>3.4.4 多项式开方</li>
+<li>3.4.5 多点求值与快速插值</li>
+<li>3.4.6 多项式三角函数</li>
 </ul>
 </li>
 </ul>
@@ -464,55 +570,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ICPC 杂题浏览</title>
-    <url>/2021/09/13/ICPC-%E6%9D%82%E9%A2%98%E6%B5%8F%E8%A7%88/</url>
-    <content><![CDATA[<h3 id="题源"><a href="#题源" class="headerlink" title="题源"></a>题源</h3><p>随机选自 <a href="https://acm.ecnu.edu.cn/wiki/index.php?title=Main_Page">EOJ Wiki</a>。</p>
-<p>大概并没看过几场。</p>
-<h3 id="2019-Asia-Shanghai-Regional-Contest"><a href="#2019-Asia-Shanghai-Regional-Contest" class="headerlink" title="2019 Asia Shanghai Regional Contest"></a><a href="https://ac.nowcoder.com/acm/contest/4370">2019 Asia Shanghai Regional Contest</a></h3><h4 id="A"><a href="#A" class="headerlink" title="A"></a>A</h4><p>平面上有一些黑格子，求由黑格子围成的矩形中两边比为 $1:2$ 的个数。</p>
-<p>只考虑 $x:y=1:2$，另一种旋转坐标轴即可。</p>
-<p>枚举矩形的一顶点并统计可作为对顶点的点数。</p>
-<p>预处理每个黑点上下左右最多延伸长度。枚举经过黑点的 $k=2$ 的直线，将坐标轴旋转至斜率为 $2$。发现每个会存在向右延伸的最远距离与向左延伸的最远距离。于是对每个点查找在其右侧且能与之相交的点数，即按点坐标降序枚举求当前点的右端点左侧已出现的左端点个数。</p>
-<h4 id="B"><a href="#B" class="headerlink" title="B"></a>B</h4><p>判断给出的串中是否存在两个串具有前缀关系。</p>
-<p>Trie 板子。</p>
-<h4 id="D"><a href="#D" class="headerlink" title="D"></a>D</h4><p>从完全图中每次移除一棵生成树的边，求最大移除数量。</p>
-<p>可得上界 $\lfloor\dfrac{n}{2}\rfloor$。</p>
-<p>考虑把所有点排成一个环，从某个点开始，向其右侧点连边，再向其左侧点连边，再向其右侧第二个点、左侧第二个点连边，以此类推，可构造出一棵树。选择前 $\lfloor\dfrac{n}{2}\rfloor$ 个点执行此操作。奇数时孤立点注意连边。</p>
-<h4 id="E"><a href="#E" class="headerlink" title="E"></a>E</h4><p>给出矩阵，可以四连通移动，每次移动至一个未访问过的格子获得价值为两者权值之积。求最大价值。</p>
-<p>事实上是最大生成树。</p>
-<h4 id="F"><a href="#F" class="headerlink" title="F"></a>F</h4><p>维护链加，链乘，链覆盖，链立方和。</p>
-<p>重链剖分加二项式展开推式子。有点无聊。</p>
-<h4 id="H"><a href="#H" class="headerlink" title="H"></a>H</h4><p>将树切割成 $k$ 块，使每块点权和的最大值最小，求该最大值。</p>
-<p>二分后从底向上贪心。由于需要使得块数最小，从小到大选择尽量多的子树与当前结点连通，再向上传。</p>
-<h4 id="J"><a href="#J" class="headerlink" title="J"></a>J</h4><p>维护十进制下插入，右移，求异或指定数的最大值，求区间异或和。</p>
-<p>十叉 Trie。操作分别为插入，根上接根，以及两个平凡操作。</p>
-<h4 id="K"><a href="#K" class="headerlink" title="K"></a>K</h4><p>保留最多的边使图中无奇环。点数不超过 $16$。</p>
-<p>二分图染色。枚举每个点的颜色即可判断剩下边数。</p>
-<h3 id="2018-Asia-Xuzhou-Regional-Contest"><a href="#2018-Asia-Xuzhou-Regional-Contest" class="headerlink" title="2018 Asia Xuzhou Regional Contest"></a><a href="https://codeforces.com/gym/102012">2018 Asia Xuzhou Regional Contest</a></h3><h4 id="A-1"><a href="#A-1" class="headerlink" title="A"></a>A</h4><p>求所有最小生成树的边权和。边权在大范围内随机。</p>
-<p>难以随机到同边权，因此只需求最小生成树。</p>
-<h4 id="F-1"><a href="#F-1" class="headerlink" title="F"></a>F</h4><p>求 $S$ 中本质不同非空子串 $T$ 的数量，其满足 $\forall P,PT\not=TP\or TP\not\subseteq S$。</p>
-<p>即为对每一非循环子串只统计其最大次幂。转化为统计本质不同非循环子串数量。</p>
-<p>于是需要 runs。不会。</p>
-<h4 id="G"><a href="#G" class="headerlink" title="G"></a>G</h4><p>从给定路径中选出给定数目条，求有交的方案数。</p>
-<p>直接想法是路径覆盖后根据每个点被覆盖的次数算组合数。然而有重复。</p>
-<p>考虑对某条路径的贡献只在与之相关特殊点计算。路径的交必定经过其中之一的最浅点。于是只在当前点为某些点的最浅点时计算该路径的贡献。补集转化为从所有覆盖路径中取的方案数减去从无最浅点路径中取的方案数。</p>
-<h4 id="H-1"><a href="#H-1" class="headerlink" title="H"></a>H</h4><p>为多个区间指定颜色，使得被 $k$ 种颜色同时覆盖的区间总长最大。</p>
-<p>贪心地考虑。从左到右扫，若覆盖当前区间的未染色线段足够产生 $k$ 种颜色则染足。</p>
-<h4 id="I"><a href="#I" class="headerlink" title="I"></a>I</h4><p>给出 $n(\le 50)$ 个数与 $k(\le 10)$ 个操作，每个操作使得指定两位置有序，求使得执行所有操作后最长上升子序列至少为 $n-1$ 的排列数。</p>
-<p>最后的状态数较小。对每个最后状态剪枝搜索初始状态。</p>
-<h4 id="M"><a href="#M" class="headerlink" title="M"></a>M</h4><p>给出一个凸包和一些点光源，选择最少的光源覆盖整个凸包。</p>
-<p>求出每个点光源覆盖的顶点区间后转为区间覆盖问题。</p>
-<h3 id="2018-2019-ICPC-NEERC-Southern-Subregional-Contest"><a href="#2018-2019-ICPC-NEERC-Southern-Subregional-Contest" class="headerlink" title="2018-2019 ICPC NEERC Southern Subregional Contest"></a><a href="https://codeforces.com/blog/entry/62570">2018-2019 ICPC NEERC Southern Subregional Contest</a></h3><h4 id="A-2"><a href="#A-2" class="headerlink" title="A"></a>A</h4><p>求出数位和为 $s$ 的最小的 $d$ 的倍数。</p>
-<p>最短路，在余数间连边。边权为 $1$ 可 bfs。</p>
-<h4 id="B-1"><a href="#B-1" class="headerlink" title="B"></a>B</h4><p>将 $a.b.c.d$ 中每一个数看作一个 $8$ 位二进制数，则整个 IP 地址可以用 $32$ 位二进制数表示。若满足后 $32-x$ 位全为 $0$，$a.b.c.d/x$ 可用于表示一个子网，其覆盖的范围为前 $x$ 位与之相同的所有 IP 地址。可以使用无 $/x$ 的子网表示覆盖一个长度为 $1$ 的范围。现给出子网的黑白名单，判断可行性后构造一份新的名单，使得原名单中的黑白地址仍在对应的新名单中，且新名单的子网数目最少。</p>
-<p>插入 Trie，深搜同时将深度尽量小的全黑名单子树整体作为一个子网。</p>
-<h4 id="G-1"><a href="#G-1" class="headerlink" title="G"></a>G</h4><p>一排格子中某些格子有一些英雄，另一些格子里有一些关卡，第一个经过某个关卡的英雄价值会加上关卡价值。安排一个集合点与一个移动顺序，使得按照这样的移动顺序移动到集合点过程中，所有英雄任意时刻价值非负。</p>
-<p>枚举集合点并贪心地向左向右遍历，尽量使得访问到的英雄立刻移动，判断最远英雄是否可移动即可。</p>
-]]></content>
-      <tags>
-        <tag>题目选做</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>册页</title>
     <url>/2021/06/10/%E5%86%8C%E9%A1%B5/</url>
     <content><![CDATA[<ul>
@@ -543,18 +600,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客更新日志</title>
-    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
-<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
-<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
-<p>同时安装了加密系统。学习方面的密码可以找博主索取。生活方面的随缘猜吧。</p>
-]]></content>
-      <tags>
-        <tag>大事祭</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>历届联赛题解</title>
     <url>/2021/06/10/%E5%8E%86%E5%B1%8A%E8%81%94%E8%B5%9B%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<ul>
@@ -569,6 +614,18 @@
 ]]></content>
       <tags>
         <tag>题目选做</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客更新日志</title>
+    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
+<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
+<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
+<p>同时安装了加密系统。学习方面的密码可以找博主索取。生活方面的随缘猜吧。</p>
+]]></content>
+      <tags>
+        <tag>大事祭</tag>
       </tags>
   </entry>
   <entry>
@@ -607,63 +664,6 @@
 ]]></content>
       <tags>
         <tag>flag</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·七】组合计数</title>
-    <url>/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</url>
-    <content><![CDATA[<h3 id="1-计数原理"><a href="#1-计数原理" class="headerlink" title="1.计数原理"></a>1.计数原理</h3><ul>
-<li>1.1 加法原理与乘法原理</li>
-<li>1.2 排列组合<ul>
-<li>1.2.1 排列数与组合数</li>
-<li>1.2.2 组合数相关公式</li>
-<li>1.2.3 康托展开</li>
-<li>1.2.4 排列组合经典问题</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-容斥与反演"><a href="#2-容斥与反演" class="headerlink" title="2.容斥与反演"></a>2.容斥与反演</h3><ul>
-<li>2.1 容斥原理</li>
-<li>2.2 子集反演</li>
-<li>2.3 最值反演</li>
-<li>2.4 二项式反演</li>
-<li>2.5 莫比乌斯反演</li>
-<li>2.6 单位根反演</li>
-<li>2.7 斯特林反演</li>
-</ul>
-<h3 id="3-数列与生成函数"><a href="#3-数列与生成函数" class="headerlink" title="3.数列与生成函数"></a><a href="/2021/08/15/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%913-%E6%95%B0%E5%88%97%E4%B8%8E%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0">3.数列与生成函数</a></h3><ul>
-<li>3.1 常见数列</li>
-<li>3.2  生成函数<ul>
-<li>3.2.1 普通型生成函数</li>
-<li>3.2.2 指数型生成函数</li>
-</ul>
-</li>
-<li>3.3 离散卷积<ul>
-<li>3.3.1 形式幂级数与加法卷积<ul>
-<li>3.3.1.1 快速傅里叶变换</li>
-<li>3.3.1.2 快速数论变换</li>
-</ul>
-</li>
-<li>3.3.2 集合幂级数与位运算卷积<ul>
-<li>3.3.2.1 快速莫比乌斯变换</li>
-<li>3.3.2.2 快速沃尔什变换</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>3.4 多项式操作<ul>
-<li>3.4.1 拉格朗日插值</li>
-<li>3.4.2 多项式牛顿迭代</li>
-<li>3.4.3 多项式求逆与除法</li>
-<li>3.4.4 多项式开方</li>
-<li>3.4.5 多点求值与快速插值</li>
-<li>3.4.6 多项式三角函数</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
