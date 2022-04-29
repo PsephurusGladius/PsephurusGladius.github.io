@@ -191,6 +191,91 @@
       </tags>
   </entry>
   <entry>
+    <title>【所谓讲义·三】数论</title>
+    <url>/2021/04/26/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%89%E3%80%91%E6%95%B0%E8%AE%BA/</url>
+    <content><![CDATA[<h3 id="1-整除与质数"><a href="#1-整除与质数" class="headerlink" title="1.整除与质数"></a>1.整除与质数</h3><ul>
+<li>1.1 整除<ul>
+<li>1.1.1 算术基本定理<ul>
+<li>1.1.2.1 质因数分解</li>
+<li>1.1.2.2 阶乘的因数分解 </li>
+</ul>
+</li>
+<li>1.1.2 最大公因数与最小公倍数<ul>
+<li>1.1.2.1 欧几里得算法</li>
+<li>1.1.2.2 二进制算法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1.2 质数<ul>
+<li>1.2.1 质数的基本性质</li>
+<li>1.2.2 质数测试</li>
+<li>1.2.3 质数筛法<ul>
+<li>1.2.3.1 埃氏筛法</li>
+<li>1.2.3.2 欧拉筛法 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-线性同余"><a href="#2-线性同余" class="headerlink" title="2.线性同余"></a>2.线性同余</h3><ul>
+<li>2.1 同余的基本性质</li>
+<li>2.2 线性同余方程<ul>
+<li>2.2.1 裴蜀定理</li>
+<li>2.2.2 扩展欧几里得算法</li>
+<li>2.2.3 乘法逆元</li>
+</ul>
+</li>
+<li>2.3 线性同余方程组<ul>
+<li>2.3.1 中国剩余定理</li>
+<li>2.3.2 同余方程合并</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-阶乘同余"><a href="#3-阶乘同余" class="headerlink" title="3.阶乘同余"></a>3.阶乘同余</h3><ul>
+<li>3.1 威尔逊定理</li>
+<li>3.2 卢卡斯定理</li>
+<li>3.3 库默尔定理</li>
+<li>3.4 快速阶乘取模</li>
+</ul>
+<h3 id="4-高次同余"><a href="#4-高次同余" class="headerlink" title="4.高次同余"></a>4.高次同余</h3><ul>
+<li>4.1 欧拉定理<ul>
+<li>4.1.1 欧拉定理</li>
+<li>4.1.2 费马小定理</li>
+<li>4.1.3 扩展欧拉定理</li>
+<li>4.1.4 Miller-Rabin 质数测试</li>
+<li>4.1.5 Pollar-Rho 质因数分解</li>
+</ul>
+</li>
+<li>4.2 离散对数<ul>
+<li>4.2.1 原根</li>
+<li>4.2.2 BSGS</li>
+<li>4.2.3 扩展 BSGS</li>
+<li>4.2.4 整数模 $n$ 乘法群</li>
+</ul>
+</li>
+<li>4.3 二次剩余</li>
+</ul>
+<h3 id="5-数论函数"><a href="#5-数论函数" class="headerlink" title="5.数论函数"></a>5.数论函数</h3><ul>
+<li>5.1 数论函数变换<ul>
+<li>5.1.1 积性函数</li>
+<li>5.1.2 狄利克雷卷积</li>
+<li>5.1.3 狄利克雷生成函数</li>
+</ul>
+</li>
+<li>5.2 亚线性前缀和筛法<ul>
+<li>5.2.1 杜教筛</li>
+<li>5.2.2 min_25 筛</li>
+<li>5.2.3 Powerful Numbers</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【所谓讲义·七】组合计数</title>
     <url>/2021/08/02/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%83%E3%80%91%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</url>
     <content><![CDATA[<h3 id="1-计数原理"><a href="#1-计数原理" class="headerlink" title="1.计数原理"></a>1.计数原理</h3><ul>
@@ -370,100 +455,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·三】数论</title>
-    <url>/2021/04/26/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%B8%89%E3%80%91%E6%95%B0%E8%AE%BA/</url>
-    <content><![CDATA[<h3 id="1-整除与质数"><a href="#1-整除与质数" class="headerlink" title="1.整除与质数"></a>1.整除与质数</h3><ul>
-<li>1.1 整除<ul>
-<li>1.1.1 算术基本定理<ul>
-<li>1.1.2.1 质因数分解</li>
-<li>1.1.2.2 阶乘的因数分解 </li>
-</ul>
-</li>
-<li>1.1.2 最大公因数与最小公倍数<ul>
-<li>1.1.2.1 欧几里得算法</li>
-<li>1.1.2.2 二进制算法</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>1.2 质数<ul>
-<li>1.2.1 质数的基本性质</li>
-<li>1.2.2 质数测试</li>
-<li>1.2.3 质数筛法<ul>
-<li>1.2.3.1 埃氏筛法</li>
-<li>1.2.3.2 欧拉筛法 </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-线性同余"><a href="#2-线性同余" class="headerlink" title="2.线性同余"></a>2.线性同余</h3><ul>
-<li>2.1 同余的基本性质</li>
-<li>2.2 线性同余方程<ul>
-<li>2.2.1 裴蜀定理</li>
-<li>2.2.2 扩展欧几里得算法</li>
-<li>2.2.3 乘法逆元</li>
-</ul>
-</li>
-<li>2.3 线性同余方程组<ul>
-<li>2.3.1 中国剩余定理</li>
-<li>2.3.2 同余方程合并</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-阶乘同余"><a href="#3-阶乘同余" class="headerlink" title="3.阶乘同余"></a>3.阶乘同余</h3><ul>
-<li>3.1 威尔逊定理</li>
-<li>3.2 卢卡斯定理</li>
-<li>3.3 库默尔定理</li>
-<li>3.4 快速阶乘取模</li>
-</ul>
-<h3 id="4-高次同余"><a href="#4-高次同余" class="headerlink" title="4.高次同余"></a>4.高次同余</h3><ul>
-<li>4.1 欧拉定理<ul>
-<li>4.1.1 欧拉定理</li>
-<li>4.1.2 费马小定理</li>
-<li>4.1.3 扩展欧拉定理</li>
-<li>4.1.4 Miller-Rabin 质数测试</li>
-<li>4.1.5 Pollar-Rho 质因数分解</li>
-</ul>
-</li>
-<li>4.2 离散对数<ul>
-<li>4.2.1 原根</li>
-<li>4.2.2 BSGS</li>
-<li>4.2.3 扩展 BSGS</li>
-<li>4.2.4 整数模 $n$ 乘法群</li>
-</ul>
-</li>
-<li>4.3 二次剩余</li>
-</ul>
-<h3 id="5-数论函数"><a href="#5-数论函数" class="headerlink" title="5.数论函数"></a>5.数论函数</h3><ul>
-<li>5.1 数论函数变换<ul>
-<li>5.1.1 积性函数</li>
-<li>5.1.2 狄利克雷卷积</li>
-<li>5.1.3 狄利克雷生成函数</li>
-</ul>
-</li>
-<li>5.2 亚线性前缀和筛法<ul>
-<li>5.2.1 杜教筛</li>
-<li>5.2.2 min_25 筛</li>
-<li>5.2.3 Powerful Numbers</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【所谓讲义·六】线性代数</title>
-    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
-    <content><![CDATA[<p>留坑。</p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【所谓讲义·五】动态规划</title>
     <url>/2021/06/17/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E4%BA%94%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[<h2 id="1-状态设计模型"><a href="#1-状态设计模型" class="headerlink" title="1.状态设计模型"></a>1.状态设计模型</h2><ul>
@@ -508,27 +499,9 @@
       </tags>
   </entry>
   <entry>
-    <title>【所谓讲义·四】字符串</title>
-    <url>/2021/05/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
-    <content><![CDATA[<h3 id="1-基础算法"><a href="#1-基础算法" class="headerlink" title="1.基础算法"></a>1.基础算法</h3><ul>
-<li>1.1 字符串散列</li>
-<li>1.2 子序列自动机</li>
-</ul>
-<h3 id="2-匹配问题"><a href="#2-匹配问题" class="headerlink" title="2.匹配问题"></a>2.匹配问题</h3><ul>
-<li>2.1 KMP 算法</li>
-<li>2.2 AC 自动机</li>
-</ul>
-<h3 id="3-回文问题"><a href="#3-回文问题" class="headerlink" title="3.回文问题"></a><a href="/2021/08/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%913-%E5%9B%9E%E6%96%87%E9%97%AE%E9%A2%98">3.回文问题</a></h3><ul>
-<li>3.1 Manacher</li>
-<li>3.2 回文自动机</li>
-</ul>
-<h3 id="4-子串问题"><a href="#4-子串问题" class="headerlink" title="4.子串问题"></a><a href="/2021/06/14/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%914-%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98">4.子串问题</a></h3><ul>
-<li>4.1 Z 函数</li>
-<li>4.2 后缀树</li>
-<li>4.3 后缀数组</li>
-<li>4.4 后缀自动机</li>
-<li>4.5 广义后缀自动机</li>
-</ul>
+    <title>【所谓讲义·六】线性代数</title>
+    <url>/2021/06/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%85%AD%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
+    <content><![CDATA[<p>留坑。</p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -582,23 +555,6 @@
       </tags>
   </entry>
   <entry>
-    <title>历届联赛题解</title>
-    <url>/2021/06/10/%E5%8E%86%E5%B1%8A%E8%81%94%E8%B5%9B%E9%A2%98%E8%A7%A3/</url>
-    <content><![CDATA[<ul>
-<li><a href="/2020/09/29/NOIP-2014-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2014 提高组</a></li>
-<li><a href="/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2015 提高组</a></li>
-<li><a href="/2020/08/12/NOIP-2016-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2016 提高组</a></li>
-<li><a href="/2020/08/10/NOIP-2017-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2017 提高组</a></li>
-<li><a href="/2020/08/04/NOIP-2018-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2018 提高组</a></li>
-<li><a href="/2020/08/02/CSP-S-2019-%E9%A2%98%E8%A7%A3">CSP-S 2019</a></li>
-<li><a href="/2020/12/19/NOIP-2020-%E9%A2%98%E8%A7%A3">NOIP 2020</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>题目选做</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>册页</title>
     <url>/2021/06/10/%E5%86%8C%E9%A1%B5/</url>
     <content><![CDATA[<ul>
@@ -624,6 +580,69 @@
 <li><a href="/2022/02/25/%E6%99%9A%E5%AE%89">晚安</a></li>
 </ul>
 </li>
+</ul>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【所谓讲义·四】字符串</title>
+    <url>/2021/05/22/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<h3 id="1-基础算法"><a href="#1-基础算法" class="headerlink" title="1.基础算法"></a>1.基础算法</h3><ul>
+<li>1.1 字符串散列</li>
+<li>1.2 子序列自动机</li>
+</ul>
+<h3 id="2-匹配问题"><a href="#2-匹配问题" class="headerlink" title="2.匹配问题"></a>2.匹配问题</h3><ul>
+<li>2.1 KMP 算法</li>
+<li>2.2 AC 自动机</li>
+</ul>
+<h3 id="3-回文问题"><a href="#3-回文问题" class="headerlink" title="3.回文问题"></a><a href="/2021/08/11/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%913-%E5%9B%9E%E6%96%87%E9%97%AE%E9%A2%98">3.回文问题</a></h3><ul>
+<li>3.1 Manacher</li>
+<li>3.2 回文自动机</li>
+</ul>
+<h3 id="4-子串问题"><a href="#4-子串问题" class="headerlink" title="4.子串问题"></a><a href="/2021/06/14/%E3%80%90%E6%89%80%E8%B0%93%E8%AE%B2%E4%B9%89%C2%B7%E5%9B%9B%E3%80%914-%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98">4.子串问题</a></h3><ul>
+<li>4.1 Z 函数</li>
+<li>4.2 后缀树</li>
+<li>4.3 后缀数组</li>
+<li>4.4 后缀自动机</li>
+<li>4.5 广义后缀自动机</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>历届联赛题解</title>
+    <url>/2021/06/10/%E5%8E%86%E5%B1%8A%E8%81%94%E8%B5%9B%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<ul>
+<li><a href="/2020/09/29/NOIP-2014-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2014 提高组</a></li>
+<li><a href="/2020/08/15/NOIP-2015-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2015 提高组</a></li>
+<li><a href="/2020/08/12/NOIP-2016-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2016 提高组</a></li>
+<li><a href="/2020/08/10/NOIP-2017-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2017 提高组</a></li>
+<li><a href="/2020/08/04/NOIP-2018-%E6%8F%90%E9%AB%98%E7%BB%84%E9%A2%98%E8%A7%A3">NOIP 2018 提高组</a></li>
+<li><a href="/2020/08/02/CSP-S-2019-%E9%A2%98%E8%A7%A3">CSP-S 2019</a></li>
+<li><a href="/2020/12/19/NOIP-2020-%E9%A2%98%E8%A7%A3">NOIP 2020</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>题目选做</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生活哲学</title>
+    <url>/2022/04/30/%E7%94%9F%E6%B4%BB%E5%93%B2%E5%AD%A6/</url>
+    <content><![CDATA[<ul>
+<li>活在当下，忽视未来。</li>
+<li>人生虚无，意义随心。</li>
+<li>无悔，无怨。</li>
+<li>冒险适度。</li>
+<li>减小社交依赖。</li>
+<li>笑。</li>
+<li>保持距离，尤其是与“那个人”。</li>
+<li>守护平静尚存的生活。</li>
+<li>文化课与音乐而已。</li>
 </ul>
 ]]></content>
       <tags>
