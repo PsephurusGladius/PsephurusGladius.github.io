@@ -28,7 +28,7 @@
 <meta property="og:description" content="线性空间理论。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-11-15T05:26:44.000Z">
-<meta property="article:modified_time" content="2023-11-15T05:52:07.071Z">
+<meta property="article:modified_time" content="2023-11-15T05:58:30.611Z">
 <meta property="article:author" content="白鲟">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
@@ -233,7 +233,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-11-15 13:26:44 / 修改时间：13:52:07" itemprop="dateCreated datePublished" datetime="2023-11-15T13:26:44+08:00">2023-11-15</time>
+      <time title="创建时间：2023-11-15 13:26:44 / 修改时间：13:58:30" itemprop="dateCreated datePublished" datetime="2023-11-15T13:26:44+08:00">2023-11-15</time>
     </span>
 
   
@@ -362,15 +362,15 @@
 <p>特别地，当且仅当 $\mathcal V_1+\mathcal V_2+\cdots+\mathcal V_n$ 为直和时，<br>$$<br>\dim(\mathcal V_1+\mathcal V_2+\cdots+\mathcal V_2)=\dim\mathcal V_1+\dim\mathcal V_2+\cdots+\dim\mathcal V_n.<br>$$</p>
 <h4 id="1-0-相关证明"><a href="#1-0-相关证明" class="headerlink" title="1.0 相关证明"></a>1.0 相关证明</h4><h5 id="定理-1-1-3"><a href="#定理-1-1-3" class="headerlink" title="定理 1.1.3"></a>定理 1.1.3</h5><p>为避免对定理 1.1.3.5 的循环论证，证明将采取看上去更复杂的形式．</p>
 <p>注意到线性空间的定义只保证了加法的右单位元与右逆元存在，于是首先有以下引理：</p>
-<p><strong>引理 1</strong>：<strong>左逆元存在且等于右逆元</strong>．<br>$$<br>\begin{aligned}<br>&amp;\boldsymbol 0\<br>=\ &amp;(-\boldsymbol x)+\boldsymbol x+(-((-\boldsymbol x)+\boldsymbol x))\<br>=\ &amp;((-\boldsymbol x)+\boldsymbol 0)+\boldsymbol x+(-((-\boldsymbol x)+\boldsymbol x))\<br>=\ &amp;(-\boldsymbol x)+(\boldsymbol x+(-\boldsymbol x))+\boldsymbol x+(-((-\boldsymbol x)+\boldsymbol x))\<br>=\ &amp;((-\boldsymbol x)+\boldsymbol x)+(((-\boldsymbol x)+\boldsymbol x)+(-((-\boldsymbol x)+\boldsymbol x)))\<br>=\ &amp;(-\boldsymbol x)+\boldsymbol x.<br>\end{aligned}<br>$$<br><strong>引理 2</strong>：<strong>左单位元存在且等于右单位元</strong>．<br>$$<br>\boldsymbol x+\boldsymbol 0=\boldsymbol x+((-\boldsymbol x)+\boldsymbol x)=(\boldsymbol x+(-\boldsymbol x))+\boldsymbol x=\boldsymbol 0+\boldsymbol x.<br>$$<br>引理 1、2 事实上证明了群的单边定义与群的一般定义等价．</p>
+<p><strong>引理 1</strong>：<strong>左逆元存在且等于右逆元</strong>．<br>$$<br>\begin{aligned}<br>&amp;\boldsymbol 0\\<br>=\ &amp;(-\boldsymbol x)+\boldsymbol x+(-((-\boldsymbol x)+\boldsymbol x))\\<br>=\ &amp;((-\boldsymbol x)+\boldsymbol 0)+\boldsymbol x+(-((-\boldsymbol x)+\boldsymbol x))\\<br>=\ &amp;(-\boldsymbol x)+(\boldsymbol x+(-\boldsymbol x))+\boldsymbol x+(-((-\boldsymbol x)+\boldsymbol x))\\<br>=\ &amp;((-\boldsymbol x)+\boldsymbol x)+(((-\boldsymbol x)+\boldsymbol x)+(-((-\boldsymbol x)+\boldsymbol x)))\\<br>=\ &amp;(-\boldsymbol x)+\boldsymbol x.<br>\end{aligned}<br>$$<br><strong>引理 2</strong>：<strong>左单位元存在且等于右单位元</strong>．<br>$$<br>\boldsymbol x+\boldsymbol 0=\boldsymbol x+((-\boldsymbol x)+\boldsymbol x)=(\boldsymbol x+(-\boldsymbol x))+\boldsymbol x=\boldsymbol 0+\boldsymbol x.<br>$$<br>引理 1、2 事实上证明了群的单边定义与群的一般定义等价．</p>
 <p><strong>定理 1.1.3.1</strong></p>
 <p>若存在第二个加法单位元 $\boldsymbol 0’$，则 $\boldsymbol 0’=\boldsymbol 0’+\boldsymbol 0=\boldsymbol 0+\boldsymbol 0’=\boldsymbol 0$，矛盾．</p>
 <p><strong>定理 1.1.3.2</strong></p>
 <p>若存在第二个加法逆元，有 $-\boldsymbol x’=-\boldsymbol x’+((\boldsymbol x+(-\boldsymbol x))=(-\boldsymbol x’+\boldsymbol x)+(-\boldsymbol x)=-\boldsymbol x$，矛盾．</p>
 <p>此二定理事实上在群中具有一般性．</p>
 <p><strong>定理 1.1.3.3</strong></p>
-<p>对于前半部分，运用数乘对数的分配律，<br>$$<br>0\boldsymbol x=(0+0)\boldsymbol x=0\boldsymbol x+0\boldsymbol x,\<br>(-0\boldsymbol x)+0\boldsymbol x=((-0\boldsymbol x)+0\boldsymbol x)+0\boldsymbol x,\<br>0\boldsymbol x=\boldsymbol 0.<br>$$<br>后半部分，运用数乘对向量的分配律，同理．</p>
-<p><strong>定理 1.1.3.4</strong><br>$$<br>\boldsymbol x+(-1)\boldsymbol x=1\boldsymbol x+(-1)\boldsymbol x=(1-1)\boldsymbol x=\boldsymbol 0.<br>$$<br><strong>定理 1.1.3.5</strong><br>$$<br>\begin{aligned}<br>&amp;\boldsymbol a+\boldsymbol b\<br>=\ &amp;\boldsymbol a+\boldsymbol b+(-(\boldsymbol b+\boldsymbol a))+(\boldsymbol b+\boldsymbol a)\<br>=\ &amp;(\boldsymbol a+(\boldsymbol b-\boldsymbol b)-\boldsymbol a)+\boldsymbol b+\boldsymbol a\<br>=\ &amp;\boldsymbol b+\boldsymbol a.<br>\end{aligned}<br>$$<br><strong>定理 1.1.3.6</strong></p>
+<p>对于前半部分，运用数乘对数的分配律，<br>$$<br>0\boldsymbol x=(0+0)\boldsymbol x=0\boldsymbol x+0\boldsymbol x,\\<br>(-0\boldsymbol x)+0\boldsymbol x=((-0\boldsymbol x)+0\boldsymbol x)+0\boldsymbol x,\\<br>0\boldsymbol x=\boldsymbol 0.<br>$$<br>后半部分，运用数乘对向量的分配律，同理．</p>
+<p><strong>定理 1.1.3.4</strong><br>$$<br>\boldsymbol x+(-1)\boldsymbol x=1\boldsymbol x+(-1)\boldsymbol x=(1-1)\boldsymbol x=\boldsymbol 0.<br>$$<br><strong>定理 1.1.3.5</strong><br>$$<br>\begin{aligned}<br>&amp;\boldsymbol a+\boldsymbol b\\<br>=\ &amp;\boldsymbol a+\boldsymbol b+(-(\boldsymbol b+\boldsymbol a))+(\boldsymbol b+\boldsymbol a)\\<br>=\ &amp;(\boldsymbol a+(\boldsymbol b-\boldsymbol b)-\boldsymbol a)+\boldsymbol b+\boldsymbol a\\<br>=\ &amp;\boldsymbol b+\boldsymbol a.<br>\end{aligned}<br>$$<br><strong>定理 1.1.3.6</strong></p>
 <p>该条件可由原系统推出，下证该条件可推出加法逆元存在，<br>$$<br>0\boldsymbol x=(1-1)\boldsymbol x=\boldsymbol x+(-1)\boldsymbol x=\boldsymbol 0,<br>$$<br>则 $(-1)\boldsymbol x$ 即为 $\boldsymbol x$ 的加法逆元．</p>
 <h5 id="定理-1-1-6"><a href="#定理-1-1-6" class="headerlink" title="定理 1.1.6"></a>定理 1.1.6</h5><p>子空间到封闭易得，另一方向容易利用数乘验证加法单位元、加法逆元存在，余下自动满足．</p>
 <h5 id="定理-1-1-8"><a href="#定理-1-1-8" class="headerlink" title="定理 1.1.8"></a>定理 1.1.8</h5><p>考虑两个子空间的情形，$\forall\ \boldsymbol x,\boldsymbol y\in \mathcal U\cap\mathcal W,\ \lambda,\gamma\in\F$，有 $\boldsymbol x,\boldsymbol y\in\mathcal U,\ \boldsymbol x,\boldsymbol y\in\mathcal W$，</p>
