@@ -32,6 +32,18 @@
       </tags>
   </entry>
   <entry>
+    <title>博客更新日志</title>
+    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
+<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
+<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
+<p>同时安装了加密系统。学习方面的密码可以找博主索取。生活方面的随缘猜吧。</p>
+]]></content>
+      <tags>
+        <tag>大事祭</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>十八号</title>
     <url>/2023/08/14/%E5%8D%81%E5%85%AB%E5%8F%B7/</url>
     <content><![CDATA[<p>白昼开始缩短，潮湿的江风藏着一贯的似有似无的腥气，而我的情绪仍然找不到落脚点。</p>
@@ -43,18 +55,6 @@
 ]]></content>
       <tags>
         <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客更新日志</title>
-    <url>/2021/06/06/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="June-6th"><a href="#June-6th" class="headerlink" title="June 6th"></a>June 6th</h4><p>博客正式搬迁。</p>
-<h4 id="August-7th"><a href="#August-7th" class="headerlink" title="August 7th"></a>August 7th</h4><p>配置友链。</p>
-<h4 id="August-8th"><a href="#August-8th" class="headerlink" title="August 8th"></a>August 8th</h4><p>重置隐藏文章功能，现在隐藏文章不会出现在日志、搜索等各类列表中，且不再有 hide 标签。</p>
-<p>同时安装了加密系统。学习方面的密码可以找博主索取。生活方面的随缘猜吧。</p>
-]]></content>
-      <tags>
-        <tag>大事祭</tag>
       </tags>
   </entry>
   <entry>
@@ -71,154 +71,6 @@
     <url>/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E4%B8%8E%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<p>一门比较有基础的课。所以没有非常系统的整理。</p>
 <h4 id="1-常见模拟方法"><a href="#1-常见模拟方法" class="headerlink" title="1.常见模拟方法"></a><a href="/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E4%B8%8E%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-1-%E5%B8%B8%E8%A7%81%E6%A8%A1%E6%8B%9F%E6%96%B9%E6%B3%95/">1.常见模拟方法</a></h4>]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机语言与程序设计 1.常见模拟方法</title>
-    <url>/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E4%B8%8E%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-1-%E5%B8%B8%E8%A7%81%E6%A8%A1%E6%8B%9F%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p><strong>析出整数</strong></p>
-<p>执行下列函数，可以忽略非数字的字符，直接读入最近的一个整数。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">char</span> t=getchar();</span><br><span class="line">    <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(t))t=getchar();</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">isdigit</span>(t))x=x*<span class="number">10</span>+t-<span class="string">&#x27;0&#x27;</span>,t=getchar();</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>稍加更改可以支持符号输入，或者应用到字符串处理中。</p>
-<p><strong>输入的分隔符</strong></p>
-<p>若无明显分隔符，可使用文件结束符 <code>EOF</code>。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x)!=EOF)&#123;</span><br><span class="line">    <span class="comment">/*do something...*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>当输入字符希望使用上述体系时，建议显式声明有符号 <code>char</code>，以避免默认可能无符号导致错误。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">signed</span> <span class="keyword">char</span> x;</span><br><span class="line"><span class="keyword">while</span>((x=getchar())!=EOF)&#123;</span><br><span class="line">    <span class="comment">/*do something...*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输入一行字符串建议使用 <code>fgets</code> 以避免爆错，但需要注意此方法读入的字符串末尾会包含换行符。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">fgets(s,maxn,<span class="built_in">stdin</span>);</span><br></pre></td></tr></table></figure>
-
-<p>另外，由于一些不可描述的原因，输入数据最后一行可能没有换行符，建议不用换行符判断是否到达输入末尾。</p>
-<h4 id="中间变量"><a href="#中间变量" class="headerlink" title="中间变量"></a>中间变量</h4><p><strong>值交换</strong></p>
-<p>下述代码实现了基本的交换。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> *a,<span class="keyword">int</span> *b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t=*a;</span><br><span class="line">    *a=*b;</span><br><span class="line">    *b=t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>特别地，可以使用下列不借助中间变量的方法进行整型交换。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> swap(a,b) ((a)^=(b)^=(a)^=(b))</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>数组循环移位</strong></p>
-<p>将长度为 $n$ 的数组整体左移一位，事实上是交换了第一个元素与后 $n-1$ 个元素的位置。</p>
-<p>考虑使用中间变量存储第一个元素，然后将后 $n-1$ 个元素左移，最后将最后一个元素赋为中间变量的值。</p>
-<p>经过适当的取模运算，左移位数不超过数组长度，右移可以等价地转化为左移。</p>
-<p>对于左移 $m$ 位，可以转化为 $m$ 个左移一位，这种方式写起来简便。</p>
-<p>同时也可以看作交换前 $m$ 位与后 $n-m$ 位，这种方式速度更快。</p>
-<p>下给出第二种方式实现的代码。注意到需要给数组开辟额外的 $n$ 个空间（意即总共 $2n$） 以防数组越界。</p>
-<p>更方便地，考虑将整个数组复制一遍，则左移和后续赋值可以被统一起来。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">shift_vector</span><span class="params">(<span class="keyword">int</span> m,<span class="keyword">int</span> *<span class="built_in">vector</span>,<span class="keyword">int</span> number)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;m;++i)<span class="built_in">vector</span>[m+i]=<span class="built_in">vector</span>[i];</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;m;++i)<span class="built_in">vector</span>[i]=<span class="built_in">vector</span>[i+(m+number%m)%m];</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>稍加更改得到删除数组内某元素的方法。</p>
-<h4 id="标记数组"><a href="#标记数组" class="headerlink" title="标记数组"></a><strong>标记数组</strong></h4><p>使用元素为 $0,1$ 二元的数组标记某个位置是否处于某个特定状态，例如选择过与未选择过，出现过与未出现过。</p>
-<p><strong>Josephus 问题</strong></p>
-<p>（即猴子报数）</p>
-<p>使用 <code>vis</code> 数组标记某个猴子是否已经出列。最后剩下的一只 <code>vis</code> 为 $0$ 的猴子即为所求。</p>
-<p>将猴子从 $0$ 到 $n-1$ 编号，以下代码共循环 $n-1$ 轮，每一轮找出一只猴子出局：每一轮中 <code>k</code> 从上一轮结束的位置开始，在 $0$ 到 $n-1$ 间不断循环，并统计所遇未出局的猴子数，直到达到要求的 $m$ 只，标记此处的猴子出局。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(cnt=n;cnt&gt;<span class="number">1</span>;--cnt)&#123;</span><br><span class="line">    <span class="keyword">int</span> now=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(now&lt;m)&#123;</span><br><span class="line">        now+=!vis[k];</span><br><span class="line">        k=(k+<span class="number">1</span>)%n;</span><br><span class="line">    &#125;</span><br><span class="line">    vis[(k+n<span class="number">-1</span>)%n]=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="常量数组"><a href="#常量数组" class="headerlink" title="常量数组"></a>常量数组</h4><p>将频繁出现的常量存在数组中，可能简化代码。</p>
-<p>例如：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> *language[<span class="number">17</span>]=&#123;<span class="string">&quot;C&quot;</span>,<span class="string">&quot;C++&quot;</span>,<span class="string">&quot;Python&quot;</span>,<span class="string">&quot;Java&quot;</span>,<span class="string">&quot;Basic&quot;</span>,<span class="string">&quot;C#&quot;</span>,<span class="string">&quot;PHP&quot;</span>,<span class="string">&quot;Javascript&quot;</span>,<span class="string">&quot;SQL&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;Ruby&quot;</span>,<span class="string">&quot;Matlab&quot;</span>,<span class="string">&quot;Go&quot;</span>,<span class="string">&quot;Perl&quot;</span>,<span class="string">&quot;R&quot;</span>,<span class="string">&quot;Fortran&quot;</span>,<span class="string">&quot;Pascal&quot;</span>,<span class="string">&quot;Swift&quot;</span>&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><p><strong>字符处理函数</strong></p>
-<p><code>ctype.h</code> 中包含了一些字符处理的函数（宏），</p>
-<p>例如 <code>tolower</code>，<code>toupper</code>，<code>isdigit</code>，<code>isalpha</code>，<code>isalnum</code>，<code>islower</code>，<code>isupper</code>。</p>
-<p><strong>字符串处理函数</strong></p>
-<p>以下给出一些 <code>string.h</code> 中字符串函数的使用实例。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> len=<span class="built_in">strlen</span>(s);</span><br><span class="line"><span class="built_in">strcpy</span>(a,b);<span class="comment">/*let a be b*/</span></span><br><span class="line"><span class="built_in">strcat</span>(a,b);<span class="comment">/*let a be a concatenated with b*/</span></span><br><span class="line"><span class="keyword">if</span>(<span class="built_in">strcmp</span>(a,b)&gt;<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="comment">/*do something...*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">char</span> *token=strtok(str,<span class="string">&quot; &quot;</span>);<span class="comment">/*get the first string*/</span></span><br><span class="line"><span class="keyword">while</span>(token!=<span class="literal">NULL</span>) &#123;</span><br><span class="line">    <span class="comment">/*do something...*/</span></span><br><span class="line">    token=strtok(<span class="literal">NULL</span>,<span class="string">&quot; &quot;</span>);<span class="comment">/*get the next string*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意 <code>strlen()</code>  的返回值为 <code>size_t</code> 类型，也即无符号整型，因此应避免 <code>strlen(s)-1</code> 等可能溢出的算式。</p>
-<p>使用 <code>sprintf</code> 可以方便地向指定字符串中添加或替换一串字符，例如：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sprintf</span>(buffer+<span class="built_in">strlen</span>(buffer),<span class="string">&quot;%+d&quot;</span>,x);</span><br></pre></td></tr></table></figure>
-
-<p>实现了向 <code>buffer</code> 末尾添加一个带符号整型数字。</p>
-<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><p><strong>最大值和最小值</strong></p>
-<p>给出求最大值和最小值的经典代码。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(x,y) ((x)&lt;(y)?(y):(x))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(x,y) ((x)&lt;(y)?(x):(y))</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>冒泡排序</strong></p>
-<p>比较相邻两元素并将较大者放到后面，此方法每次可找出当前序列的最大值置于最后，然后将处理长度减 $1$。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=n;i;--i)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;i;++j)</span><br><span class="line">        <span class="keyword">if</span>(a[j]&gt;a[j+<span class="number">1</span>])</span><br><span class="line">            swap(a[j],a[j+<span class="number">1</span>]);</span><br></pre></td></tr></table></figure>
-
-<p>事实上可以直接找出当前序列中的最大值放在最后，此思路通常称为选择排序。</p>
-<p><strong>插入排序</strong></p>
-<p>考虑每次维护 $1$ 到 $i$ 有序，并向其中插入第 $i+1$ 个元素，使其仍保持有序。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;++i)&#123;</span><br><span class="line">    <span class="keyword">for</span>(j=i<span class="number">-1</span>;j;--j)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[j]&lt;a[j+<span class="number">1</span>])</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        swap(a[j],a[j+<span class="number">1</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;	</span><br></pre></td></tr></table></figure>
-
-<p><strong>有序数组的归并</strong></p>
-<p>将两个有序数组合并成一个有序数组，则每次比较第一个元素，将较小的放入答案数组，同时移动指针。</p>
-<p>最后需要确保两个数组中的元素都已放入。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">i=<span class="number">1</span>,j=<span class="number">1</span>,t=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span>(i&lt;=n&amp;&amp;j&lt;=m)</span><br><span class="line">    c[++t]=(a[i]&lt;b[j]?a[i++]:b[j++]);</span><br><span class="line"><span class="keyword">while</span>(i&lt;=n)c[++t]=a[i++];</span><br><span class="line"><span class="keyword">while</span>(j&lt;=m)c[++t]=b[j++];</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="高精度整数"><a href="#高精度整数" class="headerlink" title="高精度整数"></a>高精度整数</h4><p>位数较多的整数操作，基本原理是使用数组模拟竖式计算。</p>
-<p><strong>存储</strong></p>
-<p>以下内容需要保证数组未使用的空间为 $0$。</p>
-<p>需要存储位数（可使用数组的 $0$ 位置），并从低位到高位存储每一位，以便位数调整。</p>
-<p>特别地，原数为 $0$ 时，通常将位数记为 $1$。若需要进行有符号整数运算，需要额外的空间存储符号。</p>
-<p><strong>输入</strong></p>
-<p>通常先使用字符串输入再转存进整型数组。注意需要倒序。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,s);</span><br><span class="line">d[<span class="number">0</span>]=<span class="built_in">strlen</span>(s);</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=d[<span class="number">0</span>];++i)</span><br><span class="line">    d[i]=s[d[<span class="number">0</span>]-i]-<span class="string">&#x27;0&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>若输入数据中存在前导零（即在第一位非零位前有零），则位数需要进行调整。</p>
-<p>在减法、乘法等操作后也可能出现前导零（即位数减少），去除前导零的方法相同。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(d[<span class="number">0</span>]&amp;&amp;!d[d[<span class="number">0</span>])--d[<span class="number">0</span>];</span><br></pre></td></tr></table></figure>
-
-<p><strong>输出</strong></p>
-<p>倒序输出。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=c[<span class="number">0</span>];i;--i)<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,c[i]);</span><br></pre></td></tr></table></figure>
-
-<p><strong>加法</strong></p>
-<p>在每一位上处理下一位的进位，通过 <code>+=</code> 来将上一位的进位纳入计算。</p>
-<p>注意到加法过程中位数可能增加至多一位，需要特殊判断。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">c[<span class="number">0</span>]=max(a[<span class="number">0</span>],b[<span class="number">0</span>]);</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=c[<span class="number">0</span>];++i)&#123;</span><br><span class="line">    c[i]+=a[i]+b[i];</span><br><span class="line">    c[i+<span class="number">1</span>]+=c[i]/<span class="number">10</span>;</span><br><span class="line">    c[i]%=<span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(c[c[<span class="number">0</span>]+<span class="number">1</span>])++c[<span class="number">0</span>];</span><br></pre></td></tr></table></figure>
-
-<p><strong>减法</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">c[<span class="number">0</span>]=a[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=c[<span class="number">0</span>];++i)&#123;</span><br><span class="line">    c[i]+=a[i]-b[i];</span><br><span class="line">    <span class="keyword">if</span>(c[i]&lt;<span class="number">0</span>)</span><br><span class="line">    	--c[i+<span class="number">1</span>],c[i]+=<span class="number">10</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>乘法</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">c[<span class="number">0</span>]=a[<span class="number">0</span>]+b[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=a[<span class="number">0</span>];++i)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=b[<span class="number">0</span>];++j)&#123;</span><br><span class="line">        c[i+j<span class="number">-1</span>]+=a[i]*b[j];</span><br><span class="line">        c[i+j]+=c[i+j<span class="number">-1</span>]/<span class="number">10</span>;</span><br><span class="line">        c[i+j<span class="number">-1</span>]%=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>除法</strong></p>
-<p>除法难度增加较大，总的来说依然可以模拟竖式计算使用试除法。</p>
-<p>将除数的末位与被除数的每一位依次对齐，并按照此种对齐方式尽量多地减去除数。</p>
-<p>代码暂不给出。</p>
-<p><strong>大小比较</strong></p>
-<p>先比较位数再从高位起依次比较。以下给出小于比较的函数，其余类推。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">is_less_than</span><span class="params">(<span class="keyword">int</span> *a,<span class="keyword">int</span> *b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">if</span>(a[<span class="number">0</span>]!=b[<span class="number">0</span>])<span class="keyword">return</span> a[<span class="number">0</span>]&lt;b[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(i=a[<span class="number">0</span>];i;--i)</span><br><span class="line">        <span class="keyword">if</span>(a[i]!=b[i])</span><br><span class="line">            <span class="keyword">return</span> a[i]&lt;b[i];</span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="基本数学"><a href="#基本数学" class="headerlink" title="基本数学"></a>基本数学</h4><p><strong>最大公约数</strong></p>
-<p>使用辗转相除法。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> y?<span class="built_in">gcd</span>(y,x%y):x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>素数判断</strong></p>
-<p>只需检验 $2\le i\le\sqrt x$ 间的 $i$ 是否是 $x$ 的约数。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">is_prime</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i*i&lt;=x;++i)</span><br><span class="line">        <span class="keyword">if</span>(x%i==<span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">   	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>素数 Eratosthenes 筛法</strong></p>
-<p>结合前述标记数组思想，标记每个位置是否是素数。</p>
-<p>从 $2$ 开始循环到 $n$，如果当前的位置未被标记为合数，此时用其标记其倍数为合数。</p>
-<p>可以证明未被标记的数均为素数。</p>
-<p>这是较快且简便地得到不大于 $n$ 的所有素数的方法。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">not_prime[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;++i)</span><br><span class="line">    <span class="keyword">if</span>(!not_prime[i])</span><br><span class="line">        <span class="keyword">for</span>(j=i+i;j&lt;=n;j+=i)</span><br><span class="line">            not_prime[j]=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>多项式的点值</strong></p>
-<p>计算多项式函数 $f(x)$ 在 $x_0$ 处的点值 $f(x_0)$，有一种被称为秦九韶算法的较简便（且快速）的方法。</p>
-<p>以五次多项式为例，$a,b,c,d,e$ 分别为从 $4$ 次项到 $0$ 次项的系数，此处 $5$ 次项的系数为 $1$。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">f</span><span class="params">(<span class="keyword">float</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x*(x*(x*(x*(x+a)+b)+c)+d)+e;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>容易得到普遍的递归形式。</p>
-]]></content>
       <tags>
         <tag>学习笔记</tag>
       </tags>
