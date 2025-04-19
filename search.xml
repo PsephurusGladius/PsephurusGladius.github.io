@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>概率论基础-01-概率空间</title>
+      <link href="/2025/04/19/%E6%A6%82%E7%8E%87%E8%AE%BA%E5%9F%BA%E7%A1%80-01-%E6%A6%82%E7%8E%87%E7%A9%BA%E9%97%B4/"/>
+      <url>/2025/04/19/%E6%A6%82%E7%8E%87%E8%AE%BA%E5%9F%BA%E7%A1%80-01-%E6%A6%82%E7%8E%87%E7%A9%BA%E9%97%B4/</url>
+      
+        <content type="html"><![CDATA[<h4 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h4><p>此系列笔记源于笔者两门在修课程：数学系概率论 (1) 的两平行课堂中不强调测度论的一堂，主要参考教材李贤平《概率论基础》；给工科（主要是本系）开设的随机数学与统计，主要参考教材钱敏平、叶俊《大学数学·随机数学（第二版）》。</p><p>在此系列笔记，以及可能继续更新的其余笔记中，笔者将尝试突出知识的 motivation（或可译作动机）。但由于笔者学识有限，尽管尝试在此着力，其陈述并不一定是恰当的。笔记内容的选择和书写方式与笔者自身兴趣点有关，因此其不一定符合历史发展的现实，更不一定与课程教学内容相一致。</p><p>笔记的预期内容包含不强调测度的概率论基础（尽管可能有所涉及），以及随机过程与数理统计的部分内容。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World!</title>
+      <link href="/2025/04/07/hello-world/"/>
+      <url>/2025/04/07/hello-world/</url>
+      
+        <content type="html"><![CDATA[<ul><li>2025.04.12 以 Hexo Butterfly 重启了博客，配置了 Mathjax。</li><li>2025.04.19 配置了 tags 与 categories，配置了 local_search。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 站务 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 站务 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
