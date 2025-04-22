@@ -66,7 +66,7 @@
       <link href="/2025/04/22/signals-and-systems-notes-01/"/>
       <url>/2025/04/22/signals-and-systems-notes-01/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h3><p>笔者的信号与系统的前半学期过得甚是艰难。痛定思痛，考虑着重梳理一遍本课程内容。本笔记主要参照卓晴老师的 PPT，但对于概念引入顺序可能会做大的调整。</p><h3 id="1-信号与系统"><a href="#1-信号与系统" class="headerlink" title="1. 信号与系统"></a>1. 信号与系统</h3><h4 id="1-1-定义：信号与系统"><a href="#1-1-定义：信号与系统" class="headerlink" title="1.1 定义：信号与系统"></a>1.1 定义：信号与系统</h4><p>信号听起来当然不是一个陌生的概念，至少在生活中。点头摇头似乎是信号的一类，说出的一句话也可以是一种信号，不一而足。生活化地讲，<strong>信息的传输载体</strong>即是信号。</p><p>由于信息的复杂性，信号不太能被认为是一个“单值”；单值的例子当然也有，但不够一般化。在现实意义上，信号通常是某个物理量的一组特定的变化，它蕴含着一定的信息；而“变化”所直接引出的量正是“时间”。由此，定义<strong>信号</strong>为<strong>关于时间的函数</strong> $f(t)$。</p><p>信号的目的是传输信息，传输信息的目的是使用信息，系统是<strong>使用信息</strong>的实体。接收信号、加工信号并传递新的信号，这可以被认为是信息使用的惯常方式。一个合适的抽象是将系统视为对一定<strong>输入信号</strong>产生一定<strong>输出信号</strong>的箱子，即<strong>系统</strong>是<strong>信号到信号的映射</strong>；由于信号是关于时间的函数，系统是由一函数空间到另一函数空间的映射，即一种<strong>算子</strong>。</p>]]></content>
       
       
       <categories>
