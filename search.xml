@@ -13,9 +13,9 @@
       
       <categories>
           
-          <category> 优化 </category>
-          
           <category> 课程 </category>
+          
+          <category> 优化 </category>
           
       </categories>
       
@@ -42,9 +42,9 @@
       
       <categories>
           
-          <category> 优化 </category>
-          
           <category> 课程 </category>
+          
+          <category> 优化 </category>
           
       </categories>
       
@@ -71,9 +71,9 @@
       
       <categories>
           
-          <category> 优化 </category>
-          
           <category> 课程 </category>
+          
+          <category> 优化 </category>
           
       </categories>
       
@@ -120,9 +120,9 @@
     
     
     <entry>
-      <title>【自动控制理论笔记】性能设计</title>
-      <link href="/2026/02/08/tac-performance-design/"/>
-      <url>/2026/02/08/tac-performance-design/</url>
+      <title>【自动控制理论笔记】约束控制</title>
+      <link href="/2026/02/08/tac-constrained-control/"/>
+      <url>/2026/02/08/tac-constrained-control/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -178,9 +178,9 @@
     
     
     <entry>
-      <title>【自动控制理论笔记】约束控制</title>
-      <link href="/2026/02/08/tac-constrained-control/"/>
-      <url>/2026/02/08/tac-constrained-control/</url>
+      <title>【自动控制理论笔记】性能设计</title>
+      <link href="/2026/02/08/tac-performance-design/"/>
+      <url>/2026/02/08/tac-performance-design/</url>
       
         <content type="html"><![CDATA[]]></content>
       
