@@ -4,6 +4,383 @@
   
     
     <entry>
+      <title>【运筹学笔记】非线性规划</title>
+      <link href="/2026/02/08/operations-research-non-linear-programming/"/>
+      <url>/2026/02/08/operations-research-non-linear-programming/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 优化 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 运筹学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【运筹学笔记】线性规划 Ⅱ</title>
+      <link href="/2026/02/08/operations-research-linear-programming-2/"/>
+      <url>/2026/02/08/operations-research-linear-programming-2/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 优化 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 运筹学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【运筹学笔记】线性规划 Ⅰ</title>
+      <link href="/2026/02/08/operations-research-linear-programming-1/"/>
+      <url>/2026/02/08/operations-research-linear-programming-1/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 优化 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 运筹学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【自动控制理论笔记】MIMO 系统</title>
+      <link href="/2026/02/08/tac-MIMO-systems/"/>
+      <url>/2026/02/08/tac-MIMO-systems/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 课程 </category>
+          
+          <category> 控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 自动控制理论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【自动控制理论笔记】性能设计</title>
+      <link href="/2026/02/08/tac-performance-design/"/>
+      <url>/2026/02/08/tac-performance-design/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 课程 </category>
+          
+          <category> 控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 自动控制理论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【自动控制理论笔记】SISO 系统</title>
+      <link href="/2026/02/08/tac-SISO-systems/"/>
+      <url>/2026/02/08/tac-SISO-systems/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 课程 </category>
+          
+          <category> 控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 自动控制理论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【自动控制理论笔记】约束控制</title>
+      <link href="/2026/02/08/tac-constrained-control/"/>
+      <url>/2026/02/08/tac-constrained-control/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 课程 </category>
+          
+          <category> 控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 自动控制理论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【微积分笔记】积分学</title>
+      <link href="/2026/01/23/calculus-integral-calculus/"/>
+      <url>/2026/01/23/calculus-integral-calculus/</url>
+      
+        <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微积分 </tag>
+            
+            <tag> 课程笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【微积分笔记】微分学</title>
+      <link href="/2026/01/23/calculus-differential-calculus/"/>
+      <url>/2026/01/23/calculus-differential-calculus/</url>
+      
+        <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微积分 </tag>
+            
+            <tag> 课程笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【微积分笔记】级数</title>
+      <link href="/2026/01/23/calculus-series/"/>
+      <url>/2026/01/23/calculus-series/</url>
+      
+        <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微积分 </tag>
+            
+            <tag> 课程笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【微积分笔记】极限</title>
+      <link href="/2026/01/23/calculus-limits/"/>
+      <url>/2026/01/23/calculus-limits/</url>
+      
+        <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p><p>笔记包含大语言模型辅助写作成分。</p><h3 id="0-序言：分析与微积分"><a href="#0-序言：分析与微积分" class="headerlink" title="0. 序言：分析与微积分"></a>0. 序言：分析与微积分</h3><p>微积分，即本笔记的标题内容，是分析中的基础且重要的内容。微分与积分分别体现了分析对局部和整体两方面的关注，彼此又通过微积分基本定理等若干核心结论进行联系。</p><p>从较为初级的眼光来看，分析的一个核心思想是<strong>逼近</strong>：使用“较为熟知或简单”的对象作为材料，通过给定的组合方式，去接近甚至在某种意义下替代“较为未知或复杂”的目标对象。分析关心这样的逼近是否可行，即在给定的逼近材料和组合方式之下，可以把误差压缩到多小，是否可以在给定的标准下把构造出的逼近与目标视为等同。</p><p>分析的基本问题主要围绕三件事展开，即允许使用的逼近材料是什么，逼近的方式是什么，衡量逼近程度的标准是什么。而在技术层面上，尤为重要的工具是各类不等式，它们使误差得以估计与控制，从而把“逼近”这一思想落实为可操作的论证。</p><p>本笔记分为四个部分，“极限”、“级数”、“微分学”与“积分学”。笔记坚持将一元、多元与更为抽象的数学对象结合叙事，通过适当的例子彼此勾连，力求理解不过分偏颇于特殊情形的特殊性质，但也不做于理解无益的抽象。其中，极限部分确立逼近的一般语言，级数部分展示简单的逼近材料的无穷组合产生的力量，微分学部分研究局部的逼近法则，积分学部分则研究了更为整体的逼近，并与局部的逼近联系起来。</p><h3 id="1-极限"><a href="#1-极限" class="headerlink" title="1. 极限"></a>1. 极限</h3><h4 id="1-1-有理数及其极限"><a href="#1-1-有理数及其极限" class="headerlink" title="1.1 有理数及其极限"></a>1.1 有理数及其极限</h4><h4 id="1-2-实数"><a href="#1-2-实数" class="headerlink" title="1.2 实数"></a>1.2 实数</h4><h4 id="1-3-度量空间的极限"><a href="#1-3-度量空间的极限" class="headerlink" title="1.3 度量空间的极限"></a>1.3 度量空间的极限</h4><h4 id="1-4-紧性"><a href="#1-4-紧性" class="headerlink" title="1.4 紧性"></a>1.4 紧性</h4><h4 id="1-5-连续性"><a href="#1-5-连续性" class="headerlink" title="1.5 连续性"></a>1.5 连续性</h4><h4 id="1-6-多项式与有理函数"><a href="#1-6-多项式与有理函数" class="headerlink" title="1.6 多项式与有理函数"></a>1.6 多项式与有理函数</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微积分 </tag>
+            
+            <tag> 课程笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【拓扑学笔记】同调</title>
+      <link href="/2025/12/31/topology-homology/"/>
+      <url>/2025/12/31/topology-homology/</url>
+      
+        <content type="html"><![CDATA[<p>笔者于 2025 年秋季学期学习拓扑学课程。笔记主要参考教材为 Allen Hatcher <em>Algebraic Topology</em>，同时参考 M.A. Armstrong <em>Basic Topology</em> 与宗正宇老师的课堂讲义。本篇笔记内容大概包括 Hatcher 2.1 2.2，及 Armstrong 第 9 章。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 拓扑学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【拓扑学笔记】同伦</title>
+      <link href="/2025/12/31/topology-homotopy/"/>
+      <url>/2025/12/31/topology-homotopy/</url>
+      
+        <content type="html"><![CDATA[<p>笔者于 2025 年秋季学期学习拓扑学课程。本篇笔记主要参考教材为 Allen Hatcher <em>Algebraic Topology</em>，同时参考 M.A. Armstrong <em>Basic Topology</em> 与宗正宇老师的课堂讲义。虽题为同伦，本篇笔记内容大致只包括 Hatcher 第 1 章基本群。</p><p><img src="/images/a3682fcf-0504-4826-9c23-76f7f8db0c3c.png" alt="a3682fcf-0504-4826-9c23-76f7f8db0c3c"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 拓扑学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>训狗日记</title>
       <link href="/2025/05/03/cyberdog-training-diary/"/>
       <url>/2025/05/03/cyberdog-training-diary/</url>
