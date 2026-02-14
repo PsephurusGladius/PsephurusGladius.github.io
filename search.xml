@@ -5,17 +5,17 @@
     
     <entry>
       <title>【运筹学笔记】非线性规划</title>
-      <link href="/blog/2026/02/08/operations-research-non-linear-programming/"/>
-      <url>/blog/2026/02/08/operations-research-non-linear-programming/</url>
+      <link href="/2026/02/08/operations-research-non-linear-programming/"/>
+      <url>/2026/02/08/operations-research-non-linear-programming/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> 优化 </category>
-          
           <category> 课程 </category>
+          
+          <category> 优化 </category>
           
       </categories>
       
@@ -34,17 +34,17 @@
     
     <entry>
       <title>【运筹学笔记】线性规划 Ⅱ</title>
-      <link href="/blog/2026/02/08/operations-research-linear-programming-2/"/>
-      <url>/blog/2026/02/08/operations-research-linear-programming-2/</url>
+      <link href="/2026/02/08/operations-research-linear-programming-2/"/>
+      <url>/2026/02/08/operations-research-linear-programming-2/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> 优化 </category>
-          
           <category> 课程 </category>
+          
+          <category> 优化 </category>
           
       </categories>
       
@@ -63,17 +63,17 @@
     
     <entry>
       <title>【运筹学笔记】线性规划 Ⅰ</title>
-      <link href="/blog/2026/02/08/operations-research-linear-programming-1/"/>
-      <url>/blog/2026/02/08/operations-research-linear-programming-1/</url>
+      <link href="/2026/02/08/operations-research-linear-programming-1/"/>
+      <url>/2026/02/08/operations-research-linear-programming-1/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> 优化 </category>
-          
           <category> 课程 </category>
+          
+          <category> 优化 </category>
           
       </categories>
       
@@ -92,8 +92,8 @@
     
     <entry>
       <title>【自动控制理论笔记】最优控制</title>
-      <link href="/blog/2026/02/08/tac-optimal-control/"/>
-      <url>/blog/2026/02/08/tac-optimal-control/</url>
+      <link href="/2026/02/08/tac-optimal-control/"/>
+      <url>/2026/02/08/tac-optimal-control/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -121,8 +121,8 @@
     
     <entry>
       <title>【自动控制理论笔记】状态空间方法</title>
-      <link href="/blog/2026/02/08/tac-state-space-methods/"/>
-      <url>/blog/2026/02/08/tac-state-space-methods/</url>
+      <link href="/2026/02/08/tac-state-space-methods/"/>
+      <url>/2026/02/08/tac-state-space-methods/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -150,8 +150,8 @@
     
     <entry>
       <title>【自动控制理论笔记】反馈控制</title>
-      <link href="/blog/2026/02/08/tac-feedback-control/"/>
-      <url>/blog/2026/02/08/tac-feedback-control/</url>
+      <link href="/2026/02/08/tac-feedback-control/"/>
+      <url>/2026/02/08/tac-feedback-control/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -179,8 +179,8 @@
     
     <entry>
       <title>【微积分笔记】积分学</title>
-      <link href="/blog/2026/01/23/calculus-integral-calculus/"/>
-      <url>/blog/2026/01/23/calculus-integral-calculus/</url>
+      <link href="/2026/01/23/calculus-integral-calculus/"/>
+      <url>/2026/01/23/calculus-integral-calculus/</url>
       
         <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
       
@@ -208,8 +208,8 @@
     
     <entry>
       <title>【微积分笔记】微分学</title>
-      <link href="/blog/2026/01/23/calculus-differential-calculus/"/>
-      <url>/blog/2026/01/23/calculus-differential-calculus/</url>
+      <link href="/2026/01/23/calculus-differential-calculus/"/>
+      <url>/2026/01/23/calculus-differential-calculus/</url>
       
         <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
       
@@ -237,8 +237,8 @@
     
     <entry>
       <title>【微积分笔记】极限</title>
-      <link href="/blog/2026/01/23/calculus-limits/"/>
-      <url>/blog/2026/01/23/calculus-limits/</url>
+      <link href="/2026/01/23/calculus-limits/"/>
+      <url>/2026/01/23/calculus-limits/</url>
       
         <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p><p>笔记包含大语言模型辅助写作成分。</p><h3 id="0-序言：分析与微积分"><a href="#0-序言：分析与微积分" class="headerlink" title="0. 序言：分析与微积分"></a>0. 序言：分析与微积分</h3><p>微积分，即本笔记的标题内容，是分析中的基础且重要的内容。微分与积分分别体现了分析对局部和整体两方面的关注，彼此又通过微积分基本定理等若干核心结论进行联系。</p><p>从较为初级的眼光来看，分析的一个核心思想是<strong>逼近</strong>：使用“较为熟知或简单”的对象作为材料，通过给定的组合方式，去接近甚至在某种意义下替代“较为未知或复杂”的目标对象。分析关心这样的逼近是否可行，即在给定的逼近材料和组合方式之下，可以把误差压缩到多小，是否可以在给定的标准下把构造出的逼近与目标视为等同。</p><p>分析的基本问题主要围绕三件事展开，即允许使用的逼近材料是什么，逼近的方式是什么，衡量逼近程度的标准是什么。而在技术层面上，尤为重要的工具是各类不等式，它们使误差得以估计与控制，从而把“逼近”这一思想落实为可操作的论证。</p><p>本笔记分为四个部分，“极限”、“级数”、“微分学”与“积分学”。笔记坚持将一元、多元与更为抽象的数学对象结合叙事，通过适当的例子彼此勾连，力求理解不过分偏颇于特殊情形的特殊性质，但也不做于理解无益的抽象。其中，极限部分确立逼近的一般语言，级数部分展示简单的逼近材料的无穷组合产生的力量，微分学部分研究局部的逼近法则，积分学部分则研究了更为整体的逼近，并与局部的逼近联系起来。</p><h3 id="1-极限"><a href="#1-极限" class="headerlink" title="1. 极限"></a>1. 极限</h3><h4 id="1-1-有理数"><a href="#1-1-有理数" class="headerlink" title="1.1 有理数"></a>1.1 有理数</h4><h4 id="1-2-实数"><a href="#1-2-实数" class="headerlink" title="1.2 实数"></a>1.2 实数</h4><h4 id="1-3-度量空间"><a href="#1-3-度量空间" class="headerlink" title="1.3 度量空间"></a>1.3 度量空间</h4><h4 id="1-4-紧性"><a href="#1-4-紧性" class="headerlink" title="1.4 紧性"></a>1.4 紧性</h4><h4 id="1-5-连续性"><a href="#1-5-连续性" class="headerlink" title="1.5 连续性"></a>1.5 连续性</h4><h4 id="1-6-有理函数"><a href="#1-6-有理函数" class="headerlink" title="1.6 有理函数"></a>1.6 有理函数</h4>]]></content>
       
@@ -266,8 +266,8 @@
     
     <entry>
       <title>【微积分笔记】级数</title>
-      <link href="/blog/2026/01/23/calculus-series/"/>
-      <url>/blog/2026/01/23/calculus-series/</url>
+      <link href="/2026/01/23/calculus-series/"/>
+      <url>/2026/01/23/calculus-series/</url>
       
         <content type="html"><![CDATA[<p>由于下学期将同时修读复分析和测度与积分两门课程，同时在上学期常微分方程的学习中发现自身分析功底较差，计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
       
@@ -295,8 +295,8 @@
     
     <entry>
       <title>【拓扑学笔记】同调</title>
-      <link href="/blog/2025/12/31/topology-homology/"/>
-      <url>/blog/2025/12/31/topology-homology/</url>
+      <link href="/2025/12/31/topology-homology/"/>
+      <url>/2025/12/31/topology-homology/</url>
       
         <content type="html"><![CDATA[<p>笔者于 2025 年秋季学期学习拓扑学课程。笔记主要参考教材为 Allen Hatcher <em>Algebraic Topology</em>，同时参考 M.A. Armstrong <em>Basic Topology</em> 与宗正宇老师的课堂讲义。本篇笔记内容大概包括 Hatcher 2.1 2.2，及 Armstrong 第 9 章。</p>]]></content>
       
@@ -324,8 +324,8 @@
     
     <entry>
       <title>【拓扑学笔记】同伦</title>
-      <link href="/blog/2025/12/31/topology-homotopy/"/>
-      <url>/blog/2025/12/31/topology-homotopy/</url>
+      <link href="/2025/12/31/topology-homotopy/"/>
+      <url>/2025/12/31/topology-homotopy/</url>
       
         <content type="html"><![CDATA[<p>笔者于 2025 年秋季学期学习拓扑学课程。本篇笔记主要参考教材为 Allen Hatcher <em>Algebraic Topology</em>，同时参考 M.A. Armstrong <em>Basic Topology</em> 与宗正宇老师的课堂讲义。虽题为同伦，本篇笔记内容大致只包括 Hatcher 第 1 章基本群。</p><p><img src="/images/a3682fcf-0504-4826-9c23-76f7f8db0c3c.png" alt="a3682fcf-0504-4826-9c23-76f7f8db0c3c"></p>]]></content>
       
@@ -353,8 +353,8 @@
     
     <entry>
       <title>【拓扑学笔记】点集拓扑</title>
-      <link href="/blog/2025/12/31/topology-point-set-topology/"/>
-      <url>/blog/2025/12/31/topology-point-set-topology/</url>
+      <link href="/2025/12/31/topology-point-set-topology/"/>
+      <url>/2025/12/31/topology-point-set-topology/</url>
       
         <content type="html"><![CDATA[<p>笔者于 2025 年秋季学期学习拓扑学课程。本篇笔记主要参考教材为 Munkres <em>Topology</em>，同时参考 M.A. Armstrong <em>Basic Topology</em> 与宗正宇老师的课堂讲义。</p><p><img src="/images/a3682fcf-0504-4826-9c23-76f7f8db0c3c.png" alt="a3682fcf-0504-4826-9c23-76f7f8db0c3c"></p>]]></content>
       
@@ -382,8 +382,8 @@
     
     <entry>
       <title>训狗日记</title>
-      <link href="/blog/2025/05/03/cyberdog-training-diary/"/>
-      <url>/blog/2025/05/03/cyberdog-training-diary/</url>
+      <link href="/2025/05/03/cyberdog-training-diary/"/>
+      <url>/2025/05/03/cyberdog-training-diary/</url>
       
         <content type="html"><![CDATA[<h4 id="2025-04-26"><a href="#2025-04-26" class="headerlink" title="2025.04.26"></a>2025.04.26</h4><p>给狗子充了电。</p><h4 id="2025-05-02"><a href="#2025-05-02" class="headerlink" title="2025.05.02"></a>2025.05.02</h4><p>开始尝试与 3-1 狗子建立连接，阅读 PPT 没明白 Cyberdog2 APP 是怎么突然出现的，咨询后发现是手机 APP，PPT 讲解顺序有点混乱。经过尝试连接成功，但不能站立。根据人工校准的图示，发现确实是位置没摆好，摆好后遥控动作成功。</p><p>Cyberdog2 APP 的 UI 与手机型号不适配，IP 显示只能看到 10.0.0 后的一个数字。利用 Advanced IP scanner 根据此信息扫描拿到了狗子的 IP。在个人电脑和 3-1 上开始安装 tightVNC。</p><p>晚，WJ 抵达，开始与 3-2 狗子互动。</p><p>发现自身系统直接打开 windows powershell 窗口的配色太怪了，不想调，遂换用 vscode 打开。熟悉了 vim 的操作，并完成了 tightVNC 的配置。</p><p>3-2 安装了 tightVNC，但出现灰屏。利用群内文件尝试修改 <code>~/.vnc/xstartup</code>，图形界面出现，但命令行无法输入。3-2 最终决定换用 mobaxterm 进行操作，顺利开始。</p><p>通过两处 <code>manual.py</code> 的 <code>get_namespace</code> 的修改进行改名。3-1 改名为 jiqimao1，3-2 改名为 jiqimao2。尝试直接在命令行里键入 <code>ros2 service call</code> 相关指令使狗子站起，未果。暂时跳过此步骤。</p><p>创建了工作空间 <code>workplace/src</code>，创建了 <code>learning</code> 功能包，在 <code>learning/learning</code> 下依照 PPT 编写了 <code>stand.py</code>，增添了 <code>learning/setup.py</code> 有关 <code>stand.py</code> 的配置。尝试在 <code>workplace</code> 下 <code>colcon build</code>，报错，修复未果。直接 <code>python3 stand.py</code> 瞬间执行完成，但没有任何作用。</p><p>经咨询发现报错是正常的，能跑就行。明天试试。</p><h4 id="2025-05-03"><a href="#2025-05-03" class="headerlink" title="2025.05.03"></a>2025.05.03</h4><p>继续 3-1 的站立。<code>source ~/workplace/install/setup.bash</code> 报错 <code>not found:&quot;/opt/ros2/galactic/share/libg2o/local_setup.bash&quot;</code>。忽略。直接执行 <code>ros2 run learning stand</code>，狗子成功站立。WJ 到，3-2 试验亦成功。3-2 还试验了原地踏步、超声波测距、相机开启等，均顺利完成；但 bash 文件配置不成功，不能打开全部相机。</p><p>咨询了上位机相关问题，学习了 ROS2 的 callback 相关机制。</p><p>（以下内容由 WJ 撰写）</p><h4 id="2025-05-04"><a href="#2025-05-04" class="headerlink" title="2025.05.04"></a>2025.05.04</h4><p>修改了讲义中的代码，使用 <code>$!</code> 获取后台进程 PID，并在脚本末尾用 <code>wait</code> 维持主进程存活，最终成功使用 .bash 文件打开了 3-2 的相机。</p><p>之后将PPT里的追踪部分的代码拷贝到了 3-2 当中，使用 ros2 和 python3 运行了几次都没有反应，遂将 3-2 重启，重新连接后build，终于出现了错误信息，是有几处地方拷贝错误了。修正过后重新运行追踪部分的代码，输出 <code>Connection Refused</code>。</p><h4 id="2025-05-05"><a href="#2025-05-05" class="headerlink" title="2025.05.05"></a>2025.05.05</h4><p>出现 <code>Connection Refused</code> 的原因是没有正常打开深度相机，除此之外还报了一些和 <code>ip</code> 和 <code>port</code> 相关的错误，用 <code>tightvncserver</code> 连接后好像解决了。</p><p>后续仍然不断输出 <code>Not Found</code> （后来发现一直输出 <code>Not Found</code> 是因为上位机的追踪算法没有启用，需要我们自己写一个根据图片识别绿球的算法），就先搓了一个在 <code>Not Found</code> 的条件下狗子原地转圈的函数 <code>rotate</code>。</p><p>搞了一下午也没有搞清楚 <code>RGB</code> 相机如何使用，想索性直接用灰度图，搓了一个获取灰度图数据的程序 <code>get_camera_info</code>，却发现用 <code>cv2</code> 不能实时显示订阅的数据。</p><h4 id="2025-05-06"><a href="#2025-05-06" class="headerlink" title="2025.05.06"></a>2025.05.06</h4><p><code>cv2</code> 必须配合 <code>cv2.waitKey()</code> 使用才有效，否则无法展示界面，将获取相机数据与展示数据写在一个循环里，将每一帧的展示时间设定为 <code>1ms</code>，最后可以实时显示画面。</p><p>发现先打开深度相机，再新开一个命令行运行 <code>export DISPLAY=:0</code> 并打开 RGB 相机就能使 RGB 相机正常工作</p><p>使用 cv2 库中的方法实现了绿球的识别功能：<code>inRange</code> 滤除非绿色部分，<code>GuassianBlur</code> 对图像进行平滑化处理，最后用 <code>HoughCircles</code> 检测图像中的圆形，并返回圆心坐标。</p><p>下午把之前写好的几类节点直接拷贝到 <code>my_track</code> 里，使用了比较初级的策略完成了识别到球后往前走，当球足够近时停下的功能。同时使用超声波测距实现了避障功能。（由 WJ 与 LX 共同完成）</p><p>（以下转回本人撰写）</p><p>晚上为 3-1 配备相应功能。编写了前进、左转、右转、坐下、超声结点。与 DC、YC 交流 ROS2 初步以及 cv 内容。</p><h4 id="2025-05-07"><a href="#2025-05-07" class="headerlink" title="2025.05.07"></a>2025.05.07</h4><p>3-1 cv 最终选用绿色过滤加中点检测的方法，即先把画面滤到只剩绿色，并忽略有色点过少的情形，再将所有有色点的中点视为球的中心，避免了各类噪点干扰问题，识别结果相当稳定。避障仍采用超声测距方法，最终停止结合绿色存在性与超声测距的两结果进行判断。</p><h4 id="2025-05-14"><a href="#2025-05-14" class="headerlink" title="2025.05.14"></a>2025.05.14</h4><p>WJ 适配了 vrpn 动捕系统。</p><h4 id="2025-05-26"><a href="#2025-05-26" class="headerlink" title="2025.05.26"></a>2025.05.26</h4><p>熟悉了动捕系统下的操作。</p><h4 id="2025-05-27"><a href="#2025-05-27" class="headerlink" title="2025.05.27"></a>2025.05.27</h4><p>将狗分配为防御和攻击，并使用 <code>Attack</code> 和 <code>Defend</code> 两个类分别对应，两个类共同继承 <code>Act</code> 基类。防御采用某一纵坐标上的横坐标预测和拦截方法，并针对球较近和较远的情况进行特化。在 <code>rclpy</code> 使用中，<code>subscribe</code> 和 <code>publish</code> 的队列长度现在设为了 $1$（以期望逼近即时处理）。编写了 <code>kick</code> 函数，分为调整朝向、助跑和暂停三个阶段，但有问题。</p><h4 id="2025-05-28"><a href="#2025-05-28" class="headerlink" title="2025.05.28"></a>2025.05.28</h4><p>WJ、DC、LX 实现了简单的攻击策略。让狗走到球和球门上随机点的延长线上，转向对准这条线，然后推球往前走，预期能实现对静止的球的进攻。</p><p>由于动捕系统及网络使用人数过多，在四元数等坐标变换上调试许久。</p><p>后续更改：近距离时，角度的误差影响非常大，在近距离计算时不再使用与角度有关的控制；移动不再要求转动到正对点再移动，而可以允许一个 pi / 4 的偏差；射门会在一个接近正对的时候出射，不再使用球门内角度的精确控制。</p><p>防御狗的表现很差，可能跟动捕系统的精度及时间延迟、狗的速度等都有关，不知道怎么调。攻击狗方面，在射门时采用了根据离球门距离以及已移动距离判断是否应该停止跑动的方法，避免撞进对方球门或护栏上，但转向的精度使狗并不能很好地从转向切换到跑动，以及在跑动时准确命中。</p><h4 id="2025-05-29"><a href="#2025-05-29" class="headerlink" title="2025.05.29"></a>2025.05.29</h4><p>一觉睡完，本队与冠军队的对局（也是整场比赛的第一个对局）已经结束，光速下播。实力和运气兼低导致的。听说他们启用了 plan B，但由于在睡觉，我并不知道。</p><p>总体来看，后续投入时间不足可能是最重要的问题；以后不能再这么多线程地干活了。（很可惜的是，在写下这几行字的时候，已经在多线程干活了。）</p>]]></content>
       
@@ -409,8 +409,8 @@
     
     <entry>
       <title>Hello World!</title>
-      <link href="/blog/2025/04/07/hello-world/"/>
-      <url>/blog/2025/04/07/hello-world/</url>
+      <link href="/2025/04/07/hello-world/"/>
+      <url>/2025/04/07/hello-world/</url>
       
         <content type="html"><![CDATA[<ul><li>2025.04<ul><li>以 Hexo Butterfly 重启了博客，配置了 Mathjax。</li><li>配置了 tags 与 categories，配置了 local_search。</li><li>配置了 gitalk。</li></ul></li><li>2025.12<ul><li>配置了友链。</li></ul></li></ul>]]></content>
       
