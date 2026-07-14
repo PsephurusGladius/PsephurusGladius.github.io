@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title>【概率论笔记】条件、独立与信息</title>
-      <link href="/2026/07/10/probability-conditioning-independence-and-information/"/>
-      <url>/2026/07/10/probability-conditioning-independence-and-information/</url>
+      <title>【概率与统计笔记】假设与检验</title>
+      <link href="/2026/07/10/probability-and-statistics-hypotheses-and-testing/"/>
+      <url>/2026/07/10/probability-and-statistics-hypotheses-and-testing/</url>
       
         <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
       
@@ -33,9 +33,9 @@
     
     
     <entry>
-      <title>【概率论笔记】随机变量的渐近行为</title>
-      <link href="/2026/07/10/probability-asymptotic-behavior-of-random-variables/"/>
-      <url>/2026/07/10/probability-asymptotic-behavior-of-random-variables/</url>
+      <title>【概率与统计笔记】模型与估计</title>
+      <link href="/2026/07/10/probability-and-statistics-models-and-estimation/"/>
+      <url>/2026/07/10/probability-and-statistics-models-and-estimation/</url>
       
         <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
       
@@ -62,9 +62,9 @@
     
     
     <entry>
-      <title>【概率论笔记】随机变量的数字特征</title>
-      <link href="/2026/07/10/probability-characteristics-of-random-variables/"/>
-      <url>/2026/07/10/probability-characteristics-of-random-variables/</url>
+      <title>【概率与统计笔记】条件与鞅</title>
+      <link href="/2026/07/10/probability-and-statistics-conditioning-and-martingales/"/>
+      <url>/2026/07/10/probability-and-statistics-conditioning-and-martingales/</url>
       
         <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
       
@@ -91,9 +91,125 @@
     
     
     <entry>
-      <title>【概率论笔记】随机现象的描述</title>
-      <link href="/2026/07/10/probability-describing-random-phenomena/"/>
-      <url>/2026/07/10/probability-describing-random-phenomena/</url>
+      <title>【概率与统计笔记】条件与鞅</title>
+      <link href="/2026/07/10/probability-and-statistics-states-and-time/"/>
+      <url>/2026/07/10/probability-and-statistics-states-and-time/</url>
+      
+        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【概率与统计笔记】收敛性与极限定理</title>
+      <link href="/2026/07/10/probability-and-statistics-convergence-and-limit-theorems/"/>
+      <url>/2026/07/10/probability-and-statistics-convergence-and-limit-theorems/</url>
+      
+        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【概率与统计笔记】分布特征与样本统计量</title>
+      <link href="/2026/07/10/probability-and-statistics-distributional-characteristics-and-sample-statistics/"/>
+      <url>/2026/07/10/probability-and-statistics-distributional-characteristics-and-sample-statistics/</url>
+      
+        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【概率与统计笔记】随机向量与随机过程</title>
+      <link href="/2026/07/10/probability-and-statistics-random-vectors-and-stochastic-processes/"/>
+      <url>/2026/07/10/probability-and-statistics-random-vectors-and-stochastic-processes/</url>
+      
+        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【概率与统计笔记】概率空间与分布</title>
+      <link href="/2026/07/10/probability-and-statistics-probability-spaces-and-distributions/"/>
+      <url>/2026/07/10/probability-and-statistics-probability-spaces-and-distributions/</url>
       
         <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
       
