@@ -62,9 +62,9 @@
     
     
     <entry>
-      <title>【概率与统计笔记】条件与鞅</title>
-      <link href="/2026/07/10/probability-and-statistics-conditioning-and-martingales/"/>
-      <url>/2026/07/10/probability-and-statistics-conditioning-and-martingales/</url>
+      <title>【概率与统计笔记】条件与信息</title>
+      <link href="/2026/07/10/probability-and-statistics-conditioning-and-information/"/>
+      <url>/2026/07/10/probability-and-statistics-conditioning-and-information/</url>
       
         <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
       
@@ -91,9 +91,9 @@
     
     
     <entry>
-      <title>【概率与统计笔记】条件与鞅</title>
-      <link href="/2026/07/10/probability-and-statistics-states-and-time/"/>
-      <url>/2026/07/10/probability-and-statistics-states-and-time/</url>
+      <title>【概率与统计笔记】路径与积分</title>
+      <link href="/2026/07/10/probability-and-statistics-paths-and-integration/"/>
+      <url>/2026/07/10/probability-and-statistics-paths-and-integration/</url>
       
         <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
       
@@ -120,9 +120,9 @@
     
     
     <entry>
-      <title>【概率与统计笔记】收敛性与极限定理</title>
-      <link href="/2026/07/10/probability-and-statistics-convergence-and-limit-theorems/"/>
-      <url>/2026/07/10/probability-and-statistics-convergence-and-limit-theorems/</url>
+      <title>【概率与统计笔记】状态与转移</title>
+      <link href="/2026/07/10/probability-and-statistics-states-and-transitions/"/>
+      <url>/2026/07/10/probability-and-statistics-states-and-transitions/</url>
       
         <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
       
@@ -149,40 +149,11 @@
     
     
     <entry>
-      <title>【概率与统计笔记】分布特征与样本统计量</title>
-      <link href="/2026/07/10/probability-and-statistics-distributional-characteristics-and-sample-statistics/"/>
-      <url>/2026/07/10/probability-and-statistics-distributional-characteristics-and-sample-statistics/</url>
+      <title>【概率与统计笔记】第四章 收敛与极限</title>
+      <link href="/2026/07/10/probability-and-statistics-convergence-and-limits/"/>
+      <url>/2026/07/10/probability-and-statistics-convergence-and-limits/</url>
       
-        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数学 </category>
-          
-          <category> 课程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 课程笔记 </tag>
-            
-            <tag> 概率论 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>【概率与统计笔记】随机向量与随机过程</title>
-      <link href="/2026/07/10/probability-and-statistics-random-vectors-and-stochastic-processes/"/>
-      <url>/2026/07/10/probability-and-statistics-random-vectors-and-stochastic-processes/</url>
-      
-        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
+        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p><p><strong><em>Probability and Statistics</em></strong></p><p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程和数理统计。主要参考李贤平《概率论基础》、叶俊老师的《随机数学》与茆诗松《概率论与数理统计》。也参考 David Williams <em>Probability with Martingales</em> 和 Durret <em>Probability: Theory and Examples</em>。</p><h3 id="4-收敛与极限"><a href="#4-收敛与极限" class="headerlink" title="4. 收敛与极限"></a>4. 收敛与极限</h3><p><strong><em>Convergence and Limits</em></strong></p><h4 id="4-1-随机变量的收敛"><a href="#4-1-随机变量的收敛" class="headerlink" title="4.1 随机变量的收敛"></a>4.1 随机变量的收敛</h4><p><strong><em>Convergence of Random Variables</em></strong></p><h4 id="4-2-大数定律"><a href="#4-2-大数定律" class="headerlink" title="4.2 大数定律"></a>4.2 大数定律</h4><p><strong><em>Laws of Large Numbers</em></strong></p><h4 id="4-3-中心极限定理"><a href="#4-3-中心极限定理" class="headerlink" title="4.3 中心极限定理"></a>4.3 中心极限定理</h4><p><strong><em>Central Limit Theorems</em></strong></p><h4 id="4-4-统计量的渐近性质"><a href="#4-4-统计量的渐近性质" class="headerlink" title="4.4 统计量的渐近性质"></a>4.4 统计量的渐近性质</h4><p><strong><em>Asymptotic Properties of Statistics</em></strong></p><h4 id="4-5-布朗运动"><a href="#4-5-布朗运动" class="headerlink" title="4.5 布朗运动"></a>4.5 布朗运动</h4><p><strong><em>Brownian Motion</em></strong></p>]]></content>
       
       
       <categories>
@@ -207,11 +178,98 @@
     
     
     <entry>
-      <title>【概率与统计笔记】概率空间与分布</title>
-      <link href="/2026/07/10/probability-and-statistics-probability-spaces-and-distributions/"/>
-      <url>/2026/07/10/probability-and-statistics-probability-spaces-and-distributions/</url>
+      <title>【概率与统计笔记】第三章 特征与样本</title>
+      <link href="/2026/07/10/probability-and-statistics-characteristics-and-samples/"/>
+      <url>/2026/07/10/probability-and-statistics-characteristics-and-samples/</url>
       
-        <content type="html"><![CDATA[<p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程。主要参考李贤平《概率论基础》与叶俊老师的《随机数学》。</p>]]></content>
+        <content type="html"><![CDATA[<p><strong><em>Probability and Statistics</em></strong></p><p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程和数理统计。主要参考李贤平《概率论基础》、叶俊老师的《随机数学》与茆诗松《概率论与数理统计》。也参考 David Williams <em>Probability with Martingales</em> 和 Durret <em>Probability: Theory and Examples</em>。</p><h3 id="3-特征与样本"><a href="#3-特征与样本" class="headerlink" title="3. 特征与样本"></a>3. 特征与样本</h3><p><strong><em>Characteristics and Samples</em></strong></p><h4 id="3-1-期望与矩"><a href="#3-1-期望与矩" class="headerlink" title="3.1 期望与矩"></a>3.1 期望与矩</h4><p><strong><em>Expectation and Moments</em></strong></p><h4 id="3-2-条件期望"><a href="#3-2-条件期望" class="headerlink" title="3.2 条件期望"></a>3.2 条件期望</h4><p><strong><em>Conditional Expectation</em></strong></p><h4 id="3-3-生成函数与特征函数"><a href="#3-3-生成函数与特征函数" class="headerlink" title="3.3 生成函数与特征函数"></a>3.3 生成函数与特征函数</h4><p><strong><em>Generating Functions and Characteristic Functions</em></strong></p><h4 id="3-4-高斯分布"><a href="#3-4-高斯分布" class="headerlink" title="3.4 高斯分布"></a>3.4 高斯分布</h4><p><strong><em>Gaussian Distributions</em></strong></p><h4 id="3-5-样本、观测与似然"><a href="#3-5-样本、观测与似然" class="headerlink" title="3.5 样本、观测与似然"></a>3.5 样本、观测与似然</h4><p><strong><em>Samples, Observations, and Likelihood</em></strong></p><h4 id="3-6-统计量与无偏估计"><a href="#3-6-统计量与无偏估计" class="headerlink" title="3.6 统计量与无偏估计"></a>3.6 统计量与无偏估计</h4><p><strong><em>Statistics and Unbiased Estimation</em></strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【概率与统计笔记】第二章 向量与过程</title>
+      <link href="/2026/07/10/probability-and-statistics-vectors-and-processes/"/>
+      <url>/2026/07/10/probability-and-statistics-vectors-and-processes/</url>
+      
+        <content type="html"><![CDATA[<p><strong><em>Probability and Statistics</em></strong></p><p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程和数理统计。主要参考李贤平《概率论基础》、叶俊老师的《随机数学》与茆诗松《概率论与数理统计》。也参考 David Williams <em>Probability with Martingales</em> 和 Durret <em>Probability: Theory and Examples</em>。</p><h3 id="2-向量与过程"><a href="#2-向量与过程" class="headerlink" title="2. 向量与过程"></a>2. 向量与过程</h3><p><strong><em>Vectors and Processes</em></strong></p><h4 id="2-1-随机向量与独立性"><a href="#2-1-随机向量与独立性" class="headerlink" title="2.1 随机向量与独立性"></a>2.1 随机向量与独立性</h4><p><strong><em>Random Vectors and Independence</em></strong></p><h4 id="2-2-随机向量的函数"><a href="#2-2-随机向量的函数" class="headerlink" title="2.2 随机向量的函数"></a>2.2 随机向量的函数</h4><p><strong><em>Functions of Random Vectors</em></strong></p><h4 id="2-3-随机过程的构造"><a href="#2-3-随机过程的构造" class="headerlink" title="2.3 随机过程的构造"></a>2.3 随机过程的构造</h4><p><strong><em>Construction of Stochastic Processes</em></strong></p><h4 id="2-4-独立增量过程"><a href="#2-4-独立增量过程" class="headerlink" title="2.4 独立增量过程"></a>2.4 独立增量过程</h4><p><strong><em>Processes with Independent Increments</em></strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【概率与统计笔记】第一章 空间与分布</title>
+      <link href="/2026/07/10/probability-and-statistics-distributions-and-spaces/"/>
+      <url>/2026/07/10/probability-and-statistics-distributions-and-spaces/</url>
+      
+        <content type="html"><![CDATA[<p><strong><em>Probability and Statistics</em></strong></p><p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程和数理统计。主要参考李贤平《概率论基础》、叶俊老师的《随机数学》与茆诗松《概率论与数理统计》。也参考 David Williams <em>Probability with Martingales</em>，Durret <em>Probability: Theory and Examples</em>，Kai Lai Chung <em>A Course in Probability Theory</em> 等。测度有关部分，还参考了卢旭光老师的讲义。</p><h3 id="1-分布与空间"><a href="#1-分布与空间" class="headerlink" title="1. 分布与空间"></a>1. 分布与空间</h3><p><strong><em>Distributions and Spaces</em></strong></p><h4 id="1-1-实直线上的分布"><a href="#1-1-实直线上的分布" class="headerlink" title="1.1 实直线上的分布"></a>1.1 实直线上的分布</h4><p><strong><em>Distributions on the Real Line</em></strong></p><p>概率试图度量随机现象的可能性。经过适当的形式化，许多随机现象最终表现为一个实数值，而我们所询问的，则是这个值落在实数某个子集的可能性。例如，一次测量的结果是否超过某个阈值，一段等待时间是否落在某个区间，都是这样的问题。因此，接下来首先要研究的，就是如何恰当地给出实直线上的概率；我们将 $\mathbb R$ 上的恰当定义的概率称为<strong>概率分布</strong>，暂且设想它是一个 $\R$ 的子集到 $[0,1]$ 的映射。将子集 $A$ 的概率记作 $\mu(A)$，$\mu$ 即是我们所称的概率分布。</p><p>首先讨论概率必须满足的一些性质。首先，概率满足<strong>非负性</strong>，即 $\mu(A)\geq 0$；其次，整个实直线包含所有可能的取值，因此 $\mu(\mathbb R)=1$，这称为概率的<strong>规范性</strong>；空集不包含任何可能的取值，因此 $\mu(\varnothing)=0$；此外，若 $A\subseteq B$，则取值落在 $A$ 中必然意味着它也落在 $B$ 中，因而应有 $\mu(A)\leq \mu(B)$，这一性质称为概率的<strong>单调性</strong>。</p><p>在这些基本性质之下，我们进一步考察概率可以怎样构造。最直接的设想，是为每个单点集指定一个概率，再把一个集合的概率理解为其中各单点集概率的和。由于任意集合都是其单点集的不交并，这一设想也可以表述为：任意一族两两不交集合的并的概率，应当等于这些集合概率的和。我们暂且把这一性质作为额外假设，称为<strong>任意可加性</strong>。在最平凡的情况下，确实可以这样做。</p><p><strong>例 1.1.1</strong> Bernoulli 分布</p><p>假设一个随机结果只可能取 $1$ 和 $0$ 两个值，可以将其想象为某事件发生或不发生。给定 $p\in[0,1]$，为 $\{1\}$ 赋予概率 $p$，$\{0\}$ 赋予概率 $1-p$，则对 $\R$ 的任意子集 $A$，定义 $\mu(A)=p\bold 1_A(1)+(1-p)\bold 1_A(0)$。</p><p>其中，$\boldsymbol 1_A(x)=\cases{1,x\in A\\0,x\notin A}$ 称为 $A$ 的<strong>示性函数</strong>，它反映了 $x$ 是否落在 $A$ 中。</p><p>抛掷硬币得到正反面朝上是最典型的由 Bernoulli 分布描述的案例。</p><p>稍作推广，将可能结果的数量推广至可数集，我们就可以得到离散型概率分布。我们将在推广后的情形下验证定义是良好的。为了作这一推广，需要先对非负项级数的运算规则作一些讨论。为了使得命题简洁一些，此处首先引入广义实数集的概念，即在实数集中引入无穷远点 $+\infty$ 和 $-\infty$；如此做，还可以使后续许多分析命题的陈述和证明得到简化。</p><p><strong>定义 1.1.1</strong> 广义实数集</p><p>广义实数集 $\overline{\mathbb R}=\mathbb R\cup\{+\infty,-\infty\}$，规定对 $x\in\mathbb R$ 满足 $-\infty &lt; x&lt;+\infty$。</p><p>广义实数的运算大多沿用实数的运算规则，并作相应的自然延拓，后续在具体需要的时候会展开解释。</p><p>对于 $a_n\in [0,+\infty]$，有 $\sum_{n=1}^{\infty}a_n=\lim_{N\to \infty}\sum_{n=1}^Na_n=\sup_{N\in \mathbb N}\sum_{n=1}^Na_n\in[0,+\infty]$，其中 $+\infty$ 对应部分和没有有限上界的情形。因此，任意非负项级数都在 $[0,+\infty]$ 中有确定的和。</p><p><strong>命题 1.1.1</strong> 非负项级数的换序</p><p>设 $a_{mn}\in[0,+\infty],m,n\in\mathbb N$，则 $\sum_{m=1}^\infty\left(\sum_{n=1}^{\infty}a_{mn}\right)=\sum_{n=1}^\infty\left(\sum_{m=1}^{\infty}a_{mn}\right)$。</p><p><strong>证明</strong> 记 $S_{M,N}=\sum_{m=1}^M\sum_{n=1}^N a_{mn}$，有</p><script type="math/tex; mode=display">\begin{aligned}\sum_{m=1}^{\infty}\left(\sum_{n=1}^\infty a_{mn}\right)=&\sup_{M\in\mathbb N}\sum_{m=1}^M\left(\sum_{n=1}^\infty a_{mn}\right)\\=&\sup_{M\in\mathbb N}\sum_{m=1}^M\lim_{N\to\infty}\sum_{n=1}^N a_{mn}\\=&\sup_{M\in\mathbb N}\lim_{N\to\infty}S_{M,N}\\=&\sup_{M\in\mathbb N}\sup_{N\in\mathbb N}S_{M,N}\\=&\sup_{M,N\in\mathbb N}S_{M,N}.\end{aligned}</script><p>同理原等式右侧也等于 $\sup_{M,N\in\mathbb N}S_{M,N}$，故两侧相等，于是命题 1.1.1 得到了证明。</p><p><strong>命题 1.1.2</strong> 非负项级数的重排</p><p>设 $a_{n}\in[0,+\infty],n\in\mathbb N$，设 $\sigma:\mathbb N\to\mathbb N$ 为双射，则 $\sum_{n=1}^\infty a_n=\sum_{n=1}^{\infty}a_{\sigma(n)}$。</p><p><strong>证明</strong> 记 $S_N=\sum_{n=1}^Na_n, T_N=\sum_{n=1}^Na_{\sigma(n)}$，同时记 $S=\sum_{n=1}^{\infty}a_n, T=\sum_{n=1}^\infty a_{\sigma(n)}$，</p><p>对于任意 $N\in \mathbb N$，令 $M_N=\max_{n\le N}\{\sigma(n)\}$，则 $T_N=\sum_{n=1}^{N}a_{\sigma(n)}\le\sum_{n=1}^{M_N}a_n\le S$，故 $T\le S$，</p><p>对 $\sigma^{-1}$ 应用同样的论证得到 $S\le T$，故 $S=T$，于是命题 1.1.2 得到了证明，则非负项级数可以任意打乱编号顺序，今后对可数指标集的非负求和将不再特意编号。</p><p><strong>定义 1.1.2</strong> 离散型概率分布</p><p>设 $D=\{x_n\}_{n\in I\sube \N}\sube \R$，其中 $x_n$ 互不相同，取 $\mu(\{x_n\})=p_n$，其中 $\sum_{n\in I}p_n=1,p_n\ge 0$。</p><p>定义 $\mu(A)=\sum_{n\in I}p_n\bold 1_{A}(x_n)=\sum_{n\in I}\mu(\{x_n\})\bold 1_{A}(x_n)$，这样的概率称为<strong>离散型概率分布</strong>。</p><p>Bernoulli 分布就是其中 $D=\{0,1\}$ 的情形。对于非负性，规范性，以及空集概率为零的验证，均没有什么困难；对于单调性的验证，注意到 $A\sube B$ 蕴含 $\bold 1_A(x)\le \bold 1_{B}(x)$ 即可，此性质是<strong>示性函数的单调性</strong>；下面验证离散型概率分布满足任意可加性。</p><p>设 $\{A_\alpha\}_{\alpha\in J}$ 是一族两两不交的实数子集，其中指标集 $J$ 不要求可数，验证 $\mu\left(\bigcup_{\alpha\in J}A_\alpha\right)=\sum_{\alpha\in J}\mu(A_\alpha)$。事实上，右侧的和式指标集可能不可数，而我们还不了解不可数和式的一般定义。不过，幸运的是，在这里，至多只有可数个 $A_\alpha$，$\mu(A_\alpha)$ 可能非零。此处的严格叙述是，令 $J_+=\{\alpha\in J:\mu(A_\alpha)&gt;0\}$，即 $\mu(A_\alpha)$ 非零的指标集；对每个 $\alpha\in J_+$，由 $\mu(A_\alpha)=\sum_{n\in I}p_n\bold 1_{A_{\alpha}}(x_n)&gt;0$，存在 $n\in I$，使得 $p_n&gt;0$ 且 $\bold 1_{A_{\alpha}}(x_n)&gt;0$（即 $x_n\in A_{\alpha}$），取满足条件的最小下标，记为 $n_\alpha$；由 $A_{\alpha}$ 两两不交，$\alpha\mapsto n_\alpha$ 是从 $J_+$ 到 $I\sube \mathbb N$ 的单射，因此 $J_+$ 至多可数。</p><p>于是，我们稍加变通即可处理目前面临的情况：对于形如 $\sum_{\alpha\in J}x_\alpha$ 的和式，其中 $x_\alpha$ 均非负，若正项指标集 $J_+=\{\alpha\in J:x_\alpha&gt;0\}$ 至多可数，我们定义 $\sum_{\alpha\in J}x_\alpha=\sum_{\alpha\in J_+}x_{\alpha}$ 即可。于是有</p><script type="math/tex; mode=display">\begin{aligned}\mu\left(\bigcup_{\alpha\in J}A_\alpha\right)&=\sum_{n\in I}p_n\bold 1_{\bigcup_{\alpha\in J}A_\alpha}(x_n)\\&=\sum_{n\in I}p_n\sum_{\alpha\in J}\bold 1_{A_\alpha}(x_n)\\&=\sum_{\alpha\in J}\sum_{n\in I}p_n\bold 1_{A_\alpha}(x_n)\\&=\sum_{\alpha\in J}\mu(A_\alpha)\end{aligned}.</script><p>第二个等号用到了 $\bold 1_{\bigcup_{\alpha\in J}A_\alpha}(x)=\sum_{\alpha\in J}\bold 1_{A_\alpha}(x)$ 的成立。这是由于 $A_{\alpha}$ 两两不交，所以对于任意固定的 $x$，右侧只有至多一项为 $1$，且当且仅当 $x$ 属于这些集合的并时，该项存在。第三个等号用到了非负项级数的换序。至此完成了定义 1.1.2 离散型概率分布的全部验证。</p><p>离散型的情况得到了理想的解决。然而，只要试图考虑在 $[0,1]$ 上均匀取值的分布，就会遇到困难。均匀性至少要求区间内每个单点集具有相同的概率；取 $\mu(\{x\})$ 为正值 $p$，取区间中可数个单点，则它们的概率和为 $+\infty$，即取到这些点的概率为 $+\infty$，而根据单调性，这不应该超过 $\mu([0,1])=1$，故任意单点集的概率只能是 $0$；然而，这又意味着 $\mu([0,1])=\mu\left(\bigcup_{x\in[0,1]}\{x\}\right)=\sum_{x\in[0,1]}\mu(\{x\})=0$，仍然迎来了矛盾。这证明，在这样的情况下，前述假设无法同时成立；而假设中，最可能改动的便是任意可加性。</p><p>直觉上，我们仍然希望概率包含某种可加性。离散型分布的讨论已经作出了一些提示。对于一族两两不交的集合，尽管其指标集可以不可数，但在离散型分布下，具有正概率的集合至多只有可数个；因此，离散型分布的任意可加性实质上只涉及可数个非零项的求和。由此，我们尝试放弃不可数族上的可加性，而保留<strong>可数可加性</strong>，即设 $\{A_n\}_{n\in \mathbb N}$ 是一族两两不交的实数子集，有 $\mu\left(\bigcup_{n=1}^\infty A_n\right)=\sum_{n=1}^\infty\mu(A_n)$。</p><p><strong>命题 1.1.3</strong> 可数可加性的推论</p><p>在保持概率非负性、规范性的前提下，可数可加性蕴含空集概率为 $0$，有限可加性（即任取有限个两两不交的实数子集，其并的概率等于概率的和），及单调性。</p><p><strong>证明</strong> 取 $A_1=\mathbb R, A_2=A_3=\cdots=\varnothing$ 证得空集概率为 $0$；将有限项以外项取为空集证得有限可加性。</p><p>由有限可加性，对 $A\sube B$，有 $\mu(B)=\mu(A)+\mu(B\setminus A)\ge \mu(A)$，得单调性，且 $\mu(B\setminus A)=\mu(B)-\mu(A)$，$\mu(A^c)=1-\mu(A)$。</p><p>保留可数可加性的条件下，按照我们之前的推理，若希望在 $[0,1]$ 上定义均匀取值的分布，则任何单点集和可数集的概率均应为 $0$。然而，这一条件远不足以确定一个分布，我们还需要进一步刻画均匀的含义。均匀性应当意味着概率不应取决于集合所处的位置；我们将其表述为，将一个集合平移而不改变其形状，也不应改变它的概率。接下来将看到，即使将任意可加性弱化为可数可加性，也不可能在实数所有子集上同时保持均匀性与可数可加性。</p><p><strong>例 1.1.2</strong>  Vitali 集</p><p>我们在 $[0,1)$ 上讨论具有这样的平移不变性的概率，此处去掉一个端点是便于处理平移的边界，可以想象让 $[0,1)$ 首尾相接，并在其上进行循环平移。由于单点集的概率为 $0$，删去区间的一个端点不会影响这里所讨论的均匀分布。在模 $1$ 意义下定义加法为 $x\oplus t=(x+ t)\bmod 1$，定义集合的平移为 $A\oplus t=\{x\oplus t:x\in A\}$，则平移不变性意味着对任意 $A\sube [0,1),t\in[0,1)$，均满足 $\mu(A)=\mu(A\oplus t)$。</p><p>想要构造出一个无法在上述要求下赋予概率的集合，仿照之前的矛盾，我们需要构造出可数多个两两不交集合，使它们具有相同的概率，且其并集是 $[0,1)$。如此一来，它们的共同概率既不能为正，也不能为 $0$，从而导出矛盾。为了构造出具有相同概率的集合，我们需要利用上述的平移不变性。将平移的步长取为 $[0,1)$ 间的有理数，在 $[0,1)$ 上定义关系 $x\sim y\Leftrightarrow x-y\in\mathbb Q$，不难验证这是一个等价关系，因而给出了 $[0,1)$ 的一个划分；利用选择公理，在每一个等价类里取一个代表元，组成集合 $V$，则 $\{V_q=V\oplus q\}_{q\in \mathbb Q\cap[0,1)}$ 即为我们所寻找的可数集族：对任意 $x\in[0,1)$，其所属的等价类具有唯一代表元 $v$ 落在 $V$ 中，且存在唯一有理数 $q\in \mathbb Q\cap[0,1)$，满足 $x=v\oplus q$，这使得 $x$ 唯一地属于此 $V_q$，从而 $[0,1)=\bigsqcup_{q\in\mathbb Q\cap[0,1)}V_q$（此符号表示不交并）。这样构造的 $V$ 即称为 <strong>Vitali 集</strong>。</p><p>我们已经看到了无法在上述要求下被赋予概率的集合，这说明我们的假设还需要进一步削弱。然而，目前已有的平移不变性是均匀分布的核心含义，不能轻易放弃；而若进一步削弱可数可加性，会大大限制我们可使用的分析工具。另一方面，我们注意到 Vitali 集的构造是较为间接的，并且使用了选择公理；在通常的分析与概率问题中，我们较少遇到这样的集合。因此，我们选择限制能够被赋予概率的集合的范围。为了使概率的运算能够正常进行，这个集合范围应当对补集和可数并等基本集合运算封闭；同时，最基本地，应当使所有的开区间都被囊括进去。</p><p><strong>定义 1.1.3</strong> Borel 集族</p><p>在实数集的所有子集族中，考虑满足以下条件的集合族 $\mathcal F$：</p><ul><li>包含有界开区间：$(a,b)\in \mathcal F, a&lt;b$；</li><li>对补集封闭：若 $A\in \mathcal F$，则 $A^c\in \mathcal F$；</li><li>对可数并封闭：若 $A_n\in \mathcal F,n\in \mathbb N$，则 $\bigcup_{n=1}^\infty A_n\in \mathcal F$。</li></ul><p>此处满足上述条件的集合族确实存在，因为 $2^{\mathbb R}$（即 $\mathbb R$ 的幂集，$\mathbb R$ 的所有子集构成的族）满足这些条件。取所有满足条件的 $\mathcal F$ 的交，容易验证其仍满足这些条件，故其为满足条件的最小集族，称之为实直线上的 <strong>Borel 集族</strong>，记作 $\mathcal B(\mathbb R)$，其中集合称为 <strong>Borel 集</strong>。</p><p><strong>命题 1.1.4</strong> Borel 集的运算</p><p>Borel 集对可数交、有限并、有限交和差集封闭。实直线上的各种区间、单点集和可数集均为 Borel 集。</p><p><strong>证明</strong> $\mathbb R=\bigcup_{n=1}^\infty(-n,n)$ 是 Borel 集，从而 $\varnothing =\mathbb R^c$ 是 Borel 集。</p><p>由 De Morgan 公式，$\bigcap_{n=1}^{\infty}A_n=\left(\bigcup_{n=1}^\infty A_n^c\right)^c$ 是 Borel 集，故对可数交封闭；对有限并和有限交的封闭，在可数并和可数交的剩余部分分别取作 $\varnothing$ 和 $\mathbb R$ 即得到；$A\setminus B=A\cap B^c$ 是 Borel 集，故对差集封闭。</p><p>闭区间 $[a,b]=\bigcap_{n=1}^\infty\left(a-\dfrac1n,b+\dfrac1n\right)$ 是 Borel 集；开射线 $(a,+\infty)=\bigcup_{n=1}^\infty (a,a+n)$ 是 Borel 集，其余射线同理；$(a,b]=(a,+\infty)\setminus (b,+\infty)$ 是 Borel 集，其余区间不再赘述；单点 $\{x\}=\bigcap_{n=1}^\infty\left(x-\dfrac1n,x+\dfrac1n\right)$ 是 Borel 集；可数集是单点集的可数并，是 Borel 集。</p><p>由此证明了命题 1.1.4，即 Borel 集族包含我们常用的实数子集，并且对所需的基本集合运算封闭。后续在构造出均匀分布后，我们将看到上述提到的 Vitali 集不是 Borel 集。在历经一番讨论后，我们正式给出概率分布的定义。</p><p><strong>定义 1.1.4</strong> 概率分布</p><p>实直线上的概率分布，是定义在 Borel 集族上的映射 $\mu:\mathcal B(\mathbb R)\to [0,1]$，其满足</p><ul><li>规范性：$\mu(\mathbb R)=1$；</li><li>可数可加性：对两两不交的 Borel 集族 $\{A_n\}_{n\in\mathbb N}$，有 $\mu\left(\bigcup_{n=1}^\infty A_n\right)=\sum_{n=1}^\infty\mu(A_n)$。</li></ul><p>由于 Borel 集族对补集和差集封闭，命题 1.1.3 的论证仍然适用。概率分布还满足空集概率为 $0$，有限可加性及单调性，也满足差集和补集的公式。定义 1.1.4 说明了概率分布应当满足哪些条件，却还没有给出一种直接的构造或表示方式。若直接对各个 Borel 集指定概率，还必须保证这些赋值之间满足复杂的相容关系。接下来，我们将寻找一种更易于构造和使用的表示。</p><h4 id="1-2-分布函数"><a href="#1-2-分布函数" class="headerlink" title="1.2 分布函数"></a>1.2 分布函数</h4><p><strong><em>Distribution Functions</em></strong></p><h4 id="1-3-分布的分解"><a href="#1-3-分布的分解" class="headerlink" title="1.3 分布的分解"></a>1.3 分布的分解</h4><p><strong><em>Decomposition of Distributions</em></strong></p><h4 id="1-4-概率空间与随机变量"><a href="#1-4-概率空间与随机变量" class="headerlink" title="1.4 概率空间与随机变量"></a>1.4 概率空间与随机变量</h4><p><strong><em>Probability Spaces and Random Variables</em></strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程笔记 </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【概率与统计笔记】序与目录</title>
+      <link href="/2026/07/10/probability-and-statistics-preface-and-contents/"/>
+      <url>/2026/07/10/probability-and-statistics-preface-and-contents/</url>
+      
+        <content type="html"><![CDATA[<p><strong><em>Probability and Statistics</em></strong></p><p>概率论的知识遗忘得太多了。重启概率论的笔记，会包含简单的随机过程和数理统计。主要参考李贤平《概率论基础》、叶俊老师的《随机数学》与茆诗松《概率论与数理统计》。也参考 David Williams <em>Probability with Martingales</em> 和 Durret <em>Probability: Theory and Examples</em>。</p><h3 id="序言：随机数学"><a href="#序言：随机数学" class="headerlink" title="序言：随机数学"></a>序言：随机数学</h3><p><strong><em>Preface: Stochastic Mathematics</em></strong></p><p>概率与统计都源于对随机现象的描述，因而都可以归入随机数学之下，尽管这一术语并不十分常用。概率是对可能性的量度。现代概率论建立在测度论的基础之上，并进一步引入条件、独立等结构，从而形成严密的数学体系。其中，条件——更准确地说，条件期望——使我们能够根据信息的变化重新认识随机对象；在随机过程中，信息随时间不断积累，这种思想便得到最充分的展开。因此，若完全不触及随机过程，概率论的核心便难以得到充分呈现。统计则以概率论为基础，主要研究抽样过程中样本与未知总体或统计模型之间的关系，是一门更偏向推断与应用的学问。</p><p>本笔记总体分为三个部分。前四章为概率论基础，同时给出随机过程的基本定义与若干简单例子，并建立统计推断所需的概率基础；第五、六章为随机过程选讲，第七、八章为统计选讲。阅读时不难注意到，每一章的标题都由两个对象组成，尽管它们之间的关系不尽相同。其中缘由，除了笔者突生的兴致以外，还在于两个对象之间的关系，几乎正是每一章试图传达的核心。此外，由于分属的部分是清晰的，章节标题中故意略去了“概率”“统计”“随机”等字样，希求借此达到直指核心的效果。</p><p>笔记的组织遵循以下两个原则：其一，不堆砌例子，而使例子在真正重要的时刻出现，让例子成为概念的寄托；其二，注重动机与系统，既阐释较为严格的数学结构，也试图说明是什么问题与需要引导出了这样的结构。由此，希望能够将概率与统计中的大量数学对象有条理而不失趣味地串联起来。</p>]]></content>
       
       
       <categories>
@@ -468,11 +526,11 @@
     
     
     <entry>
-      <title>【微积分笔记】级数</title>
-      <link href="/2026/01/23/calculus-series/"/>
-      <url>/2026/01/23/calculus-series/</url>
+      <title>【微积分笔记】极限</title>
+      <link href="/2026/01/23/calculus-limits/"/>
+      <url>/2026/01/23/calculus-limits/</url>
       
-        <content type="html"><![CDATA[<p>计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
+        <content type="html"><![CDATA[<p>计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p><p>笔记包含大语言模型辅助写作成分。</p><h3 id="0-序言：分析与微积分"><a href="#0-序言：分析与微积分" class="headerlink" title="0. 序言：分析与微积分"></a>0. 序言：分析与微积分</h3><p>微积分，即本笔记的标题内容，是分析中的基础且重要的内容。微分与积分分别体现了分析对局部和整体两方面的关注，彼此又通过微积分基本定理等若干核心结论进行联系。</p><p>从较为初级的眼光来看，分析的一个核心思想是<strong>逼近</strong>：使用“较为熟知或简单”的对象作为材料，通过给定的组合方式，去接近甚至在某种意义下替代“较为未知或复杂”的目标对象。分析关心这样的逼近是否可行，即在给定的逼近材料和组合方式之下，可以把误差压缩到多小，是否可以在给定的标准下把构造出的逼近与目标视为等同。</p><p>分析的基本问题主要围绕三件事展开，即允许使用的逼近材料是什么，逼近的方式是什么，衡量逼近程度的标准是什么。而在技术层面上，尤为重要的工具是各类不等式，它们使误差得以估计与控制，从而把“逼近”这一思想落实为可操作的论证。</p><p>本笔记分为四个部分，“极限”、“级数”、“微分学”与“积分学”。笔记坚持将一元、多元与更为抽象的数学对象结合叙事，通过适当的例子彼此勾连，力求理解不过分偏颇于特殊情形的特殊性质，但也不做于理解无益的抽象。其中，极限部分确立逼近的一般语言，级数部分展示简单的逼近材料的无穷组合产生的力量，微分学部分研究局部的逼近法则，积分学部分则研究了更为整体的逼近，并与局部的逼近联系起来。</p><h3 id="1-极限"><a href="#1-极限" class="headerlink" title="1. 极限"></a>1. 极限</h3><h4 id="1-1-有理数"><a href="#1-1-有理数" class="headerlink" title="1.1 有理数"></a>1.1 有理数</h4><h4 id="1-2-实数"><a href="#1-2-实数" class="headerlink" title="1.2 实数"></a>1.2 实数</h4><h4 id="1-3-度量空间"><a href="#1-3-度量空间" class="headerlink" title="1.3 度量空间"></a>1.3 度量空间</h4><h4 id="1-4-紧性"><a href="#1-4-紧性" class="headerlink" title="1.4 紧性"></a>1.4 紧性</h4><h4 id="1-5-连续性"><a href="#1-5-连续性" class="headerlink" title="1.5 连续性"></a>1.5 连续性</h4><h4 id="1-6-有理函数"><a href="#1-6-有理函数" class="headerlink" title="1.6 有理函数"></a>1.6 有理函数</h4>]]></content>
       
       
       <categories>
@@ -497,11 +555,11 @@
     
     
     <entry>
-      <title>【微积分笔记】极限</title>
-      <link href="/2026/01/23/calculus-limits/"/>
-      <url>/2026/01/23/calculus-limits/</url>
+      <title>【微积分笔记】级数</title>
+      <link href="/2026/01/23/calculus-series/"/>
+      <url>/2026/01/23/calculus-series/</url>
       
-        <content type="html"><![CDATA[<p>计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p><p>笔记包含大语言模型辅助写作成分。</p><h3 id="0-序言：分析与微积分"><a href="#0-序言：分析与微积分" class="headerlink" title="0. 序言：分析与微积分"></a>0. 序言：分析与微积分</h3><p>微积分，即本笔记的标题内容，是分析中的基础且重要的内容。微分与积分分别体现了分析对局部和整体两方面的关注，彼此又通过微积分基本定理等若干核心结论进行联系。</p><p>从较为初级的眼光来看，分析的一个核心思想是<strong>逼近</strong>：使用“较为熟知或简单”的对象作为材料，通过给定的组合方式，去接近甚至在某种意义下替代“较为未知或复杂”的目标对象。分析关心这样的逼近是否可行，即在给定的逼近材料和组合方式之下，可以把误差压缩到多小，是否可以在给定的标准下把构造出的逼近与目标视为等同。</p><p>分析的基本问题主要围绕三件事展开，即允许使用的逼近材料是什么，逼近的方式是什么，衡量逼近程度的标准是什么。而在技术层面上，尤为重要的工具是各类不等式，它们使误差得以估计与控制，从而把“逼近”这一思想落实为可操作的论证。</p><p>本笔记分为四个部分，“极限”、“级数”、“微分学”与“积分学”。笔记坚持将一元、多元与更为抽象的数学对象结合叙事，通过适当的例子彼此勾连，力求理解不过分偏颇于特殊情形的特殊性质，但也不做于理解无益的抽象。其中，极限部分确立逼近的一般语言，级数部分展示简单的逼近材料的无穷组合产生的力量，微分学部分研究局部的逼近法则，积分学部分则研究了更为整体的逼近，并与局部的逼近联系起来。</p><h3 id="1-极限"><a href="#1-极限" class="headerlink" title="1. 极限"></a>1. 极限</h3><h4 id="1-1-有理数"><a href="#1-1-有理数" class="headerlink" title="1.1 有理数"></a>1.1 有理数</h4><h4 id="1-2-实数"><a href="#1-2-实数" class="headerlink" title="1.2 实数"></a>1.2 实数</h4><h4 id="1-3-度量空间"><a href="#1-3-度量空间" class="headerlink" title="1.3 度量空间"></a>1.3 度量空间</h4><h4 id="1-4-紧性"><a href="#1-4-紧性" class="headerlink" title="1.4 紧性"></a>1.4 紧性</h4><h4 id="1-5-连续性"><a href="#1-5-连续性" class="headerlink" title="1.5 连续性"></a>1.5 连续性</h4><h4 id="1-6-有理函数"><a href="#1-6-有理函数" class="headerlink" title="1.6 有理函数"></a>1.6 有理函数</h4>]]></content>
+        <content type="html"><![CDATA[<p>计划补足数学分析的基础。同时，由于不喜欢数学分析这个名字，也没有实际上过这一课程，本笔记命名为微积分笔记，也算祭奠自己学得一塌糊涂的微积分 A(2)。</p><p>本笔记将主要参考 Zorich 数学分析与卢旭光老师的数学分析讲义，亦将参考于品老师的数学分析讲义，spivak <em>Calculus on Manifolds</em>，以及其余与提到的内容挂钩的书目（如点集拓扑部分），在此不一一列举。同时，本笔记可能不自觉地渗入晏平老师的微积分 A 课程内容，这是由于大一学年的课程所致。</p>]]></content>
       
       
       <categories>
