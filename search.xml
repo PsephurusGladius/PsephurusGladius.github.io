@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>英语词汇札记</title>
+      <link href="/2026/09/20/notes-on-English-vocabulary/"/>
+      <url>/2026/09/20/notes-on-English-vocabulary/</url>
+      
+        <content type="html"><![CDATA[<h5 id="efficacy"><a href="#efficacy" class="headerlink" title="efficacy"></a>efficacy</h5><p>n.[U]（应然的）效力，通常指方法、药物。与 efficiency 效率/效益和 effectiveness （实然的）效果不同。</p><h5 id="amicable"><a href="#amicable" class="headerlink" title="amicable"></a>amicable</h5><p>adj. 友善的，不伤和气的。拉丁语词源 amicus。~ manner/divorces/settlement。</p><h5 id="puerile"><a href="#puerile" class="headerlink" title="puerile"></a>puerile</h5><p>adj. 孩子气的，幼稚的。拉丁语词源 puer。</p><h5 id="magisterial"><a href="#magisterial" class="headerlink" title="magisterial"></a>magisterial</h5><p>adj. 权威的；或傲慢的，居高临下的。拉丁语词源 magister。~ presence/work。</p><h5 id="pulchritude"><a href="#pulchritude" class="headerlink" title="pulchritude"></a>pulchritude</h5><p>n.[U] （尤指女性）美丽的。拉丁语词源 pulcher。</p><p>pulchritudinous adj.。</p><h5 id="relinquish"><a href="#relinquish" class="headerlink" title="relinquish"></a>relinquish</h5><p>v.[T] 放弃（责任等）；（不情愿地）松开，交出。拉丁语词源 relinquō。~ claim/control (to)/hold/grip (on)。</p><h5 id="interrogate"><a href="#interrogate" class="headerlink" title="interrogate"></a>interrogate</h5><p>v.[T] 审问，讯问；（计算机）查询。拉丁语词源 interrogō。~ a database。</p><p>interrogation n. subjected to ~。</p><h5 id="magistrate"><a href="#magistrate" class="headerlink" title="magistrate"></a>magistrate</h5><p>n.[C] 地方法官（审理较轻微案件）。拉丁语词源 magistrātus。before the magistrates。</p><h5 id="mutualistic"><a href="#mutualistic" class="headerlink" title="mutualistic"></a>mutualistic</h5><p>adj. （生物）互助的，互惠共生的。</p><p>mutualism n.[U]。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 语言 </category>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 英语 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《逻辑哲学论》</title>
+      <link href="/2026/09/13/tractatus-logico%E2%80%91philosophicus-reading/"/>
+      <url>/2026/09/13/tractatus-logico%E2%80%91philosophicus-reading/</url>
+      
+        <content type="html"><![CDATA[<p>维特根斯坦《逻辑哲学论》阅读笔记，包含大语言模型辅助理解。其书目组织为 n. 是命题 n，n.x 是 n 的评注，n.xy 是 n.x 的评注，类推。参考译本是商务印书馆本，但许多地方并不是特别明确。同时参考德文原本（很可惜暂时我不懂德文，只能看看词的对应）与 1922 年 Ogden–Ramsey 英译。</p><h4 id="1-世界是一切发生的事情。"><a href="#1-世界是一切发生的事情。" class="headerlink" title="1. 世界是一切发生的事情。"></a>1. 世界是一切发生的事情。</h4><p><strong>Die Welt ist alles, was der Fall ist.</strong> (The world is everything that is the case. )</p><p>中译本翻出了”事情“这么一个词，但事实上德文和英文译本都没有。总之是在强调，世界是一切实际如此的。</p><h5 id="1-1-世界是事实的总体，而不是事物的总体。"><a href="#1-1-世界是事实的总体，而不是事物的总体。" class="headerlink" title="1.1 世界是事实的总体，而不是事物的总体。"></a>1.1 世界是事实的总体，而不是事物的总体。</h5><p><strong>Die Welt ist die Gesamtheit der Tatsachen, nicht der Dinge.</strong>  (The world is the totality of facts, not of things. ) </p><p>较重要的评注是 1.13 在逻辑空间中的诸事实就是世界。<strong>Die Tatsachen im logischen Raum sind die Welt. </strong>(The facts in logical space are the world. ) 即设想存在一个逻辑空间，其中包含了所有可能成为事实的情形，那么若知道了<strong>全部</strong>实际如此的（1.11），也就知道了被排除的（1.12），也就确定了世界。</p><h5 id="1-2-世界分解为诸事实。"><a href="#1-2-世界分解为诸事实。" class="headerlink" title="1.2 世界分解为诸事实。"></a>1.2 世界分解为诸事实。</h5><p><strong>Die Welt zerfällt in Tatsachen.  </strong>(The world divides into facts. )</p><p>这主要其实要强调 1.21 每项事情可以发生或者不发生，其余的一切则仍保持原样。<strong>Eines kann der Fall sein oder nicht der Fall sein und alles übrige gleich bleiben.</strong>（One can be the case or not be the case and everything else remain the same.）这描述的应当理解为，逻辑空间中的各个可能情形是否实际成立，在逻辑上彼此独立。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 哲学 </category>
+          
+          <category> 阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分析哲学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>沿方向观察连续与可微</title>
       <link href="/2026/08/29/continuity-and-differentiability-viewed-along-directions/"/>
       <url>/2026/08/29/continuity-and-differentiability-viewed-along-directions/</url>
