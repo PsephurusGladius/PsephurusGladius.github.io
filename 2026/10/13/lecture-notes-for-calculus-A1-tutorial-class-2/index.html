@@ -1,0 +1,389 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>微积分A(1)第二次习题课讲义 | 白鲟鱼缸</title><meta name="author" content="白鲟"><meta name="copyright" content="白鲟"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Cauchy 列与完备性，上下极限与子列极限（续）Cauchy 列定义为 \forall \varepsilon&gt;0,\exists N,\forall n,m&gt;N,|a_n-a_m|N,p\geq 1，比较指标 n,n+p），但不能限定两指标间的较强代数关系（例如限定 |n-m| 为常数）。若可以找到 |a_n-a_m| 的一个只关于单指标 n 的上界，且上界随 n 增大趋于 0，也可以说明是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分A(1)第二次习题课讲义">
+<meta property="og:url" content="https://blog.psephurusgladius.com/2026/10/13/lecture-notes-for-calculus-A1-tutorial-class-2/index.html">
+<meta property="og:site_name" content="白鲟鱼缸">
+<meta property="og:description" content="Cauchy 列与完备性，上下极限与子列极限（续）Cauchy 列定义为 \forall \varepsilon&gt;0,\exists N,\forall n,m&gt;N,|a_n-a_m|N,p\geq 1，比较指标 n,n+p），但不能限定两指标间的较强代数关系（例如限定 |n-m| 为常数）。若可以找到 |a_n-a_m| 的一个只关于单指标 n 的上界，且上界随 n 增大趋于 0，也可以说明是">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/usericon/67952.png">
+<meta property="article:published_time" content="2026-10-13T12:14:10.000Z">
+<meta property="article:modified_time" content="2026-10-15T16:00:52.394Z">
+<meta property="article:author" content="白鲟">
+<meta property="article:tag" content="微积分">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/usericon/67952.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "微积分A(1)第二次习题课讲义",
+  "url": "https://blog.psephurusgladius.com/2026/10/13/lecture-notes-for-calculus-A1-tutorial-class-2/",
+  "image": "https://cdn.luogu.com.cn/upload/usericon/67952.png",
+  "datePublished": "2026-10-13T12:14:10.000Z",
+  "dateModified": "2026-10-15T16:00:52.394Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "白鲟",
+      "url": "https://blog.psephurusgladius.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.psephurusgladius.com/2026/10/13/lecture-notes-for-calculus-A1-tutorial-class-2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":-1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '微积分A(1)第二次习题课讲义',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://cdn.luogu.com.cn/upload/usericon/67952.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/r562ya8w.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">白鲟鱼缸</span></a><a class="nav-page-title" href="/"><span class="site-name">微积分A(1)第二次习题课讲义</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">微积分A(1)第二次习题课讲义</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-10-13T12:14:10.000Z" title="发表于 2026-10-13 20:14:10">2026-10-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-10-15T16:00:52.394Z" title="更新于 2026-10-16 00:00:52">2026-10-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%B2%E4%B9%89/">讲义</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h4 id="Cauchy-列与完备性，上下极限与子列极限（续）"><a href="#Cauchy-列与完备性，上下极限与子列极限（续）" class="headerlink" title="Cauchy 列与完备性，上下极限与子列极限（续）"></a>Cauchy 列与完备性，上下极限与子列极限（续）</h4><p>Cauchy 列定义为 <script type="math/tex">\forall \varepsilon>0,\exists N,\forall n,m>N,|a_n-a_m|<\varepsilon</script>。与数列极限定义类似，可以讨论 <script type="math/tex">\varepsilon</script> 的取法，有限项与无穷项等相关性质。此外，由于此处有两个指标 <script type="math/tex">n,m</script>，为了保证所有 <script type="math/tex">n,m</script> 组合对于一个 <script type="math/tex">N</script> 可以取遍，我们可以限定其序关系（例如取 <script type="math/tex">n>N,p\geq 1</script>，比较指标 <script type="math/tex">n,n+p</script>），但不能限定两指标间的较强代数关系（例如限定 <script type="math/tex">|n-m|</script> 为常数）。若可以找到 <script type="math/tex">|a_n-a_m|</script> 的一个只关于单指标 <script type="math/tex">n</script> 的上界，且上界随 <script type="math/tex">n</script> 增大趋于 <script type="math/tex">0</script>，也可以说明是 Cauchy 列。</p>
+<p>收敛数列一定是 Cauchy 列，这来源于三角不等式 <script type="math/tex">|a_n-a_m|<|a_n-A|+|a_m-A|</script>。实数列中的 Cauchy 列一定收敛，这等价于实数的完备性。收敛数列与 Cauchy 列的等价中，两个方向的强度是不同的。例如，在有理数列中，收敛数列仍然是 Cauchy 列，但 Cauchy 列不一定收敛到有理数；事实上，对于任意一个实数，无论是有理数还是无理数，都存在有理数列以其为极限（这也已经说明了有理数列不一定收敛到有理数）。Cauchy 列只是说明了一个数列“应当收敛”，但真正要保证收敛，需要背景空间的性质。</p>
+<p>确界原理（实数非空有上界集合必有上确界）、Cauchy 收敛准则、单调有界定理、Bolzano-Weierstrass 定理、闭区间套定理、有限覆盖定理等都刻画了实数的完备性，并在一定的假设下等价（尽管事实上有一些微妙的区别），在此不做展开，只需要理解它们与”实数“这一空间的性质高度相关。</p>
+<p>以下内容不做要求。上述提到收敛到某个实数的有理数列中的代表性数列大家已经很熟悉，那就是实数的十进制表示。这里做一些严格的阐释。首先讨论有理数中的所谓的无限循环小数，例如 <script type="math/tex">\dfrac13=0.\dot3</script>，我们知道的其实是 <script type="math/tex">1</script> 除以 <script type="math/tex">3</script> 后的结果是不小于 <script type="math/tex">0.3,0.33,0.333,\cdots</script> 的（同时还小于 <script type="math/tex">0.4,0.34,.0.334,\cdots</script>），也就是说，我们知道的是一个以 <script type="math/tex">x</script> 为上界的数列；事实上不仅是上界，<script type="math/tex">x</script> 还是上确界。对于任意的正实数 <script type="math/tex">x</script>，首先找到最大的满足 <script type="math/tex">x\geq10^{n}</script> 的 <script type="math/tex">n</script> 作为 <script type="math/tex">n_1</script>，取 <script type="math/tex">a_1=\left\lfloor\dfrac{x}{10^{n_1}}\right\rfloor</script> 作为最高位，递归地，令 <script type="math/tex">n_k=n_{k-1}-1</script>，<script type="math/tex">a_k=\left\lfloor\dfrac{x-\sum_{i=1}^{k-1}a_i10^{n_i}}{10^{n_k}}\right\rfloor</script> 即可求出第 <script type="math/tex">k</script> 位，可以看出每个实数有唯一的规范表示。这也许能破除 <script type="math/tex">0.\dot9</script> 相关的迷思：首先，其所代表的数列的极限就是 <script type="math/tex">1</script>，因此它表示的数也就等于实数 <script type="math/tex">1</script>；同时，它不是我们所规定的实数的规范表示，因为在我们的表示下，<script type="math/tex">1</script> 的整数部分应当是 <script type="math/tex">1</script>。事实上，任何尾部全部为 <script type="math/tex">9</script> 的表示均不是我们的规范表示，而其余的每一个十进制小数串都可以唯一表示一个实数。</p>
+<p>最后值得补充的是，我们可以借助让 Cauchy 列都收敛的直觉，来从有理数构造出实数。定义两个 Cauchy 列本应收敛到同一个数，如果它们的差收敛到 <script type="math/tex">0</script>，则数列据此构造出了等价关系，而每一个等价类就定义为一个实数（这样的操作是为了严格定义“补充一个点”），其继承有理数的四则运算，并可定义序关系（这是由于分别来自两个等价类的有理数列的差一定不收敛到 <script type="math/tex">0</script>，而是从某项开始大于某个正常数或小于某个负常数）。同时，我们可以通过有理数的常数列，在我们构造出的实数中识别出有理数（可以验证它们具有与原本有理数相同的性质）。最后验证完备性即可。</p>
+<p><strong>习题 2.6</strong> 设 <script type="math/tex">a\in\mathbb R</script>，令 <script type="math/tex">x_n=\sum_{k=2}^n\dfrac{\sin ka}{k(k+\sin ka)},n\geq 2</script>，试判断 <script type="math/tex">\{x_n\}</script> 的收敛性。</p>
+<p><script type="math/tex">\forall n,p\geq 1,|x_n-x_{n+p}|\leq\sum_{k=n+1}^{n+p}\left|\dfrac{\sin ka}{k(k+\sin ka)}\right| \leq \sum_{k=n+1}^{n+p}\dfrac{1}{k(k-1)}=\dfrac1n-\dfrac1{n+p}<\dfrac1n</script>，因此 <script type="math/tex">\forall \varepsilon>0,\exists N=\left\lceil\dfrac{1}{\varepsilon}\right\rceil,\text{s.t.}\forall n>N,p\geq 1,|x_n-x_{n+p}|<\varepsilon</script>，<script type="math/tex">\{x_n\}</script> 是 Cauchy 列，收敛。</p>
+<p><strong>习题 2.7</strong> 已知 <script type="math/tex">u_n\geq 0,x_n=\sum_{k=1}^nu_k,y_n=\sum_{k=1}^n\sqrt{u_ku_{k+1}}</script>。证明：若 <script type="math/tex">\{x_n\}</script> 收敛，则 <script type="math/tex">\{y_n\}</script> 也收敛。</p>
+<p><script type="math/tex">\{x_n\}</script> 收敛，是 Cauchy 列，<script type="math/tex">\forall \varepsilon>0</script>，<script type="math/tex">\exists N</script>，<script type="math/tex">\forall n>m>N</script>，<script type="math/tex">|x_n-x_m|=\sum_{k=m+1}^n u_k<\varepsilon</script>，</p>
+<p>则 <script type="math/tex">|y_n-y_m|=\sum_{k=m+1}^n\sqrt{u_ku_{k+1}}\leq \dfrac{1}{2}\sum_{k=m+1}^{n}(u_k+u_{k+1})\leq\sum_{k=m+1}^{n+1}u_k<\varepsilon</script>，<script type="math/tex">\{y_n\}</script> 是 Cauchy 列，收敛。</p>
+<p><strong>习题 2.8</strong> 若存在常数 <script type="math/tex">c\geq 0</script>，使得 <script type="math/tex">V_n=\sum_{k=1}^{n-1}|x_{k+1}-x_{k}|<c,n=2,3,\cdots</script>，称 <script type="math/tex">\{x_n\}</script> 有有界变差。</p>
+<p>（1）证明：有有界变差的数列一定是收敛列。</p>
+<p>直觉上，如果不收敛，则不满足 Cauchy 准则，那么尾部的变差就会渐渐累积超过 <script type="math/tex">c</script>。具体地，存在 <script type="math/tex">\varepsilon>0</script>，使得任意 <script type="math/tex">N</script>，存在 <script type="math/tex">n>N,p\geq 1</script>，<script type="math/tex">|x_n-x_{n+p}|\geq \varepsilon</script>，取 <script type="math/tex">N_1=1</script> 得到 <script type="math/tex">n_1,p_1</script>，令 <script type="math/tex">N_2=n_1+p_1</script>，则可取出 <script type="math/tex">n_2>N_2,p_2\geq 1</script>，使得 <script type="math/tex">|x_{n_2}-x_{n_2+p_2}|\geq \varepsilon</script>，如此进行 <script type="math/tex">t=\left\lceil \dfrac{c}{\varepsilon}\right\rceil</script> 次，有</p>
+<script type="math/tex; mode=display">
+\sum_{k=n_1}^{n_t+p_t-1}|x_{k+1}-x_{k}|\geq \sum_{k=1}^t|x_{n_k}-x_{n_k+p_k}|\geq \varepsilon t\geq c,</script><p>与题设矛盾，故收敛。</p>
+<p>当 <script type="math/tex">\{x_n\}</script> 单调时，有界变差条件可等价化为 <script type="math/tex">|x_{n}-x_1|<c</script>，这时实际上等价于描述了一个单调有界数列，故我们使用 Cauchy 准则推出了单调有界数列必收敛。同时，在不单调的情形下，变差的累积是仍然是单调增加的，但实际从 <script type="math/tex">x_m</script> 累加到 <script type="math/tex">x_n</script> 的过程中 <script type="math/tex">x_{k+1}-x_k</script> 可以正负相消，有 <script type="math/tex">|x_m-x_n|\leq V_n-V_m</script>，从而更利于收敛，这预示着有界变差是强于收敛的。假如已知单调有界定理，本题证明可以得到简化，利用  <script type="math/tex">V_n</script> 单调递增且有界得到其是 Cauchy 列，再结合上述比较关系，利用 Cauchy 准则可证 <script type="math/tex">\{x_n\}</script> 收敛。</p>
+<p>（2）试问：收敛列是否都有有界变差？说明理由。</p>
+<p>否，考虑与变号有关的收敛，令 <script type="math/tex">x_n=\dfrac{(-1)^n}{n}</script>。</p>
+<p>回忆我们对上下极限的引入。我们考虑每个位置 <script type="math/tex">n</script>，求取了对 <script type="math/tex">\forall k>n</script>，满足 <script type="math/tex">a_k-A\leq \varepsilon</script> 的最小 <script type="math/tex">\varepsilon=\sup_{k\geq n}a_k-A</script>，以及满足 <script type="math/tex">A-a_k\leq \varepsilon</script> 的最小 <script type="math/tex">\varepsilon=A-\inf_{k\geq n}a_k</script>，定义了 <script type="math/tex">\overline{\lim}_{n\to\infty} a_n=\lim_{n\to\infty}\sup_{k\geq n}a_k</script>，及 <script type="math/tex">\underline{\lim}_{n\to\infty} a_n=\lim_{n\to\infty}\inf_{k\geq n}a_k</script>。</p>
+<p><strong>例题 2.10</strong> 设 <script type="math/tex">\{x_n\}</script> 为有界数列。</p>
+<p>(1) 证明 <script type="math/tex">\overline{\lim}_{n\to\infty} x_n,\underline{\lim}_{n\to\infty}x_n</script> 存在，且 <script type="math/tex">\overline{\lim}_{n\to\infty} x_n\geq \underline{\lim}_{n\to\infty}x_n</script>。</p>
+<p>单调有界数列必收敛，故存在。<script type="math/tex">\sup_{k\geq n}x_k\geq \inf_{k\geq n}x_k</script>，由保序性得 <script type="math/tex">\overline{\lim}_{n\to\infty} x_n\geq \underline{\lim}_{n\to\infty}x_n</script>。</p>
+<p>(2) 证明 <script type="math/tex">\lim_{n\to\infty}x_n</script> 存在当且仅当 <script type="math/tex">\overline{\lim}_{n\to\infty} x_n= \underline{\lim}_{n\to\infty}x_n</script>。</p>
+<p>若 <script type="math/tex">\overline{\lim}_{n\to\infty} x_n= \underline{\lim}_{n\to\infty}x_n=A</script>，由 <script type="math/tex">\sup_{k\geq n}x_k\geq x_k\geq  \inf_{k\geq n}x_k</script>，有 <script type="math/tex">\lim_{n\to\infty} x_n=A</script>。</p>
+<p>若 <script type="math/tex">\lim_{n\to\infty}x_n=A</script>，则 <script type="math/tex">\forall\varepsilon>0</script>，存在 <script type="math/tex">N</script>，<script type="math/tex">\forall n>N</script>，<script type="math/tex">x_n\in(A-\varepsilon,A+\varepsilon)</script>，故 <script type="math/tex">\sup_{k\geq n} x_k\in(A-\varepsilon,A+\varepsilon]</script>（<script type="math/tex">\sup_{k\geq n}x_k>A-\varepsilon</script> 由 <script type="math/tex">x_k>A-\varepsilon</script> 得到，而 <script type="math/tex">\sup_{k\geq n}x_k\leq A+\varepsilon</script> 正是我们引入时所保证的），因此 <script type="math/tex">\overline{\lim}_{n\to\infty} x_n=A</script>。下极限同理。</p>
+<p>(3) <script type="math/tex">\forall \varepsilon>0</script>，在区间 <script type="math/tex">(\underline{\lim}_{n\to\infty} x_n-\varepsilon, \overline{\lim}_{n\to\infty}x_n+\varepsilon)</script> 之外最多有 <script type="math/tex">\{x_n\}</script> 的有限项。</p>
+<p>按 <script type="math/tex">\varepsilon-N</script> 语言取出的上极限的 <script type="math/tex">N</script> 对 <script type="math/tex">x_n</script> 的上界控制也适用，下极限的 <script type="math/tex">N</script> 对 <script type="math/tex">x_n</script> 的下界控制也适用。</p>
+<p><script type="math/tex">\forall \varepsilon>0</script>，<script type="math/tex">\exist N_1,N_2</script>，<script type="math/tex">\forall n> N_1</script>，<script type="math/tex">x_n\leq \sup_{k\geq n}x_k< \overline{\lim}_{n\to\infty}x_n+\varepsilon</script>，<script type="math/tex">\forall n>N_2</script>，<script type="math/tex">x_n\geq \inf_{k\geq n}x_k> \underline{\lim}_{n\to\infty}x_n-\varepsilon</script>，故 <script type="math/tex">\forall n>\max\{N_1,N_2\}</script>，<script type="math/tex">x_n\in(\underline{\lim}_{n\to\infty} x_n-\varepsilon, \overline{\lim}_{n\to\infty}x_n+\varepsilon)</script>。</p>
+<p>(4) 存在子列 <script type="math/tex">\{x_{n_k}\},\{x_{m_k}\}</script>，使得 <script type="math/tex">\lim_{k\to\infty}x_{n_k}=\overline{\lim}_{n\to\infty}x_n,\lim_{k\to\infty}x_{m_k}=\underline{\lim}_{n\to\infty}x_n</script>。</p>
+<p>我们最初的定义将 <script type="math/tex">\sup_{k\geq n}x_k</script> 看成满足 <script type="math/tex">\forall k\geq n,x_k-A\leq \varepsilon</script> 的 <script type="math/tex">\varepsilon</script> 取到最小值时的情形；我们希望能够更精确地，把需要逼近这个上界的项找出来，把一个界落地到一个对象。由上确界的定义，<script type="math/tex">\exists n_1</script>，<script type="math/tex">x_{n_1}>\sup_{k\geq 1}x_k-1</script>，取 <script type="math/tex">x_{n_i}</script> 为满足 <script type="math/tex">x_{n_\alpha}>\sup_{k\geq {i}}x_k-\dfrac{1}{i}</script> 的 <script type="math/tex">\geq i</script> 的最小的 <script type="math/tex">n_\alpha</script>，则</p>
+<script type="math/tex; mode=display">
+\overline{\lim}_{n\to\infty}x_n=\lim_{i\to\infty}\sup_{k\geq i}x_k=\lim_{i\to\infty}\left(\sup_{k\geq i}x_k-\dfrac1i\right)\leq \lim_{i\to\infty}x_{n_i}\leq \lim_{i\to\infty}\sup_{k\geq n_i}x_{k}=\overline{\lim}_{n\to\infty}x_n.</script><p>但注意，这样取出的 <script type="math/tex">n_i</script> 可能不是严格单调递增的，因此 <script type="math/tex">x_{n_i}</script> 还不一定是一个子列。不过，由于 <script type="math/tex">n_i\to\infty</script>，我们可以再从这些指标中抽取一个单调递增趋于无穷的子列，那么这也对应了原本数列的一个子列。这也证明了 Bolzano-Weierstrass 定理，即有界数列必有收敛子列。事实上，上下极限还是子列极限能达到的最值，因对任意收敛子列 <script type="math/tex">x_{n_i}</script>，考虑 <script type="math/tex">\sup_{k\geq n_i}x_{k}</script>，其是 <script type="math/tex">\sup_{k\geq n}x_k</script> 的一个子列，且满足不小于 <script type="math/tex">x_{n_i}</script>，由极限的保序性，上极限不小于子列极限，同理有下极限不大于子列极限。</p>
+<p><strong>自测 2.6</strong> 下列哪些条件是数列 <script type="math/tex">\{x_n\}</script> 发散的充要条件？</p>
+<p>(1) <script type="math/tex">\exists\varepsilon>0,\forall N,\exists n,m>N,\text{s.t. }|x_n-x_m|\geq \varepsilon.</script></p>
+<p>充要。</p>
+<p>(2) <script type="math/tex">\forall \varepsilon\in(0,1),\forall N,\exists n,m>N,\text{s.t. }|x_n-x_m|> \varepsilon.</script></p>
+<p><script type="math/tex">\varepsilon</script> 的任意性使得其充分不必要，例如考虑 <script type="math/tex">\dfrac{(-1)^n}{4}</script>，没有任何两项差距超过 <script type="math/tex">\dfrac12</script>。</p>
+<p>(3) <script type="math/tex">\exists \varepsilon>0,\forall N,\exists n>N,\exists p>0,\text{s.t. }|x_n-x_{n+p}|> \varepsilon.</script></p>
+<p>充要。</p>
+<p>(4) <script type="math/tex">\forall \varepsilon\in(0,1),\forall N,\exists n>N,\exists p>0,\text{s.t. }|x_n-x_{n+p}|> \varepsilon.</script></p>
+<p><script type="math/tex">\varepsilon</script> 的任意性使得其充分不必要。</p>
+<p>(5) <script type="math/tex">\{x_n\}</script> 存在发散子列。</p>
+<p>自身就是发散子列。</p>
+<p>(6) 要么 <script type="math/tex">\{x_n\}</script> 存在子列发散到 <script type="math/tex">\infty</script>，要么 <script type="math/tex">\{x_n\}</script> 存在收敛到不同极限的两个子列。</p>
+<p>有界时，存在分别收敛到上下极限的两个子列，而此时发散等价于上下极限不同。无界时，子列的第 <script type="math/tex">k</script> 项取绝对值大于 <script type="math/tex">k</script> 的数即可，由于无界，必定能取出。</p>
+<h4 id="差分与累积"><a href="#差分与累积" class="headerlink" title="差分与累积"></a>差分与累积</h4><p>差分指每一项对前一项作差（或后一项对此项，可以有不同规定），我们有 <script type="math/tex">x_n=x_1+\sum_{k=1}^{n-1}(x_{k+1}-x_k)</script>。累积方式除了加法以外还有乘法；在连乘中，差分则对应着比值。取对数后，乘法的累积可以转化为加法的累积，这在通常情况下会方便处理。若累积全为正贡献（也即对应差分均为正），则单调有界定理便可能带来收敛性。</p>
+<p><strong>习题 1.6</strong> 求极限 <script type="math/tex">\lim_{n\to\infty}\sum_{k=1}^n\dfrac{2k-1}{2^k}</script>。</p>
+<p><script type="math/tex">k</script> 是最简单的累积量，将其识别为累积后就可以对二重和式交换求和次序，从先求和项数再求和指数，改为先求和指数，再求和项数，简化运算。</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\sum_{k=1}^n\dfrac{2k-1}{2^k}&=-\sum_{k=1}^n\dfrac{1}{2^k}+\sum_{k=1}^n\sum_{j=1}^k\dfrac{1}{2^{k-1}}\\
+&=-1+\dfrac{1}{2^n}+\sum_{j=1}^n\sum_{k=j}^n\dfrac{1}{2^{k-1}}\\
+&=-1+\dfrac1{2^n}+\sum_{j=1}^n\left(\dfrac{1}{2^{j-2}}-\dfrac{1}{2^{n-1}}\right)\\
+&=-1+\dfrac{1}{2^n}+4\left(1-\dfrac1{2^n}\right)-\dfrac{2n}{2^n}\\
+&=3-\dfrac{2n+3}{2^n}\\
+&\to3.
+\end{aligned}</script><p><strong>习题 1.7</strong> 设 <script type="math/tex">\lim_{n\to\infty}\dfrac{a_1+a_2+\cdots+a_n}{n}=a</script>，试证 <script type="math/tex">\lim_{n\to\infty}\dfrac{a_n}n=0</script>。</p>
+<p>记 <script type="math/tex">S_n=\dfrac{a_1+a_2+\cdots+a_n}{n}</script>，则 <script type="math/tex">\dfrac{a_n}{n}=S_n-\dfrac{n-1}{n}S_{n-1}\to 0</script>。</p>
+<p><strong>习题 2.5</strong> 设数列 <script type="math/tex">\{a_n\}</script> 中每一项 <script type="math/tex">a_n</script> 都是正整数，记</p>
+<script type="math/tex; mode=display">
+x_n=\prod_{i=1}^n\left(1+\dfrac1{a_i}\right),y_n=\sum_{i=1}^n\dfrac1{a_i},n\geq 1.</script><p>试证：<script type="math/tex">\{x_n\}</script> 与 <script type="math/tex">\{y_n\}</script> 同时收敛或同时发散。</p>
+<p>两数列均单调递增，只需证两者同时有上界。若 <script type="math/tex">x_n</script> 有上界，由 <script type="math/tex">x_n=1+y_n+\cdots>y_n</script>，则 <script type="math/tex">y_n</script> 有上界。若 <script type="math/tex">y_n</script> 有上界，<script type="math/tex">\ln x_n=\sum_{i=1}^n\ln\left(1+\dfrac1{a_i}\right)<\sum_{i=1}^n\dfrac1{a_i}=y_n</script>，则 <script type="math/tex">\ln x_n</script> 有上界 <script type="math/tex">c</script>，故 <script type="math/tex">x_n</script> 有上界 <script type="math/tex">\mathrm e^c</script>。</p>
+<p><strong>习题 2.10</strong> 试证明下列不等式。</p>
+<p>主要是熟悉乘法型增长 <script type="math/tex">\left(1+\dfrac1n\right)^n<\mathrm e<\left(1+\dfrac1n\right)^{n+1}</script>。</p>
+<p>(1) <script type="math/tex">\left(\dfrac n{\mathrm e}\right)^n<n!<\mathrm e\left(\dfrac n2\right)^n.</script></p>
+<p>这是乘法型累积，已知 <script type="math/tex">n=1</script> 成立，考虑通过前后两项比值比较增长速度，令 <script type="math/tex">a_n=\dfrac{n!\mathrm e^n}{n^n}</script>，则</p>
+<script type="math/tex; mode=display">
+\dfrac{a_{n+1}}{a_n}=\dfrac{n^n\mathrm e}{(n+1)^{n}}=\dfrac{\mathrm e}{\left(1+\dfrac1n\right)^n}>1,</script><p>故 <script type="math/tex">a_n>1</script> 恒成立，即 <script type="math/tex">n!>\left(\dfrac{n}{\mathrm e}\right)^n</script> 恒成立。右侧同理。</p>
+<p>(3) <script type="math/tex">\dfrac1n-\dfrac1{n^2}<\ln\left(1+\dfrac1n\right)<\dfrac1n.</script></p>
+<p><script type="math/tex">\dfrac1n-\dfrac{1}{n^2}<\dfrac{1}{n+1}<\ln\left(1+\dfrac1n\right)<\dfrac1n.</script></p>
+<p>(2) <script type="math/tex">\left(1+\dfrac1n\right)^n>\mathrm e^{1-\frac1n}.</script></p>
+<p>上题左侧不等式乘 <script type="math/tex">n</script> 取指数即得。</p>
+<p>(4) <script type="math/tex">0<\mathrm e-\left(1+\dfrac1n\right)^n<\dfrac3n.</script></p>
+<p>左侧已知，右侧由 <script type="math/tex">\mathrm e-\left(1+\dfrac1n\right)^n<\left(1+\dfrac1n\right)^{n+1}-\left(1+\dfrac1n\right)^n=\dfrac1n\left(1+\dfrac1n\right)^n<\dfrac{\mathrm e}{n}<\dfrac3n</script> 得。</p>
+<p><strong>习题 2.11</strong> 求下列极限。</p>
+<p>(1) <script type="math/tex">\lim_{n\to\infty}\dfrac{\sum_{k=0}^n(2k+1)^2}{n^3}.</script></p>
+<p>Stolz 定理是将分子与分母同时改为差分的技术，这样的技术在连续情形即为 L’Hospital 法则。需要注意应用时检查单调性等约束条件，以及应用后的极限的存在性。</p>
+<p><script type="math/tex">\lim_{n\to\infty}\dfrac{\sum_{k=0}^n(2k+1)^2}{n^3}=\lim_{n\to\infty}\dfrac{(2n+3)^2}{(n+1)^3-n^3}=\dfrac43.</script></p>
+<p>(2) <script type="math/tex">\lim_{n\to\infty}\dfrac{\sum_{k=1}^n\dfrac{1}{\sqrt k}}{\sqrt n}.</script></p>
+<p><script type="math/tex">\lim_{n\to\infty}\dfrac{\sum_{k=1}^n\dfrac{1}{\sqrt k}}{\sqrt n}=\lim_{n\to\infty}\dfrac{\dfrac{1}{\sqrt{n+1}}}{\sqrt{n+1}-\sqrt{n}}=\lim_{n\to\infty}\dfrac{\sqrt{n+1}+\sqrt n}{\sqrt{n+1}}=2.</script></p>
+<p>(3) <script type="math/tex">\lim_{n\to\infty}\dfrac{\sum_{k=1}^n\dfrac1k}{\ln n}.</script></p>
+<p><script type="math/tex">\lim_{n\to\infty}\dfrac{\sum_{k=1}^n\dfrac1k}{\ln n}=\lim_{n\to\infty}\dfrac{\dfrac{1}{n+1}}{\ln(n+1)-\ln n}=\lim_{n\to\infty}\dfrac{\dfrac{n}{n+1}}{n\ln\left(1+\dfrac1{n}\right)}=1.</script></p>
+<p>(4) <script type="math/tex">\lim_{n\to\infty}\sqrt[n]{\dfrac{n!}{n^n}}.</script></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\lim_{n\to\infty}\ln\left(\sqrt[n]{\dfrac{n!}{n^n}}\right)&=\lim_{n\to\infty}\dfrac{\sum_{k=1}^n\ln k-n\ln n}{n}\\&=\lim_{n\to\infty}(\ln(n+1)-(n+1)\ln(n+1)+n\ln n)\\
+&=-\lim_{n\to\infty}n\ln\left(1+\dfrac1n\right)\\
+&=-1,
+\end{aligned}</script><p>则 <script type="math/tex">\lim_{n\to\infty}\sqrt[n]{\dfrac{n!}{n^n}}=\lim_{n\to\infty}\exp\left(\lim_{n\to\infty}\ln\left(\sqrt[n]{\dfrac{n!}{n^n}}\right)\right)=\mathrm e^{-1}</script>。</p>
+<p><strong>习题 2.13</strong> 对于数列 <script type="math/tex">\{a_n\},\{p_n\}</script>，记 <script type="math/tex">A_n=\sum_{k=1}^na_k</script>，试证以下结论：</p>
+<p>(1) <script type="math/tex">\sum_{k=1}^np_ka_k=p_nA_n-\sum_{k=1}^{n-1}(p_{k+1}-p_k)A_k,\forall n\geq 1.</script></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\sum_{k=1}^np_ka_k&=p_1a_1+\sum_{k=2}^np_k(A_k-A_{k-1})\\
+&=\left(p_1A_1+\sum_{k=2}^np_kA_k\right)-\sum_{k=2}^n p_kA_{k-1}\\
+&=\left(\sum_{k=1}^{n-1}p_kA_k+p_nA_n\right)-\sum_{k=1}^{n-1}p_{k+1}A_k\\
+&=p_nA_n-\sum_{k=1}^{n-1}(p_{k+1}-p_{k})A_k.
+\end{aligned}</script><p>这称为 Abel 变换，又称为分部求和法，其意义是将一个因子的差分转换到另一个因子上。</p>
+<p>(2) 若 <script type="math/tex">\{A_n\}</script> 收敛，<script type="math/tex">\{p_n\}</script> 为严格单调递增的正数列，且 <script type="math/tex">\lim_{n\to\infty}p_n=+\infty</script>，则 <script type="math/tex">\lim_{n\to\infty}\dfrac{\sum_{k=1}^np_ka_k}{p_n}=0</script>。</p>
+<p>信息在求和上，我们把 <script type="math/tex">a_k</script> 换成求和表示，即使用 Abel 变换，设 <script type="math/tex">A_n\to A</script>，有</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\lim_{n\to\infty}\dfrac{\sum_{k=1}^np_ka_k}{p_n}&=\lim_{n\to\infty}\left(A_n-\dfrac{\sum_{k=1}^{n-1}(p_{k+1}-p_k)A_k}{p_n}\right)\\
+&=\lim_{n\to\infty}A_n-\lim_{n\to\infty}\dfrac{(p_{n+1}-p_n)A_{n}}{p_{n+1}-p_{n}}\\
+&=0.
+\end{aligned}</script><h4 id="递推数列与不动点"><a href="#递推数列与不动点" class="headerlink" title="递推数列与不动点"></a>递推数列与不动点</h4><p>递推关系通过数列已有的项确定后续项，一般可以写成 <script type="math/tex">x_{n+1}=\varphi_n(x_n,x_{n-1},\ldots,x_1)</script>，这与显式写出的仅含 <script type="math/tex">n</script> 的表达形式不同。对于一些情况，可以直接求出通项公式，例如常系数线性递推；另一些情况，则需要逐步根据递推式分析单调性、收敛性等性质，同时也需要寻找递推公式中不变的量。递推关系的一个最简单的形式是 <script type="math/tex">x_{n+1}=f(x_n)</script>。对于映射 <script type="math/tex">f</script>，满足 <script type="math/tex">f(\xi)=\xi</script> 的点 <script type="math/tex">\xi</script> 称为其不动点。如果递推数列收敛于 <script type="math/tex">\xi</script>，且 <script type="math/tex">f</script> 在 <script type="math/tex">\xi</script> 处连续，那么对递推关系两边取极限，可得 <script type="math/tex">\xi=f(\xi)</script>。因此，不动点方程可以给出递推数列可能的极限，而把问题归约到数列收敛性上。反过来，求解方程时，也可以尝试将其改写为 <script type="math/tex">x=f(x)</script>，通过递推 <script type="math/tex">x_{n+1}=f(x_n)</script> 来逼近方程的解，这称为不动点迭代，是数值计算中常用的方法。迭代能否收敛同样是一个需要研究的问题。</p>
+<p><strong>例题 1.8 </strong>判断 <script type="math/tex">\{a_n\}</script> 敛散性，若收敛求极限。</p>
+<p>(6) <script type="math/tex">a_{n+1}=\lambda a_n+(1-\lambda)a_{n-1},0<\lambda<1.</script></p>
+<p>经典的常系数二阶递推，可以转化为等比数列求通项公式。</p>
+<p><script type="math/tex">a_{n+1}-a_{n}=(\lambda -1)(a_n-a_{n-1})</script>，则 <script type="math/tex">a_n=\dfrac{1-(\lambda-1)^{n-1}}{2-\lambda}(a_2-a_1)+a_1\to\dfrac{(1-\lambda)a_1+a_2}{2-\lambda}</script>。</p>
+<p>(7) <script type="math/tex">a_n=\tan n.</script></p>
+<p>可以寻找递推关系。<script type="math/tex">a_{n+1}=\tan(n+1)=\dfrac{\tan n+\tan 1}{1-\tan n \tan 1}</script>，假设收敛至 <script type="math/tex">t</script>，则 <script type="math/tex">t=\dfrac{t+\tan 1}{1-t\tan 1}</script>，<script type="math/tex">(1+t^2)\tan 1=0</script>，无解，故发散。</p>
+<p><strong>习题 2.2</strong> 已知 <script type="math/tex">a_1>0</script>，<script type="math/tex">a_{n+1}=\dfrac{a_n}2+\dfrac1{a_n}</script>，证明 <script type="math/tex">\{a_n\}</script> 收敛，并求 <script type="math/tex">\lim_{n\to\infty}a_n</script>。</p>
+<p>从第二项开始，作差 <script type="math/tex">a_{n+1}-a_n=\dfrac{2-a_n^2}{2a_n}\leq 0</script>（由于 <script type="math/tex">a_{n}\geq \sqrt2</script>），单调递减有下界，收敛。解出极限 <script type="math/tex">\sqrt 2</script>。</p>
+<p><strong>习题 2.4</strong> 设 <script type="math/tex">a\in\mathbb R,x_1=\sin a,x_{n+1}=\sin x_n</script>。证明：<script type="math/tex">\{x_n\}</script> 收敛，并求其极限。</p>
+<p>对 <script type="math/tex">x_1>0</script>，<script type="math/tex">0\leq\sin x_1\leq  x_1\leq 1</script>，归纳证明 <script type="math/tex">0\leq x_{n+1}=\sin x_n\leq x_n\leq 1</script>，单调递减有下界，收敛。对 <script type="math/tex">x_1 <0</script> 同理。对 <script type="math/tex">x_1=0</script> 直接有 <script type="math/tex">x_n\equiv 0</script>。解 <script type="math/tex">\sin x=x</script>，在 <script type="math/tex">[0,1]</script> 中只有解 <script type="math/tex">x=0</script>，此即极限。注意此处用到了 <script type="math/tex">\sin x</script> 的连续性，否则还需做一些证明。</p>
+<p><strong>习题 2.3</strong> 设 <script type="math/tex">a_1>b_1>0</script>。定义</p>
+<script type="math/tex; mode=display">
+a_{n+1}=\dfrac{a_n+b_n}{2}, b_{n+1}=\dfrac{2a_nb_n}{a_n+b_n},n=1,2,\cdots</script><p>试证：数列 <script type="math/tex">\{a_n\}</script> 与 <script type="math/tex">\{b_n\}</script> 都收敛，并求 <script type="math/tex">\lim_{n\to\infty}a_n</script> 与 <script type="math/tex">\lim_{n\to\infty}b_n</script>。</p>
+<p>已知 <script type="math/tex">a_{n+1}-b_{n+1}=\dfrac{(a_n-b_n)^2}{2(a_n+b_n)}\geq 0</script>，则 <script type="math/tex">a_{n+1}\leq a_n,b_{n+1}\geq b_n</script>，故 <script type="math/tex">b_1\leq \cdots\leq b_n\leq \cdots\leq a_n\leq\cdots \leq a_1</script>。由单调有界定理知两数列均收敛，分别设收敛到 <script type="math/tex">A,B</script>，则 <script type="math/tex">\begin{cases}A=\dfrac{A+B}{2}\\B=\dfrac{2AB}{A+B}\end{cases}</script> 给出 <script type="math/tex">A=B</script>。另一方面，<script type="math/tex">a_{n}b_n</script> 恒等于 <script type="math/tex">a_1b_1</script>，则 <script type="math/tex">AB=a_1b_1</script>，<script type="math/tex">A=B=\sqrt{a_1b_1}</script>，这个不变量由调和平均和算术平均的几何平均等于原本的几何平均给出。</p>
+<p><strong>例题 2.3</strong> 设函数 <script type="math/tex">f</script> 在 <script type="math/tex">[a,b]</script> 有定义，<script type="math/tex">f([a,b])\subset [a,b]</script>，且 <script type="math/tex">|f(x)-f(y)|\leq \alpha|x-y|,\forall x,y\in[a,b]</script>，其中 <script type="math/tex">0<\alpha <1</script>。证明：存在唯一的 <script type="math/tex">\xi\in[a,b]</script>，使得 <script type="math/tex">f(\xi)=\xi</script>。</p>
+<p>任取 <script type="math/tex">x_1\in[a,b]</script>，定义递推方程 <script type="math/tex">x_{n+1}=f(x_n)</script>，有 <script type="math/tex">|x_{n+1}-x_n|\leq \alpha|x_n-x_{n-1}|\leq \alpha^{n-1}|x_2-x_1|</script>，故</p>
+<script type="math/tex; mode=display">
+|x_{n+p}-x_n|\leq \sum_{k=n}^{n+p-1}|x_{k+1}-x_k|\leq |x_2-x_1|\sum_{k=n}^{n+p-1}\alpha^{k-1}\leq \dfrac{\alpha^{n-1}}{1-\alpha}|x_2-x_1|\to 0.</script><p>故 <script type="math/tex">\{x_n\}</script> 收敛，设收敛至 <script type="math/tex">\xi</script>，则 <script type="math/tex">|f(x_n)-f(\xi)|\leq \alpha|x_n-\xi|\to 0</script>，则 <script type="math/tex">\lim_{n\to\infty}f(x_n)=f(\xi)</script>，对递推方程两侧取极限有 <script type="math/tex">\xi=f(\xi)</script>。若有两个不动点 <script type="math/tex">\xi,\eta</script>，则 <script type="math/tex">|\eta-\xi|=|f(\eta)-f(\xi)|\leq \alpha|\eta-\xi|</script>，故 <script type="math/tex">\xi=\eta</script>，不动点唯一。</p>
+<p><strong>习题 2.9</strong> 设 <script type="math/tex">0<\alpha<1,\beta\in\mathbb R</script>。证明：方程 <script type="math/tex">x-\alpha\cos x=\beta</script> 有唯一解。</p>
+<p>改写为 <script type="math/tex">x=\alpha\cos x+\beta</script>，再转化为递推方程 <script type="math/tex">x_{n+1}=\alpha\cos x_n+\beta</script>。</p>
+<p>由于 <script type="math/tex">|\cos x-\cos y|=2\left|\sin\dfrac{x-y}{2}\cos\dfrac{x+y}{2}\right|\leq |x-y|</script>，有 <script type="math/tex">|x_{n+1}-x_n|\leq \alpha|x_n-x_{n-1}|</script>，是 <script type="math/tex">[\beta-\alpha,\beta+\alpha]</script> 上的压缩映射，故有唯一解。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.psephurusgladius.com">白鲟</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.psephurusgladius.com/2026/10/13/lecture-notes-for-calculus-A1-tutorial-class-2/">https://blog.psephurusgladius.com/2026/10/13/lecture-notes-for-calculus-A1-tutorial-class-2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.psephurusgladius.com" target="_blank">白鲟鱼缸</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/10/07/lecture-notes-for-calculus-A1-tutorial-class-1/" title="微积分A(1)第一次习题课讲义"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">微积分A(1)第一次习题课讲义</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/08/29/directional-derivatives-and-partial-derivatives/" title="方向导数与偏导数"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-08-29</div><div class="info-item-2">方向导数与偏导数</div></div><div class="info-2"><div class="info-item-1">本篇讨论沿方向观察可微性的方法，借助方向导数与偏导数尝试将可微性坐标化，并讨论其与连续和可微的实际关系。最后，借助极坐标举出关系中的反例。 以下讨论均取欧氏空间上的内积及其诱导的 2-范数、距离与拓扑，g(x)=o(f(x)) 指极限过程中有 \dfrac{\Vert g(x)\Vert}{\Vert f(x)\Vert}\to 0。函数 f:\mathbb R^n\to\mathbb R 在点 x_0 处连续可定义为 f(\boldsymbol x)-f(\boldsymbol x_0)=o(1)，可微可定义为存在线性映射 A， f(\boldsymbol x)-f(\boldsymbol x_0)=A(\boldsymbol x-\boldsymbol x_0)+o(\Vert\boldsymbol x-\boldsymbol x_0\Vert)，极限过程均为 \boldsymbol x\to\boldsymbol x_0。特别地，此处的线性映射是一个线性泛函。由定义首先可知可微必定连续，这是由于 \Vert A(\boldsymbol x-\boldsymbol...</div></div></div></a><a class="pagination-related" href="/2026/10/07/lecture-notes-for-calculus-A1-tutorial-class-1/" title="微积分A(1)第一次习题课讲义"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-07</div><div class="info-item-2">微积分A(1)第一次习题课讲义</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://cdn.luogu.com.cn/upload/usericon/67952.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">白鲟</div><div class="author-info-description">We are just two lost souls swimming in a fish bowl year after year. </div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/psephurusgladius"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/psephurusgladius" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zdx23@mails.tsinghua.edu.cn" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Cauchy-%E5%88%97%E4%B8%8E%E5%AE%8C%E5%A4%87%E6%80%A7%EF%BC%8C%E4%B8%8A%E4%B8%8B%E6%9E%81%E9%99%90%E4%B8%8E%E5%AD%90%E5%88%97%E6%9E%81%E9%99%90%EF%BC%88%E7%BB%AD%EF%BC%89"><span class="toc-text">Cauchy 列与完备性，上下极限与子列极限（续）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%AE%E5%88%86%E4%B8%8E%E7%B4%AF%E7%A7%AF"><span class="toc-text">差分与累积</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%92%E6%8E%A8%E6%95%B0%E5%88%97%E4%B8%8E%E4%B8%8D%E5%8A%A8%E7%82%B9"><span class="toc-text">递推数列与不动点</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/13/lecture-notes-for-calculus-A1-tutorial-class-2/" title="微积分A(1)第二次习题课讲义">微积分A(1)第二次习题课讲义</a><time datetime="2026-10-13T12:14:10.000Z" title="发表于 2026-10-13 20:14:10">2026-10-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/07/lecture-notes-for-calculus-A1-tutorial-class-1/" title="微积分A(1)第一次习题课讲义">微积分A(1)第一次习题课讲义</a><time datetime="2026-10-07T09:36:54.000Z" title="发表于 2026-10-07 17:36:54">2026-10-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/06/syntactic-structures-reading/" title="读《句法结构》">读《句法结构》</a><time datetime="2026-10-05T16:38:16.000Z" title="发表于 2026-10-06 00:38:16">2026-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/09/24/linear-spaces/" title="线性空间">线性空间</a><time datetime="2026-09-24T08:47:36.000Z" title="发表于 2026-09-24 16:47:36">2026-09-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/09/20/notes-on-English-vocabulary/" title="英语词汇札记">英语词汇札记</a><time datetime="2026-09-20T13:12:55.000Z" title="发表于 2026-09-20 21:12:55">2026-09-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/r562ya8w.png);"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2026 By 白鲟</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  const initGitalk = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGitalk = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const gitalk = new Gitalk({
+      clientID: 'Ov23liNlg9HzGZtjyqmv',
+      clientSecret: '16cbc8ab390251951a8af8eb0db2d4601a3e0c29',
+      repo: 'PsephurusGladius.github.io',
+      owner: 'PsephurusGladius',
+      admin: ['PsephurusGladius'],
+      updateCountCallback: commentCount,
+      ...option,
+      id: isShuoshuo ? path : (option && option.id) || 'ed23acd1fa0910d5be92a279bf25b986'
+    })
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async(el, path) => {
+    if (typeof Gitalk === 'function') initGitalk(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js')
+      initGitalk(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Gitalk' === 'Gitalk'
+      ? window.shuoshuoComment = { loadComment: loadGitalk }
+      : window.loadOtherComment = loadGitalk
+    return
+  }
+
+  if ('Gitalk' === 'Gitalk' || !false) {
+    if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
